@@ -1,0 +1,82 @@
+{
+  "stage": "check-all",
+  "verified_files": 2940,
+  "steps": [
+    {
+      "name": "raw",
+      "seconds": 20.24666419099958,
+      "returncode": 0
+    },
+    {
+      "name": "primary",
+      "seconds": 8.324435905999962,
+      "returncode": 0
+    },
+    {
+      "name": "strata",
+      "seconds": 8.412343913999393,
+      "returncode": 0
+    },
+    {
+      "name": "noise_analysis",
+      "seconds": 9.00940838600036,
+      "returncode": 0
+    },
+    {
+      "name": "verify_reporting",
+      "seconds": 0.06158104000041931,
+      "returncode": 0
+    },
+    {
+      "name": "make_publication_figures",
+      "seconds": 9.094443820999913,
+      "returncode": 0
+    },
+    {
+      "name": "make_graphical_abstract",
+      "seconds": 1.3065818469995065,
+      "returncode": 0
+    }
+  ],
+  "status": "passed",
+  "full_refit_to_test_reproduction": false,
+  "interpretation": "Frozen-parent stage replay; original locks preserved.",
+  "raw_preparation": {
+    "passed": true,
+    "portable_entries": 22
+  },
+  "primary_comparison": {
+    "files": [
+      "PRIMARY_COMPARISONS.json",
+      "PROCEDURE_METRICS.json",
+      "CALIBRATION.json",
+      "DUPLICATE_SENSITIVITY.json"
+    ],
+    "passed": true,
+    "atol": 1e-08,
+    "rtol": 1e-10
+  },
+  "strata_comparison": {
+    "files": [
+      "STRATA_RESULTS.json",
+      "CASE_METADATA.json",
+      "BOOTSTRAP_DESIGN.json",
+      "STRATA_BOOTSTRAP.npz"
+    ],
+    "passed": true,
+    "atol": 1e-08,
+    "rtol": 1e-10
+  },
+  "noise_comparison": {
+    "files": [
+      "NOISE_COMPARISONS.json",
+      "NOISE_BOOTSTRAP.npz",
+      "NOISE_MATRIX_BINDINGS.json"
+    ],
+    "passed": true,
+    "atol": 1e-08,
+    "rtol": 1e-10
+  },
+  "paper_evidence_bound_to_originals": true,
+  "source_files_verified_after": 2940
+}

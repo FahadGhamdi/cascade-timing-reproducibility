@@ -1,0 +1,16 @@
+
+\begin{table*}[t]
+\caption{The seven prefix-only timing summaries added to the size and duration inputs.}\label{tab:features}
+\centering\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.17}
+\begin{tabularx}{\textwidth}{>{\hsize=0.75\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=1.47\hsize\linewidth=\hsize\raggedright\arraybackslash}X>{\hsize=0.78\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
+\toprule
+\textbf{Added feature} & \textbf{Definition} & \textbf{Empty/degenerate value} \\ \midrule
+First-event fraction & First nonroot timestamp divided by \(w\) & 1 for an empty prefix \\
+Recency fraction & \((w-\text{last timestamp})/w\) & 1 for an empty prefix \\
+Median-gap fraction & Median consecutive nonroot gap divided by \(w\) & 0 with fewer than two records \\
+Gap coefficient of variation & Population gap standard deviation divided by mean gap & 0 with no positive mean gap \\
+Zero-gap fraction & Proportion of consecutive gaps equal to zero & 0 with fewer than two records \\
+Last-quarter fraction & Fraction of prefix records at times at least \(0.75w\) & 0 for an empty prefix \\
+Last-tenth fraction & Fraction at times at least \(0.9w\) & 0 for an empty prefix \\
+\bottomrule\end{tabularx}
+\end{table*}

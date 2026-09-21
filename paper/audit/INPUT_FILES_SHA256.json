@@ -1,0 +1,52 @@
+[
+  {
+    "name": ".codex-upload-2b90dd417e8a4375b8c80ec795af72e5",
+    "bytes": 48375,
+    "sha256": "60e125891d043c3df0b2d3fa95c3896d601a437536d009f19f7a8a3d70eb27ce"
+  },
+  {
+    "name": ".codex-upload-985876eda427460c9bc44561be7b08d5",
+    "bytes": 393216,
+    "sha256": "242e5c5ef2cefb5a4c59fb6c87bb0a2dac329e5921c506c0d550d320c683d87a"
+  },
+  {
+    "name": ".codex-upload-be1817eff9b24023bfb15a2bedb13001",
+    "bytes": 131072,
+    "sha256": "cff984c188fd727eb9ab64cb0c1fb7692aba7d9f70dd46f8e585f7fe0045bc9a"
+  },
+  {
+    "name": ".codex-upload-f9e1d447249c4c5c8e8072ed075a6488",
+    "bytes": 262144,
+    "sha256": "77e3d59a6b05d464c0dc170e6cd064cd96661deb07765058231d59ea9df465ab"
+  },
+  {
+    "name": "BRACE_MANUSCRIPT_PHASE14_REVIEWED_EN(2).md",
+    "bytes": 48375,
+    "sha256": "60e125891d043c3df0b2d3fa95c3896d601a437536d009f19f7a8a3d70eb27ce"
+  },
+  {
+    "name": "BRACE_PHASE14_REVIEW_AR(2).md",
+    "bytes": 12736,
+    "sha256": "331258dc0f6c59499013199e2002c60be5dbd51e40d264fa455356c280cbc736"
+  },
+  {
+    "name": "BRACE_Phase14_Reviewed_Manuscript_Package_20260913(2).zip",
+    "bytes": 3734756,
+    "sha256": "861a27ea9fb8b3f07446936364d031d3e867f8658810d65a517d0bb5b67fc21e"
+  },
+  {
+    "name": "CONTEXT_HANDOFF(1).zip",
+    "bytes": 1744296,
+    "sha256": "ac700ef7441624736954bc9386441ab3bd330ac77719f0453395169fa84c76dd"
+  },
+  {
+    "name": "CONTEXT_HANDOFF.zip",
+    "bytes": 1744296,
+    "sha256": "ac700ef7441624736954bc9386441ab3bd330ac77719f0453395169fa84c76dd"
+  },
+  {
+    "name": "Screenshot 2026-09-14 at 12.28.22 AM.png",
+    "bytes": 437730,
+    "sha256": "44d214dcd5fa6f3b5775f1dfd49d62b60a557df3bd49b420bd263e875e6b1869"
+  }
+]

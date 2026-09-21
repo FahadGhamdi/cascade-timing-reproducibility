@@ -1,0 +1,302 @@
+{
+  "key": "deepcas2017",
+  "requested_title": "DeepCas: An end-to-end predictor of information cascades",
+  "retrieved_from": "https://api.crossref.org/works?query.title=DeepCas%3A+An+end-to-end+predictor+of+information+cascades&rows=3",
+  "review_required": true,
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          10
+        ]
+      ],
+      "date-time": "2026-06-10T16:55:24Z",
+      "timestamp": 1781110524036,
+      "version": "3.54.1"
+    },
+    "reference-count": 16,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              24
+            ]
+          ],
+          "date-time": "2024-07-24T00:00:00Z",
+          "timestamp": 1721779200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              24
+            ]
+          ],
+          "date-time": "2024-07-24T00:00:00Z",
+          "timestamp": 1721779200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          24
+        ]
+      ]
+    },
+    "DOI": "10.1109/asap61560.2024.00050",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2024-08-22T17:45:58Z",
+      "timestamp": 1724348758000
+    },
+    "page": "214-216",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "LLM Based End-to-end Branch Predictor Optimization Generator"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Qingchen",
+        "family": "Zhai",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Chinese Academy of Sciences"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhiwei",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Automation Chinese Academy of Sciences"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ruozhou",
+        "family": "Xiao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Automation Chinese Academy of Sciences"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ISCA.2001.937436"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-28293-5_16"
+      },
+      {
+        "key": "ref3",
+        "article-title": "Dynamically Sizing the TAGE Branch Predictor",
+        "volume": "5",
+        "author": "Pruett",
+        "year": "2016",
+        "journal-title": "CBP"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCD.2017.114"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-63390-9_17"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2813885.2738007"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSE.1979.234198"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/FMCAD.2013.6679385"
+      },
+      {
+        "key": "ref9",
+        "article-title": "A survey for in-context learning",
+        "author": "Dong",
+        "year": "2022",
+        "journal-title": "arXiv preprint"
+      },
+      {
+        "key": "ref10",
+        "first-page": "1",
+        "article-title": "LoRA: Low-rank adaptation of large language models",
+        "volume-title": "International Conference on Learning Representations",
+        "author": "Hu"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2737924.2737977"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10009-012-0228-z"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18653/v1/2020.findings-emnlp.139"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18653/v1/2021.emnlp-main.685"
+      },
+      {
+        "key": "ref15",
+        "first-page": "1",
+        "article-title": "Graphcodebert: Pretraining code representations with data flow",
+        "volume-title": "International Conference on Learning Representations",
+        "author": "Guo"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18653/v1/2022.acl-long.499"
+      }
+    ],
+    "event": {
+      "name": "2024 IEEE 35th International Conference on Application-specific Systems, Architectures and Processors (ASAP)",
+      "location": "Hong Kong, Hong Kong",
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            24
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            26
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2024 IEEE 35th International Conference on Application-specific Systems, Architectures and Processors (ASAP)"
+    ],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/10630877/10631096/10631144.pdf?arnumber=10631144",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          31
+        ]
+      ],
+      "date-time": "2024-08-31T04:42:25Z",
+      "timestamp": 1725079345000
+    },
+    "score": 27.22966,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10631144/"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          24
+        ]
+      ]
+    },
+    "references-count": 16,
+    "URL": "https://doi.org/10.1109/asap61560.2024.00050",
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          24
+        ]
+      ]
+    },
+    "_title_similarity": 0.5656565656565656
+  }
+}

@@ -1,0 +1,99 @@
+Archive and original kit verified
+All 630000 saved score rows checked
+{
+  "status": "verified_saved_outputs_no_new_experiment",
+  "archive": {
+    "archive": "BRACE_PHASE14_RETURN_20260913T192805Z.zip",
+    "bytes": 222470817,
+    "sha256": "5295b94b6c6bfef77b14bbe94d16ed977e489e05dafe5e0b667d49cd1f7d2784",
+    "payloads_verified": 521,
+    "sizes_sha256_crc_valid": true,
+    "source_manifest_payloads": 108,
+    "exact_original_kit_members": 109
+  },
+  "saved_score_rows_checked": 630000,
+  "jobs_checked": 42,
+  "accounting": {
+    "new_procedure_fit_attempts": 42,
+    "component_fit_calls": 48,
+    "predictions_attempted": 630000,
+    "predictions_returned": 630000,
+    "score_attempts": 630000,
+    "score_successes": 630000,
+    "score_failures": 0,
+    "prediction_failure_rows": 0
+  },
+  "model_files_hashed_without_loading": 42,
+  "noise_matrices_verified": 12,
+  "noise_realization_means_checked": 18,
+  "max_saved_crps_error_bound": 9.999951089412207e-09,
+  "noise_array_max_abs_difference": 5.820766091346741e-11,
+  "noise_rep_mean_max_abs_difference": 0.0,
+  "noise_point_max_abs_difference": 6.661338147750939e-16,
+  "noise_saved_quantile_max_abs_difference": 0.0,
+  "noise_contrasts_checked": 12,
+  "noise_minus_I0_intervals_including_zero": 6,
+  "I1_minus_noise_intervals_entirely_negative": 6,
+  "strata_contrasts_checked": 90,
+  "strata_point_max_abs_difference": 0.0,
+  "strata_saved_quantile_max_abs_difference": 0.0,
+  "strata_negative_deltas": 64,
+  "strata_positive_deltas": 26,
+  "withheld_strata_intervals": [
+    {
+      "source": "seismic",
+      "family": "hurdle",
+      "window_s": 3600,
+      "prefix_bin": "0",
+      "roots": 26,
+      "resampling_units": 26
+    },
+    {
+      "source": "seismic",
+      "family": "qrf",
+      "window_s": 3600,
+      "prefix_bin": "0",
+      "roots": 26,
+      "resampling_units": 26
+    },
+    {
+      "source": "seismic",
+      "family": "ngboost",
+      "window_s": 3600,
+      "prefix_bin": "0",
+      "roots": 26,
+      "resampling_units": 26
+    },
+    {
+      "source": "seismic",
+      "family": "hurdle",
+      "window_s": 3600,
+      "prefix_bin": "1-2",
+      "roots": 20,
+      "resampling_units": 20
+    },
+    {
+      "source": "seismic",
+      "family": "qrf",
+      "window_s": 3600,
+      "prefix_bin": "1-2",
+      "roots": 20,
+      "resampling_units": 20
+    },
+    {
+      "source": "seismic",
+      "family": "ngboost",
+      "window_s": 3600,
+      "prefix_bin": "1-2",
+      "roots": 20,
+      "resampling_units": 20
+    }
+  ],
+  "primary_CRPS_max_abs_difference": 1.4210854715202004e-14,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "new_distribution_scores": 0,
+  "new_bootstrap_draws": 0,
+  "uncertainty_scope": "Quantiles of saved bootstrap replicates verified; resampling indices were not regenerated.",
+  "review_implementation_note": "Initial kit-identity check omitted the original archive top-level directory and raised KeyError. Path mapping was corrected in this audit only; no experiment or supplied artifact changed."
+}

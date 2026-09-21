@@ -1,0 +1,104 @@
+Cohorts frozen from metadata; beginning event preparation.
+weibo: all 13,000 selected roots prepared.
+seismic: all 13,000 selected roots prepared.
+{
+  "status": "prepared_frozen_cohorts_no_model_evaluation",
+  "protocol_id": "BRACE13B-count-time-v1",
+  "sources": {
+    "weibo": {
+      "roots_prepared": 13000,
+      "feature_rows_by_role": {
+        "test": 15000,
+        "validation": 6000,
+        "train": 18000
+      },
+      "target_rows_by_role": {
+        "test": 15000,
+        "validation": 6000,
+        "train": 18000
+      },
+      "TRAIN_only_input_size_summary": {
+        "300": {
+          "roots": 6000,
+          "zero_prefixes": 1961,
+          "one_event_prefixes": 1064,
+          "median_prefix_count": 1,
+          "p90_prefix_count_nearest_rank": 11,
+          "max_prefix_count": 851
+        },
+        "900": {
+          "roots": 6000,
+          "zero_prefixes": 886,
+          "one_event_prefixes": 680,
+          "median_prefix_count": 4,
+          "p90_prefix_count_nearest_rank": 33,
+          "max_prefix_count": 2739
+        },
+        "3600": {
+          "roots": 6000,
+          "zero_prefixes": 357,
+          "one_event_prefixes": 234,
+          "median_prefix_count": 11,
+          "p90_prefix_count_nearest_rank": 83,
+          "max_prefix_count": 10402
+        }
+      },
+      "validation_or_test_target_summary_computed": false
+    },
+    "seismic": {
+      "roots_prepared": 13000,
+      "feature_rows_by_role": {
+        "train": 18000,
+        "validation": 6000,
+        "test": 15000
+      },
+      "target_rows_by_role": {
+        "train": 18000,
+        "validation": 6000,
+        "test": 15000
+      },
+      "TRAIN_only_input_size_summary": {
+        "300": {
+          "roots": 6000,
+          "zero_prefixes": 159,
+          "one_event_prefixes": 89,
+          "median_prefix_count": 30,
+          "p90_prefix_count_nearest_rank": 106,
+          "max_prefix_count": 5685
+        },
+        "900": {
+          "roots": 6000,
+          "zero_prefixes": 80,
+          "one_event_prefixes": 48,
+          "median_prefix_count": 45,
+          "p90_prefix_count_nearest_rank": 150,
+          "max_prefix_count": 7112
+        },
+        "3600": {
+          "roots": 6000,
+          "zero_prefixes": 38,
+          "one_event_prefixes": 16,
+          "median_prefix_count": 62,
+          "p90_prefix_count_nearest_rank": 209,
+          "max_prefix_count": 8233
+        }
+      },
+      "validation_or_test_target_summary_computed": false
+    }
+  },
+  "source_hashes_unchanged": {
+    "weibo": true,
+    "seismic_index": true,
+    "seismic_data": true
+  },
+  "total_roots": 26000,
+  "feature_rows": 78000,
+  "new_model_fits": 0,
+  "new_model_predictions": 0,
+  "new_model_scores": 0,
+  "bootstrap": 0,
+  "sourcewide_metadata_previously_seen": true,
+  "targets_materialized_for_later_evaluation": true,
+  "heldout_target_summary_or_scores": false,
+  "legacy_results_changed": false
+}

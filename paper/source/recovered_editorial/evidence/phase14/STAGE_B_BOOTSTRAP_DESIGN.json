@@ -1,0 +1,24 @@
+[
+  {
+    "draws": 10000,
+    "indices_sha256": "f3a8356d4c38143516d2292c13a5296480fcdf8768ca0b32f49e832f542e159a",
+    "quantiles": [
+      0.0020833333333333333,
+      0.9979166666666667
+    ],
+    "roots": 5000,
+    "source": "weibo",
+    "units": 3467
+  },
+  {
+    "draws": 10000,
+    "indices_sha256": "34db610fbfd4fbca15c6be87be36852276393bb2fd3927cb94470ce7f06ed965",
+    "quantiles": [
+      0.0020833333333333333,
+      0.9979166666666667
+    ],
+    "roots": 5000,
+    "source": "seismic",
+    "units": 5000
+  }
+]

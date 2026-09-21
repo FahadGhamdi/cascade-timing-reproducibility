@@ -1,0 +1,1443 @@
+{
+  "scope": "Reporting consistency against frozen aggregates; no raw-data, fit, prediction, score or bootstrap rerun",
+  "checks": [
+    {
+      "check": "frozen:evidence/BOOTSTRAP_DESIGN.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/MODEL_LOCK.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/PRIMARY_COMPARISONS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/TEST_SAMPLE_DESCRIPTIVES.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/ANALYSIS_REPORT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/CALIBRATION.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/ENVIRONMENT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/PROCEDURE_METRICS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/INDEPENDENT_REVIEW.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/ARCHIVE_REVIEW.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/DUPLICATE_SENSITIVITY.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/PHASE13F_REPORT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/MAC_SETUP_VERIFICATION.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/NOISE_MATRIX_BINDINGS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/PHASE14_REPORT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/MAC_REVIEW.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/REAGGREGATION.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/STAGE_B_BOOTSTRAP_DESIGN.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/PROCEDURE_COMPLETENESS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/NOISE_BOOTSTRAP.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/STAGE_A_BOOTSTRAP_DESIGN.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/REVIEW_EXECUTION.log",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/ENVIRONMENT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/PREFLIGHT.log",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/STAGE_A_REPORT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/PARENT_VERIFICATION.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/JOB_REVIEW.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/INDEPENDENT_PHASE14_REVIEW.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/STAGE_A_REFERENCE_COMPARISON.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/NOISE_COMPARISONS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/STRATA_BOOTSTRAP.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/ORIGINAL_KIT_DELIVERY_QA.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/MAC_INDEPENDENT_AUDIT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/STAGE_B_REPORT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/ARCHIVE_REVIEW.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:evidence/phase14/STRATA_RESULTS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/NOISE_REALIZATION_SUMMARIES.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/MSLE_SAVED_MEDIANS.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/ALL_PROCEDURES.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/EMPIRICAL_REFERENCES_BY_STRATUM.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/STRATUM_LEVELS.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/NOISE_CONTROL_TABLE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/PRIMARY_TABLE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/TEST_SAMPLE_PROFILE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/NOISE_COMPARISONS.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/TIMING_STRATA.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/PER_WINDOW_PRIMARY_FAMILIES.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:tables/INTERVAL_COVERAGE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:protocols/PROTOCOL_PHASE13E.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:protocols/NOISE_JOBS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:protocols/LITERATURE_MATRIX_BEFORE_TEST.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:protocols/CONFIG_14.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:protocols/PROTOCOL_PHASE13B.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:protocols/PROTOCOL_FREEZE_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:protocols/PROTOCOL_PHASE14.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen:protocols/PROTOCOL_PHASE13F.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_table:weibo/hurdle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_aggregate_binding:weibo/hurdle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_table:weibo/qrf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_aggregate_binding:weibo/qrf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_table:weibo/ngboost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_aggregate_binding:weibo/ngboost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_table:seismic/hurdle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_aggregate_binding:seismic/hurdle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_table:seismic/qrf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_aggregate_binding:seismic/qrf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_table:seismic/ngboost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "primary_aggregate_binding:seismic/ngboost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "six_primary_intervals_below_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "eighteen_window_directions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:weibo/hurdle/noise_minus_I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:weibo/hurdle/I1_minus_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:weibo/qrf/noise_minus_I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:weibo/qrf/I1_minus_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:weibo/ngboost/noise_minus_I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:weibo/ngboost/I1_minus_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:seismic/hurdle/noise_minus_I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:seismic/hurdle/I1_minus_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:seismic/qrf/noise_minus_I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:seismic/qrf/I1_minus_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:seismic/ngboost/noise_minus_I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "noise_table:seismic/ngboost/I1_minus_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "six_noise_I0_intervals_span_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "six_I1_noise_intervals_below_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/empirical_window/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/empirical_window/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/conditional_empirical/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/conditional_empirical/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/hurdle/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/hurdle/I1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/hurdle/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/hurdle/I1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/qrf/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/qrf/I1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/qrf/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/qrf/I1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/ngboost/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/ngboost/I1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/ngboost/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/ngboost/I1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/nb2_glm/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/nb2_glm/I1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/nb2_glm/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/nb2_glm/I1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/poisson_glm/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:seismic/poisson_glm/I1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/poisson_glm/I0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "supplement_aggregate_row:weibo/poisson_glm/I1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 300, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 300, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 300, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 300, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 300, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 300, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 300, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 300, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 300, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 300, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 300, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 300, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 300, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 300, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 300, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 900, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 900, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 900, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 900, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 900, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 900, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 900, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 900, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 900, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 900, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 900, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 900, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 900, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 900, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 900, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 3600, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 3600, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 3600, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 3600, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 3600, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 3600, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 3600, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 3600, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 3600, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 3600, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 3600, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 3600, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'hurdle', 3600, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'qrf', 3600, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('weibo', 'ngboost', 3600, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 300, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 300, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 300, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 300, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 300, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 300, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 300, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 300, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 300, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 300, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 300, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 300, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 300, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 300, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 300, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 900, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 900, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 900, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 900, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 900, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 900, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 900, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 900, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 900, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 900, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 900, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 900, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 900, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 900, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 900, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 3600, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 3600, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 3600, '0')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 3600, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 3600, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 3600, '1-2')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 3600, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 3600, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 3600, '3-9')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 3600, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 3600, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 3600, '10-49')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'hurdle', 3600, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'qrf', 3600, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strata_row:('seismic', 'ngboost', 3600, '50+')",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "six_withheld_strata",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rounding_89.374",
+      "passed": true,
+      "detail": {
+        "unrounded": 89.37354681008047
+      }
+    },
+    {
+      "check": "plot_axes_do_not_truncate_PIT",
+      "passed": true,
+      "detail": {
+        "aggregate_max": 0.23577769097397394,
+        "window_max": 0.2422
+      }
+    },
+    {
+      "check": "strata_color_scale_not_saturated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "forty_locked_objects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:protocols/PROTOCOL_PHASE13B.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:protocols/PROTOCOL_PHASE13E.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:protocols/PROTOCOL_PHASE13F.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:protocols/PROTOCOL_PHASE14.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:evidence/MODEL_LOCK.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:evidence/CALIBRATION.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:evidence/BOOTSTRAP_DESIGN.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:tables/ALL_PROCEDURES.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:tables/INTERVAL_COVERAGE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:tables/PER_WINDOW_PRIMARY_FAMILIES.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:tables/TEST_SAMPLE_PROFILE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:evidence/PROCEDURE_METRICS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:evidence/CALIBRATION.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:evidence/INDEPENDENT_REVIEW.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:evidence/ENVIRONMENT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:tables/MSLE_SAVED_MEDIANS.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:tables/NOISE_REALIZATION_SUMMARIES.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:evidence/phase14/STAGE_B_REPORT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:evidence/phase14/PROCEDURE_COMPLETENESS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:code/review_saved_phase14.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_path:evidence/phase14/INDEPENDENT_PHASE14_REVIEW.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:gneiting2011",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:strobl2007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:hooker2021",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:mentch2022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:qrf2006",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:ngboost2020",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:cawley2010",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:martin2016",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:hofman2017",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:deephawkes2017",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:seismic2015",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:pinto2013",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:szabo2010",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:cheng2014",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:mishra2016",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:rpp2014",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:hip2017",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:seismic2015",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:tideh2016",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:maseptide2018",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:casper2022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:haimovich2022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:zhou2021",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:deepcas2016",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:deephawkes2017",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:casflow2023",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:ctcp2023",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:casft2024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:concat2025",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:cascadebench2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:qrf2006",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:ngboost2020",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:counts2008",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:czado2009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:scoring2019",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:calibration2007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:wei2014",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:kolassa2016",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:gneiting2011",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:szabo2010",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:pinto2013",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:cheng2014",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:proper2007",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:czado2009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:martin2016",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:hofman2017",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:brier1950",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:czado2009",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:mentch2022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:hooker2021",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "citation:openai2026",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": true,
+  "count": 286,
+  "bibliography_entries": 37
+}

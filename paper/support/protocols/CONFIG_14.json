@@ -1,0 +1,74 @@
+{
+  "protocol_id": "BRACE14-post13F-supplement-v1",
+  "sources": [
+    "weibo",
+    "seismic"
+  ],
+  "windows": [
+    300,
+    900,
+    3600
+  ],
+  "bins": [
+    "0",
+    "1-2",
+    "3-9",
+    "10-49",
+    "50+"
+  ],
+  "primary_families": [
+    "hurdle",
+    "qrf",
+    "ngboost"
+  ],
+  "noise_replicates": [
+    0,
+    1,
+    2
+  ],
+  "noise_master_seed": 2026091801,
+  "model_seeds": [
+    20260913,
+    20260914,
+    20260915
+  ],
+  "noise_distribution": "Uniform(-sqrt(3),sqrt(3)), seven mutually independent columns",
+  "noise_counterfactual_label": "dimension-matched negative control; not pure capacity identification",
+  "strata_bootstrap": {
+    "draws": 2000,
+    "seed": 2026091701,
+    "alpha": 0.05,
+    "minimum_groups_for_interval": 30,
+    "batch": 100,
+    "scope": "exploratory pointwise only; no simultaneous significance claims"
+  },
+  "noise_bootstrap": {
+    "draws": 10000,
+    "seed": 2026091802,
+    "alpha": 0.05,
+    "family_size": 12,
+    "batch": 100,
+    "scope": "supplementary family; fixed fitted models and fixed noise realizations"
+  },
+  "budget": {
+    "initialization_seconds": 180,
+    "synthetic_seconds": 180,
+    "job_seconds": 2400,
+    "global_noise_seconds": 21600,
+    "analysis_seconds": 1800,
+    "chunk": 128,
+    "noise_procedures": 42,
+    "noise_component_fits_max": 48,
+    "noise_test_rows_max": 630000
+  },
+  "phase13f_archive": {
+    "name": "BRACE_PHASE13F_RETURN_20260913T064116Z.zip",
+    "bytes": 160964430,
+    "sha256": "592e185fc9a0ad96265b407af71a3e80e9d66ccbe9da140a3bd32c36bfb51ce0"
+  },
+  "phase13b_archive": {
+    "name": "BRACE_PHASE13B_RETURN.zip",
+    "bytes": 11656737,
+    "sha256": "2fe65dba9969eeb12c1ae35b51b3f5420442732d2f53a1a28de5bbf760018187"
+  }
+}

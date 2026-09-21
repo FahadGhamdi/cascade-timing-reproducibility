@@ -1,0 +1,1426 @@
+[
+  {
+    "family": "empirical_window",
+    "info": "I0",
+    "jobs": [
+      "seismic__empirical_window__c0__I0__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.5276666666666666,
+      "coverage80": 0.8342666666666666,
+      "coverage90": 0.92,
+      "coverage95": 0.9600666666666667,
+      "crps": 56.22390779259311,
+      "interval_score90": 640.0266666666666,
+      "median_abs_error": 70.20853333333334,
+      "width90": 340.0,
+      "zero_brier": 0.00797169074074074
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.5296,
+        "coverage80": 0.8302,
+        "coverage90": 0.9134,
+        "coverage95": 0.9576,
+        "crps": 67.89617141666753,
+        "interval_score90": 769.092,
+        "median_abs_error": 84.9556,
+        "width90": 394.0,
+        "zero_brier": 0.002395761111111112
+      },
+      "3600": {
+        "coverage50": 0.5318,
+        "coverage80": 0.8426,
+        "coverage90": 0.9248,
+        "coverage95": 0.9582,
+        "crps": 43.17700861666695,
+        "interval_score90": 495.652,
+        "median_abs_error": 53.7806,
+        "width90": 275.0,
+        "zero_brier": 0.015357000000000004
+      },
+      "900": {
+        "coverage50": 0.5216,
+        "coverage80": 0.83,
+        "coverage90": 0.9218,
+        "coverage95": 0.9644,
+        "crps": 57.59854334444484,
+        "interval_score90": 655.336,
+        "median_abs_error": 71.8894,
+        "width90": 351.0,
+        "zero_brier": 0.006162311111111113
+      }
+    }
+  },
+  {
+    "family": "empirical_window",
+    "info": "I0",
+    "jobs": [
+      "weibo__empirical_window__c0__I0__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.5056666666666666,
+      "coverage80": 0.7924666666666667,
+      "coverage90": 0.8909333333333332,
+      "coverage95": 0.9562666666666666,
+      "crps": 126.56938721666864,
+      "interval_score90": 2039.4506666666668,
+      "median_abs_error": 140.6749333333333,
+      "width90": 384.33333333333337,
+      "zero_brier": 0.01630314444444444
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.5118,
+        "coverage80": 0.781,
+        "coverage90": 0.8908,
+        "coverage95": 0.9484,
+        "crps": 141.09713215555792,
+        "interval_score90": 2248.832,
+        "median_abs_error": 157.599,
+        "width90": 447.0,
+        "zero_brier": 0.003785561111111112
+      },
+      "3600": {
+        "coverage50": 0.489,
+        "coverage80": 0.7976,
+        "coverage90": 0.8982,
+        "coverage95": 0.9748,
+        "crps": 106.22351913889038,
+        "interval_score90": 1739.208,
+        "median_abs_error": 117.126,
+        "width90": 303.0,
+        "zero_brier": 0.03209797777777777
+      },
+      "900": {
+        "coverage50": 0.5162,
+        "coverage80": 0.7988,
+        "coverage90": 0.8838,
+        "coverage95": 0.9456,
+        "crps": 132.38751035555762,
+        "interval_score90": 2130.312,
+        "median_abs_error": 147.2998,
+        "width90": 403.0,
+        "zero_brier": 0.013025894444444444
+      }
+    }
+  },
+  {
+    "family": "conditional_empirical",
+    "info": "I0",
+    "jobs": [
+      "seismic__conditional_empirical__c1__I0__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.5460666666666666,
+      "coverage80": 0.8274,
+      "coverage90": 0.9216,
+      "coverage95": 0.9654666666666668,
+      "crps": 42.74035058666659,
+      "interval_score90": 399.0284666666667,
+      "median_abs_error": 56.7366,
+      "width90": 249.9324666666667,
+      "zero_brier": 0.007895026666666666
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.536,
+        "coverage80": 0.8142,
+        "coverage90": 0.9122,
+        "coverage95": 0.9616,
+        "crps": 52.465144859999896,
+        "interval_score90": 478.3542,
+        "median_abs_error": 70.1388,
+        "width90": 291.7542,
+        "zero_brier": 0.00236678
+      },
+      "3600": {
+        "coverage50": 0.5582,
+        "coverage80": 0.8384,
+        "coverage90": 0.9292,
+        "coverage95": 0.967,
+        "crps": 32.428786339999945,
+        "interval_score90": 324.6548,
+        "median_abs_error": 42.3224,
+        "width90": 198.8148,
+        "zero_brier": 0.01521384
+      },
+      "900": {
+        "coverage50": 0.544,
+        "coverage80": 0.8296,
+        "coverage90": 0.9234,
+        "coverage95": 0.9678,
+        "crps": 43.32712055999992,
+        "interval_score90": 394.0764,
+        "median_abs_error": 57.7486,
+        "width90": 259.2284,
+        "zero_brier": 0.00610446
+      }
+    }
+  },
+  {
+    "family": "conditional_empirical",
+    "info": "I0",
+    "jobs": [
+      "weibo__conditional_empirical__c3__I0__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.4569333333333334,
+      "coverage80": 0.7482,
+      "coverage90": 0.8388666666666668,
+      "coverage95": 0.9320666666666666,
+      "crps": 103.81648991999997,
+      "interval_score90": 1390.895,
+      "median_abs_error": 122.334,
+      "width90": 337.60833333333335,
+      "zero_brier": 0.01535008
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.4716,
+        "coverage80": 0.7212,
+        "coverage90": 0.8236,
+        "coverage95": 0.9362,
+        "crps": 122.99549023999995,
+        "interval_score90": 1687.4796,
+        "median_abs_error": 143.5368,
+        "width90": 342.8156,
+        "zero_brier": 0.00376096
+      },
+      "3600": {
+        "coverage50": 0.482,
+        "coverage80": 0.772,
+        "coverage90": 0.8614,
+        "coverage95": 0.9262,
+        "crps": 81.64318815999998,
+        "interval_score90": 1027.9934,
+        "median_abs_error": 98.1418,
+        "width90": 292.1294,
+        "zero_brier": 0.030064640000000004
+      },
+      "900": {
+        "coverage50": 0.4172,
+        "coverage80": 0.7514,
+        "coverage90": 0.8316,
+        "coverage95": 0.9338,
+        "crps": 106.81079135999997,
+        "interval_score90": 1457.212,
+        "median_abs_error": 125.3234,
+        "width90": 377.88,
+        "zero_brier": 0.01222464
+      }
+    }
+  },
+  {
+    "family": "hurdle",
+    "info": "I0",
+    "jobs": [
+      "seismic__hurdle__c3__I0__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.6195333333333333,
+      "coverage80": 0.8870666666666668,
+      "coverage90": 0.9442666666666668,
+      "coverage95": 0.9682,
+      "crps": 52.03592971733114,
+      "interval_score90": 526.0184,
+      "median_abs_error": 67.2326,
+      "width90": 300.40506666666664,
+      "zero_brier": 0.007972598095002299
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.689,
+        "coverage80": 0.9214,
+        "coverage90": 0.9604,
+        "coverage95": 0.9774,
+        "crps": 62.25415231956654,
+        "interval_score90": 630.244,
+        "median_abs_error": 80.0342,
+        "width90": 377.384,
+        "zero_brier": 0.0023936608248978034
+      },
+      "3600": {
+        "coverage50": 0.545,
+        "coverage80": 0.8468,
+        "coverage90": 0.9242,
+        "coverage95": 0.9578,
+        "crps": 40.703922143139415,
+        "interval_score90": 412.5926,
+        "median_abs_error": 52.9198,
+        "width90": 219.3406,
+        "zero_brier": 0.015363508765629925
+      },
+      "900": {
+        "coverage50": 0.6246,
+        "coverage80": 0.893,
+        "coverage90": 0.9482,
+        "coverage95": 0.9694,
+        "crps": 53.14971468928747,
+        "interval_score90": 535.2186,
+        "median_abs_error": 68.7438,
+        "width90": 304.4906,
+        "zero_brier": 0.0061606246944791694
+      }
+    }
+  },
+  {
+    "family": "hurdle",
+    "info": "I1",
+    "jobs": [
+      "seismic__hurdle__c3__I1__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.6228666666666666,
+      "coverage80": 0.8820666666666668,
+      "coverage90": 0.9412666666666668,
+      "coverage95": 0.9659333333333334,
+      "crps": 45.022049664342774,
+      "interval_score90": 412.0038666666666,
+      "median_abs_error": 59.577333333333335,
+      "width90": 267.9105333333333,
+      "zero_brier": 0.005112834116886112
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.6742,
+        "coverage80": 0.9036,
+        "coverage90": 0.9492,
+        "coverage95": 0.9714,
+        "crps": 55.13753254900267,
+        "interval_score90": 494.3168,
+        "median_abs_error": 72.9218,
+        "width90": 346.8728,
+        "zero_brier": 0.0019220391458067657
+      },
+      "3600": {
+        "coverage50": 0.5526,
+        "coverage80": 0.8548,
+        "coverage90": 0.9308,
+        "coverage95": 0.9564,
+        "crps": 34.84313511993697,
+        "interval_score90": 334.1448,
+        "median_abs_error": 46.0234,
+        "width90": 196.1168,
+        "zero_brier": 0.009677442350244371
+      },
+      "900": {
+        "coverage50": 0.6418,
+        "coverage80": 0.8878,
+        "coverage90": 0.9438,
+        "coverage95": 0.97,
+        "crps": 45.085481324088704,
+        "interval_score90": 407.55,
+        "median_abs_error": 59.7868,
+        "width90": 260.742,
+        "zero_brier": 0.0037390208546072
+      }
+    }
+  },
+  {
+    "family": "hurdle",
+    "info": "I0",
+    "jobs": [
+      "weibo__hurdle__c0__I0__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.7178666666666667,
+      "coverage80": 0.9212666666666668,
+      "coverage90": 0.9496,
+      "coverage95": 0.967,
+      "crps": 124.12622965314132,
+      "interval_score90": 1862.8303333333336,
+      "median_abs_error": 140.42706666666666,
+      "width90": 433.79166666666663,
+      "zero_brier": 0.01633746001598086
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.773,
+        "coverage80": 0.9212,
+        "coverage90": 0.946,
+        "coverage95": 0.9598,
+        "crps": 137.34839876489366,
+        "interval_score90": 2090.1074,
+        "median_abs_error": 155.0044,
+        "width90": 413.8314,
+        "zero_brier": 0.0037347326925291314
+      },
+      "3600": {
+        "coverage50": 0.6416,
+        "coverage80": 0.9168,
+        "coverage90": 0.9574,
+        "coverage95": 0.9766,
+        "crps": 106.63205162707591,
+        "interval_score90": 1582.1966,
+        "median_abs_error": 120.6034,
+        "width90": 450.3926,
+        "zero_brier": 0.03252063030243928
+      },
+      "900": {
+        "coverage50": 0.739,
+        "coverage80": 0.9258,
+        "coverage90": 0.9454,
+        "coverage95": 0.9646,
+        "crps": 128.39823856745437,
+        "interval_score90": 1916.187,
+        "median_abs_error": 145.6734,
+        "width90": 437.151,
+        "zero_brier": 0.012757017052974173
+      }
+    }
+  },
+  {
+    "family": "hurdle",
+    "info": "I1",
+    "jobs": [
+      "weibo__hurdle__c0__I1__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.6963333333333334,
+      "coverage80": 0.9213333333333332,
+      "coverage90": 0.9498666666666667,
+      "coverage95": 0.9650666666666667,
+      "crps": 121.28647976318896,
+      "interval_score90": 1756.7715333333333,
+      "median_abs_error": 139.69866666666664,
+      "width90": 394.2515333333333,
+      "zero_brier": 0.011838697522898175
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.7444,
+        "coverage80": 0.916,
+        "coverage90": 0.9426,
+        "coverage95": 0.9592,
+        "crps": 134.5549543290729,
+        "interval_score90": 1952.4862,
+        "median_abs_error": 155.318,
+        "width90": 391.4302,
+        "zero_brier": 0.0033955964774354426
+      },
+      "3600": {
+        "coverage50": 0.633,
+        "coverage80": 0.9264,
+        "coverage90": 0.9584,
+        "coverage95": 0.9712,
+        "crps": 103.86107216805863,
+        "interval_score90": 1525.5698,
+        "median_abs_error": 118.7938,
+        "width90": 393.4978,
+        "zero_brier": 0.02181971969573016
+      },
+      "900": {
+        "coverage50": 0.7116,
+        "coverage80": 0.9216,
+        "coverage90": 0.9486,
+        "coverage95": 0.9648,
+        "crps": 125.44341279243541,
+        "interval_score90": 1792.2586,
+        "median_abs_error": 144.9842,
+        "width90": 397.8266,
+        "zero_brier": 0.010300776395528928
+      }
+    }
+  },
+  {
+    "family": "qrf",
+    "info": "I0",
+    "jobs": [
+      "seismic__qrf__c3__I0__s20260913",
+      "seismic__qrf__c3__I0__s20260914",
+      "seismic__qrf__c3__I0__s20260915"
+    ],
+    "metrics": {
+      "coverage50": 0.544,
+      "coverage80": 0.8268444444444444,
+      "coverage90": 0.9242,
+      "coverage95": 0.964688888888889,
+      "crps": 42.875397847917014,
+      "interval_score90": 387.8916222222222,
+      "median_abs_error": 57.7194,
+      "width90": 284.8516222222222,
+      "zero_brier": 0.007907654308918568
+    },
+    "seeds": [
+      20260913,
+      20260914,
+      20260915
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.5394666666666666,
+        "coverage80": 0.8165999999999999,
+        "coverage90": 0.9186000000000001,
+        "coverage95": 0.9621333333333334,
+        "crps": 52.612662112934096,
+        "interval_score90": 455.13280000000003,
+        "median_abs_error": 71.01273333333333,
+        "width90": 325.96613333333335,
+        "zero_brier": 0.0023751374264419857
+      },
+      "3600": {
+        "coverage50": 0.5501999999999999,
+        "coverage80": 0.8324000000000001,
+        "coverage90": 0.9268666666666667,
+        "coverage95": 0.9666666666666667,
+        "crps": 32.625873447879535,
+        "interval_score90": 311.6646666666666,
+        "median_abs_error": 43.4844,
+        "width90": 234.35000000000002,
+        "zero_brier": 0.015227735949593651
+      },
+      "900": {
+        "coverage50": 0.5423333333333333,
+        "coverage80": 0.8315333333333333,
+        "coverage90": 0.9271333333333334,
+        "coverage95": 0.9652666666666666,
+        "crps": 43.387657982937405,
+        "interval_score90": 396.8774,
+        "median_abs_error": 58.66106666666666,
+        "width90": 294.2387333333333,
+        "zero_brier": 0.006120089550720066
+      }
+    }
+  },
+  {
+    "family": "qrf",
+    "info": "I1",
+    "jobs": [
+      "seismic__qrf__c3__I1__s20260913",
+      "seismic__qrf__c3__I1__s20260914",
+      "seismic__qrf__c3__I1__s20260915"
+    ],
+    "metrics": {
+      "coverage50": 0.5673555555555555,
+      "coverage80": 0.8609333333333334,
+      "coverage90": 0.9398666666666666,
+      "coverage95": 0.9745777777777778,
+      "crps": 39.058273657757326,
+      "interval_score90": 367.08822222222227,
+      "median_abs_error": 51.46735555555556,
+      "width90": 276.57133333333337,
+      "zero_brier": 0.005924404485892067
+    },
+    "seeds": [
+      20260913,
+      20260914,
+      20260915
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.5563333333333333,
+        "coverage80": 0.8479333333333333,
+        "coverage90": 0.9351333333333334,
+        "coverage95": 0.9735333333333333,
+        "crps": 48.47576662798425,
+        "interval_score90": 433.95559999999995,
+        "median_abs_error": 64.77033333333333,
+        "width90": 325.82893333333334,
+        "zero_brier": 0.002247448356267084
+      },
+      "3600": {
+        "coverage50": 0.5732666666666667,
+        "coverage80": 0.8630666666666666,
+        "coverage90": 0.9363333333333332,
+        "coverage95": 0.9711333333333334,
+        "crps": 30.4424632006009,
+        "interval_score90": 308.2057333333333,
+        "median_abs_error": 39.24766666666667,
+        "width90": 228.27906666666664,
+        "zero_brier": 0.010727437792581387
+      },
+      "900": {
+        "coverage50": 0.5724666666666667,
+        "coverage80": 0.8718,
+        "coverage90": 0.9481333333333334,
+        "coverage95": 0.9790666666666668,
+        "crps": 38.256591144686816,
+        "interval_score90": 359.1033333333333,
+        "median_abs_error": 50.38406666666666,
+        "width90": 275.606,
+        "zero_brier": 0.0047983273088277306
+      }
+    }
+  },
+  {
+    "family": "qrf",
+    "info": "I0",
+    "jobs": [
+      "weibo__qrf__c3__I0__s20260913",
+      "weibo__qrf__c3__I0__s20260914",
+      "weibo__qrf__c3__I0__s20260915"
+    ],
+    "metrics": {
+      "coverage50": 0.5132444444444444,
+      "coverage80": 0.8089333333333333,
+      "coverage90": 0.9198444444444446,
+      "coverage95": 0.9615777777777778,
+      "crps": 100.99033609125792,
+      "interval_score90": 1272.3538222222223,
+      "median_abs_error": 122.08577777777778,
+      "width90": 456.0302666666666,
+      "zero_brier": 0.015018671949912053
+    },
+    "seeds": [
+      20260913,
+      20260914,
+      20260915
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.49653333333333327,
+        "coverage80": 0.7928666666666665,
+        "coverage90": 0.9144666666666666,
+        "coverage95": 0.9586,
+        "crps": 119.09971494789484,
+        "interval_score90": 1514.3367333333333,
+        "median_abs_error": 141.98006666666666,
+        "width90": 460.7634,
+        "zero_brier": 0.0037361718613271567
+      },
+      "3600": {
+        "coverage50": 0.5339333333333333,
+        "coverage80": 0.8221333333333334,
+        "coverage90": 0.9234,
+        "coverage95": 0.9659999999999999,
+        "crps": 81.64586813017843,
+        "interval_score90": 990.9919333333333,
+        "median_abs_error": 98.80133333333333,
+        "width90": 409.40260000000006,
+        "zero_brier": 0.029300474340739718
+      },
+      "900": {
+        "coverage50": 0.5092666666666666,
+        "coverage80": 0.8118,
+        "coverage90": 0.9216666666666665,
+        "coverage95": 0.9601333333333333,
+        "crps": 102.22542519570045,
+        "interval_score90": 1311.7328,
+        "median_abs_error": 125.47593333333333,
+        "width90": 497.9248,
+        "zero_brier": 0.012019369647669286
+      }
+    }
+  },
+  {
+    "family": "qrf",
+    "info": "I1",
+    "jobs": [
+      "weibo__qrf__c3__I1__s20260913",
+      "weibo__qrf__c3__I1__s20260914",
+      "weibo__qrf__c3__I1__s20260915"
+    ],
+    "metrics": {
+      "coverage50": 0.5423111111111111,
+      "coverage80": 0.8297333333333332,
+      "coverage90": 0.9258,
+      "coverage95": 0.967,
+      "crps": 96.64015231114873,
+      "interval_score90": 1214.9816,
+      "median_abs_error": 117.0606,
+      "width90": 460.6651555555556,
+      "zero_brier": 0.010319426523184584
+    },
+    "seeds": [
+      20260913,
+      20260914,
+      20260915
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.5183333333333334,
+        "coverage80": 0.8104,
+        "coverage90": 0.9232666666666667,
+        "coverage95": 0.9669333333333333,
+        "crps": 113.36169646360445,
+        "interval_score90": 1428.403266666667,
+        "median_abs_error": 138.26373333333333,
+        "width90": 469.6979333333333,
+        "zero_brier": 0.0028521391824176696
+      },
+      "3600": {
+        "coverage50": 0.5599999999999999,
+        "coverage80": 0.8447999999999999,
+        "coverage90": 0.9321333333333333,
+        "coverage95": 0.9679333333333333,
+        "crps": 77.50510578131062,
+        "interval_score90": 982.2608666666666,
+        "median_abs_error": 93.24793333333332,
+        "width90": 452.13020000000006,
+        "zero_brier": 0.01963054977579343
+      },
+      "900": {
+        "coverage50": 0.5486,
+        "coverage80": 0.834,
+        "coverage90": 0.922,
+        "coverage95": 0.9661333333333332,
+        "crps": 99.05365468853113,
+        "interval_score90": 1234.2806666666668,
+        "median_abs_error": 119.67013333333334,
+        "width90": 460.1673333333333,
+        "zero_brier": 0.008475590611342647
+      }
+    }
+  },
+  {
+    "family": "ngboost",
+    "info": "I0",
+    "jobs": [
+      "seismic__ngboost__c3__I0__s20260913",
+      "seismic__ngboost__c3__I0__s20260914",
+      "seismic__ngboost__c3__I0__s20260915"
+    ],
+    "metrics": {
+      "coverage50": 0.567,
+      "coverage80": 0.8675333333333333,
+      "coverage90": 0.933,
+      "coverage95": 0.9606666666666666,
+      "crps": 42.522489936973656,
+      "interval_score90": 389.9781333333334,
+      "median_abs_error": 57.2594,
+      "width90": 289.5821333333333,
+      "zero_brier": 0.007991650223109102
+    },
+    "seeds": [
+      20260913,
+      20260914,
+      20260915
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.516,
+        "coverage80": 0.8634,
+        "coverage90": 0.9366,
+        "coverage95": 0.9636,
+        "crps": 52.510173527562934,
+        "interval_score90": 470.2354,
+        "median_abs_error": 71.5292,
+        "width90": 349.6754,
+        "zero_brier": 0.0023978190742877997
+      },
+      "3600": {
+        "coverage50": 0.6218,
+        "coverage80": 0.8618,
+        "coverage90": 0.9232,
+        "coverage95": 0.953,
+        "crps": 32.43401504138644,
+        "interval_score90": 310.3148,
+        "median_abs_error": 42.5848,
+        "width90": 220.9628,
+        "zero_brier": 0.01539419922537944
+      },
+      "900": {
+        "coverage50": 0.5632,
+        "coverage80": 0.8774000000000001,
+        "coverage90": 0.9392,
+        "coverage95": 0.9654000000000001,
+        "crps": 42.62328124197159,
+        "interval_score90": 389.3842,
+        "median_abs_error": 57.6642,
+        "width90": 298.1082,
+        "zero_brier": 0.006182932369660064
+      }
+    }
+  },
+  {
+    "family": "ngboost",
+    "info": "I1",
+    "jobs": [
+      "seismic__ngboost__c3__I1__s20260913",
+      "seismic__ngboost__c3__I1__s20260914",
+      "seismic__ngboost__c3__I1__s20260915"
+    ],
+    "metrics": {
+      "coverage50": 0.5564,
+      "coverage80": 0.8565333333333334,
+      "coverage90": 0.9241333333333333,
+      "coverage95": 0.9580666666666667,
+      "crps": 39.43993673554542,
+      "interval_score90": 370.4622,
+      "median_abs_error": 52.504666666666665,
+      "width90": 235.1768666666667,
+      "zero_brier": 0.00659455357726286
+    },
+    "seeds": [
+      20260913,
+      20260914,
+      20260915
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.5356,
+        "coverage80": 0.8527999999999999,
+        "coverage90": 0.9192,
+        "coverage95": 0.9556,
+        "crps": 49.37571544658389,
+        "interval_score90": 440.58279999999996,
+        "median_abs_error": 66.617,
+        "width90": 286.2068,
+        "zero_brier": 0.002322784291574294
+      },
+      "3600": {
+        "coverage50": 0.5716,
+        "coverage80": 0.8476,
+        "coverage90": 0.9184,
+        "coverage95": 0.9532000000000002,
+        "crps": 30.120447326161514,
+        "interval_score90": 301.7806,
+        "median_abs_error": 39.1882,
+        "width90": 184.4606,
+        "zero_brier": 0.0122672024633914
+      },
+      "900": {
+        "coverage50": 0.562,
+        "coverage80": 0.8691999999999999,
+        "coverage90": 0.9348,
+        "coverage95": 0.9654000000000001,
+        "crps": 38.82364743389087,
+        "interval_score90": 369.0231999999999,
+        "median_abs_error": 51.7088,
+        "width90": 234.8632,
+        "zero_brier": 0.00519367397682289
+      }
+    }
+  },
+  {
+    "family": "ngboost",
+    "info": "I0",
+    "jobs": [
+      "weibo__ngboost__c0__I0__s20260913",
+      "weibo__ngboost__c0__I0__s20260914",
+      "weibo__ngboost__c0__I0__s20260915"
+    ],
+    "metrics": {
+      "coverage50": 0.5349333333333334,
+      "coverage80": 0.8672666666666666,
+      "coverage90": 0.9221333333333332,
+      "coverage95": 0.9489333333333332,
+      "crps": 111.24949875847767,
+      "interval_score90": 1526.0198,
+      "median_abs_error": 133.15486666666666,
+      "width90": 391.6771333333333,
+      "zero_brier": 0.016345032537117186
+    },
+    "seeds": [
+      20260913,
+      20260914,
+      20260915
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.4734,
+        "coverage80": 0.8522,
+        "coverage90": 0.9129999999999999,
+        "coverage95": 0.9438,
+        "crps": 131.0898533229324,
+        "interval_score90": 1803.8834,
+        "median_abs_error": 154.587,
+        "width90": 274.7754,
+        "zero_brier": 0.0037583561992694157
+      },
+      "3600": {
+        "coverage50": 0.6108,
+        "coverage80": 0.8758,
+        "coverage90": 0.9232,
+        "coverage95": 0.9504,
+        "crps": 89.37354681008047,
+        "interval_score90": 1290.6742,
+        "median_abs_error": 106.05,
+        "width90": 508.7742,
+        "zero_brier": 0.03226339972274493
+      },
+      "900": {
+        "coverage50": 0.5206,
+        "coverage80": 0.8738,
+        "coverage90": 0.9302,
+        "coverage95": 0.9526,
+        "crps": 113.28509614242017,
+        "interval_score90": 1483.5018,
+        "median_abs_error": 138.8276,
+        "width90": 391.4818,
+        "zero_brier": 0.01301334168933721
+      }
+    }
+  },
+  {
+    "family": "ngboost",
+    "info": "I1",
+    "jobs": [
+      "weibo__ngboost__c0__I1__s20260913",
+      "weibo__ngboost__c0__I1__s20260914",
+      "weibo__ngboost__c0__I1__s20260915"
+    ],
+    "metrics": {
+      "coverage50": 0.5346666666666666,
+      "coverage80": 0.8560666666666666,
+      "coverage90": 0.9251333333333333,
+      "coverage95": 0.954,
+      "crps": 110.48402780582009,
+      "interval_score90": 1483.7952,
+      "median_abs_error": 132.55013333333332,
+      "width90": 386.9098666666667,
+      "zero_brier": 0.015661433628750217
+    },
+    "seeds": [
+      20260913,
+      20260914,
+      20260915
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.4968000000000001,
+        "coverage80": 0.8416,
+        "coverage90": 0.9118,
+        "coverage95": 0.9453999999999999,
+        "crps": 129.14519659984927,
+        "interval_score90": 1735.4710000000002,
+        "median_abs_error": 153.3608,
+        "width90": 322.259,
+        "zero_brier": 0.003655855743256059
+      },
+      "3600": {
+        "coverage50": 0.5822,
+        "coverage80": 0.8616,
+        "coverage90": 0.9289999999999999,
+        "coverage95": 0.9544,
+        "crps": 89.08477882050933,
+        "interval_score90": 1252.3222,
+        "median_abs_error": 106.08639999999998,
+        "width90": 413.4342,
+        "zero_brier": 0.031014161388078425
+      },
+      "900": {
+        "coverage50": 0.525,
+        "coverage80": 0.8649999999999999,
+        "coverage90": 0.9346,
+        "coverage95": 0.9622,
+        "crps": 113.22210799710167,
+        "interval_score90": 1463.5924000000002,
+        "median_abs_error": 138.2032,
+        "width90": 425.0364,
+        "zero_brier": 0.012314283754916158
+      }
+    }
+  },
+  {
+    "family": "nb2_glm",
+    "info": "I0",
+    "jobs": [
+      "seismic__nb2_glm__c3__I0__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.6230666666666667,
+      "coverage80": 0.8884666666666666,
+      "coverage90": 0.9443333333333334,
+      "coverage95": 0.9674,
+      "crps": 52.04073781228797,
+      "interval_score90": 526.7654,
+      "median_abs_error": 67.17833333333334,
+      "width90": 301.7774,
+      "zero_brier": 0.008010108161323793
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.693,
+        "coverage80": 0.9232,
+        "coverage90": 0.9608,
+        "coverage95": 0.9776,
+        "crps": 62.31723127658323,
+        "interval_score90": 631.8488,
+        "median_abs_error": 80.0174,
+        "width90": 380.4368,
+        "zero_brier": 0.0024325893861277593
+      },
+      "3600": {
+        "coverage50": 0.5454,
+        "coverage80": 0.8468,
+        "coverage90": 0.9232,
+        "coverage95": 0.9546,
+        "crps": 40.658455866825875,
+        "interval_score90": 412.4426,
+        "median_abs_error": 52.8516,
+        "width90": 219.1346,
+        "zero_brier": 0.01540201412366921
+      },
+      "900": {
+        "coverage50": 0.6308,
+        "coverage80": 0.8954,
+        "coverage90": 0.949,
+        "coverage95": 0.97,
+        "crps": 53.146526293454784,
+        "interval_score90": 536.0048,
+        "median_abs_error": 68.666,
+        "width90": 305.7608,
+        "zero_brier": 0.006195720974174416
+      }
+    }
+  },
+  {
+    "family": "nb2_glm",
+    "info": "I1",
+    "jobs": [
+      "seismic__nb2_glm__c3__I1__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.6224,
+      "coverage80": 0.8773333333333332,
+      "coverage90": 0.9332666666666668,
+      "coverage95": 0.9591333333333334,
+      "crps": 45.55448268260132,
+      "interval_score90": 418.02793333333335,
+      "median_abs_error": 60.20293333333333,
+      "width90": 269.41193333333337,
+      "zero_brier": 0.008012376671716137
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.6788,
+        "coverage80": 0.9018,
+        "coverage90": 0.947,
+        "coverage95": 0.9696,
+        "crps": 55.48116278736035,
+        "interval_score90": 499.9422,
+        "median_abs_error": 73.1984,
+        "width90": 349.1542,
+        "zero_brier": 0.0024009556825498757
+      },
+      "3600": {
+        "coverage50": 0.5472,
+        "coverage80": 0.8476,
+        "coverage90": 0.9158,
+        "coverage95": 0.9444,
+        "crps": 35.540903204037285,
+        "interval_score90": 340.366,
+        "median_abs_error": 46.9554,
+        "width90": 197.098,
+        "zero_brier": 0.01545646833518526
+      },
+      "900": {
+        "coverage50": 0.6412,
+        "coverage80": 0.8826,
+        "coverage90": 0.937,
+        "coverage95": 0.9634,
+        "crps": 45.641382056406314,
+        "interval_score90": 413.7756,
+        "median_abs_error": 60.455,
+        "width90": 261.9836,
+        "zero_brier": 0.006179705997413277
+      }
+    }
+  },
+  {
+    "family": "nb2_glm",
+    "info": "I0",
+    "jobs": [
+      "weibo__nb2_glm__c0__I0__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.738,
+      "coverage80": 0.9246666666666667,
+      "coverage90": 0.9616,
+      "coverage95": 0.9726,
+      "crps": 123.56197432620972,
+      "interval_score90": 1857.1459333333332,
+      "median_abs_error": 139.50106666666667,
+      "width90": 438.0366,
+      "zero_brier": 0.02055463269545258
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.8008,
+        "coverage80": 0.9214,
+        "coverage90": 0.9502,
+        "coverage95": 0.9632,
+        "crps": 137.31946466235755,
+        "interval_score90": 2091.8016,
+        "median_abs_error": 154.7184,
+        "width90": 416.9456,
+        "zero_brier": 0.00954976610442684
+      },
+      "3600": {
+        "coverage50": 0.6574,
+        "coverage80": 0.926,
+        "coverage90": 0.9766,
+        "coverage95": 0.984,
+        "crps": 105.38238976293616,
+        "interval_score90": 1566.3078,
+        "median_abs_error": 118.8708,
+        "width90": 457.1158,
+        "zero_brier": 0.034537560622894856
+      },
+      "900": {
+        "coverage50": 0.7558,
+        "coverage80": 0.9266,
+        "coverage90": 0.958,
+        "coverage95": 0.9706,
+        "crps": 127.98406855333545,
+        "interval_score90": 1913.3284,
+        "median_abs_error": 144.914,
+        "width90": 440.0484,
+        "zero_brier": 0.017576571359036043
+      }
+    }
+  },
+  {
+    "family": "nb2_glm",
+    "info": "I1",
+    "jobs": [
+      "weibo__nb2_glm__c0__I1__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.7134666666666666,
+      "coverage80": 0.9160666666666668,
+      "coverage90": 0.9496666666666668,
+      "coverage95": 0.9682666666666668,
+      "crps": 120.55922948045249,
+      "interval_score90": 1728.436,
+      "median_abs_error": 139.39193333333336,
+      "width90": 402.47866666666664,
+      "zero_brier": 0.019735283429241163
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.7612,
+        "coverage80": 0.9162,
+        "coverage90": 0.9434,
+        "coverage95": 0.9608,
+        "crps": 134.33541151091717,
+        "interval_score90": 1953.6812,
+        "median_abs_error": 154.9582,
+        "width90": 394.6572,
+        "zero_brier": 0.00811921695963323
+      },
+      "3600": {
+        "coverage50": 0.642,
+        "coverage80": 0.9154,
+        "coverage90": 0.9594,
+        "coverage95": 0.9774,
+        "crps": 102.57692502071772,
+        "interval_score90": 1464.9808,
+        "median_abs_error": 118.5378,
+        "width90": 408.3648,
+        "zero_brier": 0.03433295991258374
+      },
+      "900": {
+        "coverage50": 0.7372,
+        "coverage80": 0.9166,
+        "coverage90": 0.9462,
+        "coverage95": 0.9666,
+        "crps": 124.7653519097226,
+        "interval_score90": 1766.646,
+        "median_abs_error": 144.6798,
+        "width90": 404.414,
+        "zero_brier": 0.016753673415506518
+      }
+    }
+  },
+  {
+    "family": "poisson_glm",
+    "info": "I0",
+    "jobs": [
+      "seismic__poisson_glm__c3__I0__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.0648,
+      "coverage80": 0.1168,
+      "coverage90": 0.14593333333333333,
+      "coverage95": 0.1743333333333333,
+      "crps": 66.42170490831988,
+      "interval_score90": 1162.2971333333335,
+      "median_abs_error": 71.56653333333334,
+      "width90": 32.6278,
+      "zero_brier": 0.008068106473183548
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.07,
+        "coverage80": 0.1248,
+        "coverage90": 0.1582,
+        "coverage95": 0.186,
+        "crps": 79.19498534288428,
+        "interval_score90": 1399.5134,
+        "median_abs_error": 84.9202,
+        "width90": 36.1814,
+        "zero_brier": 0.002400000022031953
+      },
+      "3600": {
+        "coverage50": 0.0544,
+        "coverage80": 0.1056,
+        "coverage90": 0.1302,
+        "coverage95": 0.1594,
+        "crps": 52.17100490919618,
+        "interval_score90": 899.0502,
+        "median_abs_error": 56.6332,
+        "width90": 28.2862,
+        "zero_brier": 0.015604292564788758
+      },
+      "900": {
+        "coverage50": 0.07,
+        "coverage80": 0.12,
+        "coverage90": 0.1494,
+        "coverage95": 0.1776,
+        "crps": 67.89912447287921,
+        "interval_score90": 1188.3278,
+        "median_abs_error": 73.1462,
+        "width90": 33.4158,
+        "zero_brier": 0.006200026832729931
+      }
+    }
+  },
+  {
+    "family": "poisson_glm",
+    "info": "I1",
+    "jobs": [
+      "seismic__poisson_glm__c3__I1__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.07886666666666667,
+      "coverage80": 0.14799999999999996,
+      "coverage90": 0.18626666666666666,
+      "coverage95": 0.2183333333333333,
+      "crps": 59.11686627372045,
+      "interval_score90": 1025.7984,
+      "median_abs_error": 63.970533333333336,
+      "width90": 31.3664,
+      "zero_brier": 0.008068218421825781
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "seismic",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.09,
+        "coverage80": 0.175,
+        "coverage90": 0.214,
+        "coverage95": 0.2492,
+        "crps": 71.86189715679353,
+        "interval_score90": 1265.379,
+        "median_abs_error": 77.2026,
+        "width90": 34.743,
+        "zero_brier": 0.0024
+      },
+      "3600": {
+        "coverage50": 0.0644,
+        "coverage80": 0.1182,
+        "coverage90": 0.1504,
+        "coverage95": 0.1768,
+        "crps": 48.0262051781776,
+        "interval_score90": 819.7122,
+        "median_abs_error": 52.375,
+        "width90": 27.9122,
+        "zero_brier": 0.015601909887878362
+      },
+      "900": {
+        "coverage50": 0.0822,
+        "coverage80": 0.1508,
+        "coverage90": 0.1944,
+        "coverage95": 0.229,
+        "crps": 57.462496486190226,
+        "interval_score90": 992.304,
+        "median_abs_error": 62.334,
+        "width90": 31.444,
+        "zero_brier": 0.006202745377598986
+      }
+    }
+  },
+  {
+    "family": "poisson_glm",
+    "info": "I0",
+    "jobs": [
+      "weibo__poisson_glm__c3__I0__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.0544,
+      "coverage80": 0.09979999999999999,
+      "coverage90": 0.12273333333333332,
+      "coverage95": 0.1442,
+      "crps": 148.3841907782125,
+      "interval_score90": 2801.4790666666663,
+      "median_abs_error": 153.551,
+      "width90": 31.7924,
+      "zero_brier": 0.01673779468856787
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.04,
+        "coverage80": 0.0656,
+        "coverage90": 0.087,
+        "coverage95": 0.1052,
+        "crps": 173.50876208627398,
+        "interval_score90": 3285.9974,
+        "median_abs_error": 179.2312,
+        "width90": 35.1974,
+        "zero_brier": 0.0038
+      },
+      "3600": {
+        "coverage50": 0.0548,
+        "coverage80": 0.1062,
+        "coverage90": 0.1314,
+        "coverage95": 0.1602,
+        "crps": 117.73193402439318,
+        "interval_score90": 2211.4586,
+        "median_abs_error": 122.1734,
+        "width90": 27.4226,
+        "zero_brier": 0.03321338406543856
+      },
+      "900": {
+        "coverage50": 0.0684,
+        "coverage80": 0.1276,
+        "coverage90": 0.1498,
+        "coverage95": 0.1672,
+        "crps": 153.91187622397038,
+        "interval_score90": 2906.9812,
+        "median_abs_error": 159.2484,
+        "width90": 32.7572,
+        "zero_brier": 0.013200000000265047
+      }
+    }
+  },
+  {
+    "family": "poisson_glm",
+    "info": "I1",
+    "jobs": [
+      "weibo__poisson_glm__c3__I1__s20260913"
+    ],
+    "metrics": {
+      "coverage50": 0.0482,
+      "coverage80": 0.0952,
+      "coverage90": 0.1238,
+      "coverage95": 0.14793333333333333,
+      "crps": 146.9236150822849,
+      "interval_score90": 2770.8531333333335,
+      "median_abs_error": 152.123,
+      "width90": 32.089133333333336,
+      "zero_brier": 0.01673335511060269
+    },
+    "seeds": [
+      20260913
+    ],
+    "source": "weibo",
+    "status": "complete",
+    "window_metrics": {
+      "300": {
+        "coverage50": 0.0216,
+        "coverage80": 0.0458,
+        "coverage90": 0.0612,
+        "coverage95": 0.0736,
+        "crps": 180.12202568103402,
+        "interval_score90": 3401.8678,
+        "median_abs_error": 186.365,
+        "width90": 37.6638,
+        "zero_brier": 0.0038
+      },
+      "3600": {
+        "coverage50": 0.081,
+        "coverage80": 0.152,
+        "coverage90": 0.1936,
+        "coverage95": 0.227,
+        "crps": 110.53339709886833,
+        "interval_score90": 2075.737,
+        "median_abs_error": 114.7104,
+        "width90": 26.525,
+        "zero_brier": 0.03320006533180616
+      },
+      "900": {
+        "coverage50": 0.042,
+        "coverage80": 0.0878,
+        "coverage90": 0.1166,
+        "coverage95": 0.1432,
+        "crps": 150.11542246695237,
+        "interval_score90": 2834.9546,
+        "median_abs_error": 155.2936,
+        "width90": 32.0786,
+        "zero_brier": 0.013200000000001905
+      }
+    }
+  }
+]

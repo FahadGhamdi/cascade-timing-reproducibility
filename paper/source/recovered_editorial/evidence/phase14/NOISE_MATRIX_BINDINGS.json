@@ -1,0 +1,14 @@
+{
+  "noise_matrices/seismic__TEST__r0.npz": "7c86a5fef78063e38297f867a32aee34bdcfa4fc559464c5b3b7c66aff0bd511",
+  "noise_matrices/seismic__TEST__r1.npz": "59a0353730103f5a72dde03f0ffce4cef2b396688383862a74fbefb37064e9a2",
+  "noise_matrices/seismic__TEST__r2.npz": "98fdd2fd8062cd5e6c003258599a1ceed3843d548c67836abcb23d832d7da4d4",
+  "noise_matrices/seismic__TRAIN__r0.npz": "5e634b0789bdb3b2a50e1fbbe800ece065841b0c46257b68050f8e0877522e21",
+  "noise_matrices/seismic__TRAIN__r1.npz": "b9203476bfa463d7f607f0b82e62123e9b9b41e5eeb57ada8a631dfef79dd938",
+  "noise_matrices/seismic__TRAIN__r2.npz": "ff818f8b2b0eb0ea77a2fdf34e60c74b632c9f29fd9c6fcae7a71b55918be044",
+  "noise_matrices/weibo__TEST__r0.npz": "84dd9e94c69ed0dd341ba0fda729d8a2ae22d72fac555208a72bf1e359451aa6",
+  "noise_matrices/weibo__TEST__r1.npz": "6b6c2ae31ed98cb58167657cde39e42f305611e8ef47b0df20eb808ace4d3a2e",
+  "noise_matrices/weibo__TEST__r2.npz": "c835744d450bc12d15da8b8aa3dfdd05f3fa808edba2833340529c345067c290",
+  "noise_matrices/weibo__TRAIN__r0.npz": "89ea824c2c648a36451c65c33ad6d0231a5e9ff50b6708b1b1b1ceb1ec0f728a",
+  "noise_matrices/weibo__TRAIN__r1.npz": "10a26c54c54f3f328a453316c8fa22396aab6b7e2fd81763bf7aaee9c53d2b0e",
+  "noise_matrices/weibo__TRAIN__r2.npz": "5e093a4b5df7cd0b052a010363953478811f31c54117ede5feed8c9ed3b71e37"
+}

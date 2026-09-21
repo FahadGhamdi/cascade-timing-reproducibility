@@ -1,0 +1,36 @@
+% Presentation-only overrides for an unpublished author-review manuscript.
+% The bundled publisher-derived class is unchanged. No assigned volume/DOI is implied.
+\makeatletter
+\def\ps@brace{%
+\def\@oddhead{\parbox{\textwidth}{\headerfont What Does Timing Add to Size?\hfill\headerlogoall\par\hrulefill}}%
+\def\@evenhead{\parbox{\textwidth}{\headerfont What Does Timing Add to Size?\hfill\headerlogoall\par\hrulefill}}%
+\def\@oddfoot{{\footervolfont AUTHOR-REVIEW MANUSCRIPT}\hfill{\footerpagefont\thepage}}%
+\let\@evenfoot\@oddfoot}
+\let\ps@headings\ps@brace
+\let\ps@titlepage\ps@brace
+\makeatother
+
+\makeatletter
+\setlength{\headheight}{30pt}
+\renewcommand{\bodyfont}{\rmfamily\fontencoding{T1}\fontseries{m}\fontshape{n}\fontsize{10}{12}\selectfont}
+\renewcommand{\headerfont}{\sffamily\fontencoding{T1}\fontseries{m}\fontshape{n}\fontsize{7}{7}\selectfont}
+\renewcommand{\referencefont}{\rmfamily\fontencoding{T1}\fontseries{m}\fontshape{n}\fontsize{7.61}{9}\selectfont}
+\makeatother
+
+
+% Use the installed normal font series for legacy class font commands.
+\def\historyfont{\sffamily\fontencoding{T1}\fontseries{m}\fontshape{n}\fontsize{7}{8.4}\selectfont}%formata reg 7pt
+\def\doifont{\rmfamily\fontencoding{T1}\fontseries{m}\fontsize{6}{7.2}\selectfont\it}%giovannistd-bookitalic 6pt
+\def\addressfont{\rmfamily\fontencoding{T1}\fontseries{m}\fontsize{6.6}{8}\selectfont}%times roman 6.6pt
+\def\correspfont{\rmfamily\fontencoding{T1}\fontseries{m}\fontsize{7.7}{9.24}\selectfont}%times roman 7.7pt
+\def\tfootnotefont{\rmfamily\fontencoding{T1}\fontseries{m}\fontsize{7.7}{9.24}\selectfont}%times roman 7.7pt
+\def\abstractfont{\rmfamily\fontencoding{T1}\fontseries{m}\fontsize{10}{12}\selectfont}%times roman 10pt
+\def\indexfont{\rmfamily\fontencoding{T1}\fontseries{m}\fontsize{10}{12}\selectfont}%times roman 10pt
+\def\sectionCfont{\sffamily\fontencoding{T1}\fontseries{m}\fontsize{9}{12}\selectfont}%formata regular 9pt
+\def\sectionDfont{\sffamily\fontencoding{T1}\fontseries{m}\fontshape{sl}\fontsize{9}{12}\selectfont}%formata italic 9pt
+\def\tablebodyfont{\def\textit##1{{\sffamily\selectfont\itshape##1}}\sffamily\fontencoding{T1}\fontseries{m}\fontsize{7}{8.4}\selectfont}%formata regular 7 pt
+\def\footervolfont{\sffamily\fontencoding{T1}\fontseries{m}\fontsize{6}{7}\selectfont}%formata regular 6pt
+\def\footerpagefont{\sffamily\fontencoding{T1}\fontseries{m}\fontsize{7}{7}\selectfont}%formata regular 7pt
+\def\biographyfont{\rmfamily\fontencoding{T1}\fontseries{m}\fontsize{8}{9.6}\selectfont}%times roman 8pt
+\def\correspfont{\sffamily\fontencoding{T1}\fontseries{m}\fontsize{7}{8}\selectfont}%times roman 7.7pt
+\def\tfootnotefont{\sffamily\fontencoding{T1}\fontseries{m}\fontsize{7}{8}\selectfont}%times roman 7.7pt

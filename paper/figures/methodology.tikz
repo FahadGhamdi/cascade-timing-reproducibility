@@ -1,0 +1,28 @@
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth,font=\sffamily\scriptsize,
+ box/.style={draw=blue!45!black,rounded corners=2pt,fill=blue!3,align=left,inner sep=5pt,text width=3.65cm,minimum height=1.48cm},
+ control/.style={draw=orange!60!black,rounded corners=2pt,fill=orange!4,align=left,inner sep=5pt,text width=7.7cm,minimum height=1.23cm}]
+\node[box] (data) at (0,0) {\textbf{1. Two archives, separate fits}\\Weibo: root-user-disjoint pools\\SEISMIC: chronological blocks\\Per source: 6,000 / 2,000 / 5,000\\training / validation / test roots};
+\node[box] (inputs) at (4.42,0) {\textbf{2. Prefix-only representations}\\$I_0$: log count + log duration\\$I_1$: $I_0$ + 7 timing summaries\\Hurdle, QRF, NGBoost\\Strong empirical and GLM references};
+\node[box] (select) at (8.84,0) {\textbf{3. Select once on validation}\\Four candidates per family\\Average CRPS over $I_0/I_1$/seeds\\Share the selected setting\\Retain training-fitted objects};
+\node[box] (test) at (13.26,0) {\textbf{4. Locked primary test}\\5,000 roots per source\\Root-averaged losses; paired resampling\\Six timing contrasts; Bonferroni\\CRPS + count-calibration diagnostics};
+\draw[->,thick,blue!55!black] (data)--(inputs);
+\draw[->,thick,blue!55!black] (inputs)--(select);
+\draw[->,thick,blue!55!black] (select)--(test);
+
+\node[anchor=west,fill=white,text=orange!50!black,inner sep=2pt] at (-1.87,-1.43) {\textbf{Supplementary specifications frozen after the primary results were known}};
+\node[control] (strata) at (2.2,-2.92) {\textbf{A. Heterogeneity from saved losses}\\Five count strata, separately at 5 / 15 / 60 min\\All sources and families; exploratory pointwise intervals\\Original predictions remain unchanged};
+\node[control] (noise) at (11.02,-2.92) {\textbf{B. Dimension-matched negative control}\\$I_0$ + 7 independent noise coordinates; 3 fixed realizations\\Train controls with locked settings; original models remain fixed\\12 contrasts in a separate corrected family};
+\draw[thick,orange!60!black] (test.south)--(13.26,-1.85)--(2.2,-1.85);
+\draw[-{Triangle[length=2.4mm,width=1.8mm]},line width=.8pt,orange!60!black,shorten >=1pt] (11.02,-1.85)--(noise.north);
+\draw[-{Triangle[length=2.4mm,width=1.8mm]},line width=.8pt,orange!60!black,shorten >=1pt] (2.2,-1.85)--(strata.north);
+\node[anchor=west,text=blue!50!black,font=\sffamily\scriptsize\bfseries] at (-1.95,-4.05) {Common target at each prefix: additional recorded events before root + 24 h};
+\node[anchor=west,align=left] at (-1.9,-5.03) {$w=5,15,60$ min\\(one row illustrated)};
+\draw[very thick,blue!50] (1.5,-4.97)--(5.3,-4.97);
+\draw[very thick,teal!75!black] (5.3,-4.97)--(14.65,-4.97);
+\foreach \x in {1.9,2.05,2.8,4.4,4.8} {\draw[blue!60!black,thick] (\x,-5.07)--(\x,-4.87);}
+\foreach \x in {6.1,7.4,7.5,9.2,11.7,12.1,13.9} {\draw[teal!75!black,thick] (\x,-5.07)--(\x,-4.87);}
+\foreach \x/\lab in {1.5/root,5.3/forecast at $w$,14.65/root + 24 h} {\draw (\x,-5.10)--(\x,-4.83);\node[anchor=north] at (\x,-5.14) {\lab};}
+\node[anchor=south] at (3.35,-4.85) {observed prefix $[0,w)$};
+\node[anchor=south] at (9.85,-4.85) {response interval $[w,86400)$};
+\node[anchor=north east,text=black!60] at (15.1,-5.55) {Schematic event positions; time axis not to scale};
+\end{tikzpicture}

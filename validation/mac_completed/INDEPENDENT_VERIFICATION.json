@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "manifest_entries_verified": 2021,
+  "comparison_records": 1075,
+  "comparison_verification": {
+    "historical_hash_checked": 789,
+    "replayed_files_available": 788,
+    "json_exact_excluding_timing": 788,
+    "reported_large_digest_equals_original_checked": 194,
+    "replayed_files_represented_by_digest_only": 283,
+    "comparison_report_only": 92
+  },
+  "selected_model_reported_digests_checked_against_original_bytes": 40,
+  "new_large_model_bytes_received": false,
+  "difference_categories": {
+    "timing": 688
+  },
+  "stage_counts_from_job_reports": {
+    "train": {
+      "reports": 154,
+      "statuses": {
+        "eligible": 133,
+        "ineligible_preserved": 21
+      },
+      "score_attempts": 924000,
+      "score_successes": 923926,
+      "score_failures": 74,
+      "component_fit_calls": 160
+    },
+    "test": {
+      "reports": 40,
+      "statuses": {
+        "complete": 40
+      },
+      "score_attempts": 600000,
+      "score_successes": 600000,
+      "score_failures": 0,
+      "component_fit_calls": 0
+    },
+    "noise": {
+      "reports": 42,
+      "statuses": {
+        "complete": 42
+      },
+      "score_attempts": 630000,
+      "score_successes": 630000,
+      "score_failures": 0,
+      "component_fit_calls": 48
+    }
+  },
+  "errors": [],
+  "scope": "Independent verification of attached evidence and original bytes; new large Mac outputs represented by local-run digests, not independently read here."
+}

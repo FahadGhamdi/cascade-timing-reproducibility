@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "primary_table_unchanged": true,
+  "phase14_protocol_bytes_unchanged": true,
+  "obsolete_pending_execution_status_removed": true,
+  "relative_links_verified": [
+    "BRACE_MANUSCRIPT_PHASE14_REVIEWED_EN.md:figures/fig1_primary_contrasts.png",
+    "BRACE_MANUSCRIPT_PHASE14_REVIEWED_EN.md:figures/fig2_all_procedures.png",
+    "BRACE_MANUSCRIPT_PHASE14_REVIEWED_EN.md:figures/fig3_pit_weibo.png",
+    "BRACE_MANUSCRIPT_PHASE14_REVIEWED_EN.md:figures/fig4_pit_seismic.png",
+    "BRACE_TECHNICAL_SUPPLEMENT_EN.md:figures/figS1_per_window.png",
+    "BRACE_TECHNICAL_SUPPLEMENT_EN.md:figures/strata_weibo.png",
+    "BRACE_TECHNICAL_SUPPLEMENT_EN.md:figures/strata_seismic.png",
+    "BRACE_TECHNICAL_SUPPLEMENT_EN.md:figures/noise_contrasts.png"
+  ],
+  "new_phase14_pngs_visually_reviewed": [
+    "noise_contrasts.png",
+    "strata_weibo.png",
+    "strata_seismic.png"
+  ],
+  "phase14_figure_bytes_copied_without_editing": true,
+  "pdf_figures": "copied, integrity checked, not separately rendered in this review",
+  "table_columns_checked": true,
+  "reference_checks": [
+    {
+      "url": "https://jmlr.org/papers/v23/20-1264.html",
+      "checked": "2026-09-13",
+      "claim": "Independent noise augmentation can improve predictive forest performance."
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s11222-021-10057-z",
+      "checked": "2026-09-13",
+      "claim": "Unrestricted permutation of dependent features may force extrapolation."
+    }
+  ],
+  "scientific_execution_in_review": {
+    "fits": 0,
+    "predictions": 0,
+    "distribution_scores": 0,
+    "bootstrap_draws": 0
+  },
+  "author_review_required": true,
+  "submission_ready": false
+}

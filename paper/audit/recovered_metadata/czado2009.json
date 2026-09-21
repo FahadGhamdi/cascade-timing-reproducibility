@@ -1,0 +1,487 @@
+{
+  "key": "czado2009",
+  "requested_title": "Predictive model assessment for count data",
+  "retrieved_from": "https://api.crossref.org/works/10.1111/j.1541-0420.2009.01191.x",
+  "review_required": false,
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          9
+        ]
+      ],
+      "date-time": "2026-09-09T09:09:20Z",
+      "timestamp": 1788944960870,
+      "version": "build-2803163510"
+    },
+    "reference-count": 49,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              5,
+              7
+            ]
+          ],
+          "date-time": "2009-05-07T00:00:00Z",
+          "timestamp": 1241654400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Biometrics"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n                    <jats:bold>\n                      <jats:sc>Summary</jats:sc>\n                    </jats:bold>\n                    We discuss tools for the evaluation of probabilistic forecasts and the critique of statistical models for count data. Our proposals include a nonrandomized version of the probability integral transform, marginal calibration diagrams, and proper scoring rules, such as the predictive deviance. In case studies, we critique count regression models for patent data, and assess the predictive performance of Bayesian age‐period‐cohort models for larynx cancer counts in Germany. The toolbox applies in Bayesian or classical and parametric or nonparametric settings and to any type of ordered discrete outcomes.\n                  </jats:p>",
+    "DOI": "10.1111/j.1541-0420.2009.01191.x",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          7
+        ]
+      ],
+      "date-time": "2009-05-07T12:36:51Z",
+      "timestamp": 1241699811000
+    },
+    "page": "1254-1261",
+    "source": "Crossref",
+    "is-referenced-by-count": 364,
+    "title": [
+      "Predictive Model Assessment for Count Data"
+    ],
+    "prefix": "10.1093",
+    "volume": "65",
+    "author": [
+      {
+        "given": "Claudia",
+        "family": "Czado",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tilmann",
+        "family": "Gneiting",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Leonhard",
+        "family": "Held",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          11,
+          23
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_9_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/aje/kwi273"
+      },
+      {
+        "key": "e_1_2_9_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/ss/1177010123"
+      },
+      {
+        "key": "e_1_2_9_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1175/WAF966.1"
+      },
+      {
+        "key": "e_1_2_9_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.spl.2007.02.008"
+      },
+      {
+        "key": "e_1_2_9_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1256/qj.04.71"
+      },
+      {
+        "key": "e_1_2_9_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0022-1694(96)03062-4"
+      },
+      {
+        "key": "e_1_2_9_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.0006-341X.2002.00280.x"
+      },
+      {
+        "key": "e_1_2_9_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1057/9780230596146"
+      },
+      {
+        "key": "e_1_2_9_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biostatistics/kxi028"
+      },
+      {
+        "key": "e_1_2_9_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/aje/kwj221"
+      },
+      {
+        "key": "e_1_2_9_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1471082X0700700202"
+      },
+      {
+        "key": "e_1_2_9_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2981683"
+      },
+      {
+        "key": "e_1_2_9_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/aos/1018031101"
+      },
+      {
+        "key": "e_1_2_9_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2527342"
+      },
+      {
+        "key": "e_1_2_9_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1175/JCLI3729.1"
+      },
+      {
+        "key": "e_1_2_9_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1175/1520-0450(1969)008<0985:ASSFPF>2.0.CO;2"
+      },
+      {
+        "key": "e_1_2_9_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF00539368"
+      },
+      {
+        "key": "e_1_2_9_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biomet/93.4.827"
+      },
+      {
+        "key": "e_1_2_9_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11222-008-9109-4"
+      },
+      {
+        "key": "e_1_2_9_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biomet/85.1.1"
+      },
+      {
+        "key": "e_1_2_9_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1198/016214506000001437"
+      },
+      {
+        "key": "e_1_2_9_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-9868.2007.00587.x"
+      },
+      {
+        "key": "e_1_2_9_24_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "107",
+        "DOI": "10.1111/j.2517-6161.1952.tb00104.x",
+        "article-title": "Rational decisions",
+        "volume": "14",
+        "author": "Good I. J.",
+        "year": "1952",
+        "journal-title": "Journal of the Royal Statistical Society, Series B, Methodological"
+      },
+      {
+        "key": "e_1_2_9_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/sim.1523"
+      },
+      {
+        "key": "e_1_2_9_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jedc.2008.02.007"
+      },
+      {
+        "key": "e_1_2_9_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/03461230701414764"
+      },
+      {
+        "key": "e_1_2_9_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00362-006-0031-6"
+      },
+      {
+        "key": "e_1_2_9_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1175/1520-0493(2001)129<0550:IORHFV>2.0.CO;2"
+      },
+      {
+        "key": "e_1_2_9_30_1",
+        "volume-title": "Relative Distribution Methods in the Social Sciences",
+        "author": "Handcock M. S.",
+        "year": "1999"
+      },
+      {
+        "key": "e_1_2_9_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1390807"
+      },
+      {
+        "key": "e_1_2_9_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1175/WAF989.1"
+      },
+      {
+        "key": "e_1_2_9_33_1",
+        "volume-title": "Forecast Verification: A Practicioner's Guide in Atmospheric Science",
+        "author": "Jolliffe I. T.",
+        "year": "2003"
+      },
+      {
+        "key": "e_1_2_9_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biostatistics/2.1.109"
+      },
+      {
+        "key": "e_1_2_9_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/3314912"
+      },
+      {
+        "key": "e_1_2_9_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00181-005-0001-1"
+      },
+      {
+        "key": "e_1_2_9_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijforecast.2004.11.001"
+      },
+      {
+        "key": "e_1_2_9_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4899-3242-6"
+      },
+      {
+        "key": "e_1_2_9_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/sim.2274"
+      },
+      {
+        "key": "e_1_2_9_40_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "423",
+        "DOI": "10.1093/oso/9780198510550.003.0041",
+        "volume-title": "Highly Structured Stochastic Systems",
+        "author": "O'Hagan A.",
+        "year": "2003"
+      },
+      {
+        "key": "e_1_2_9_41_1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/oso/9780198509844.001.0001",
+        "volume-title": "The Statistical Evaluation of Medical Tests for Classification and Prediction",
+        "author": "Pepe M. S.",
+        "year": "2003"
+      },
+      {
+        "key": "e_1_2_9_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/aos/1176346785"
+      },
+      {
+        "key": "e_1_2_9_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/for.3980040305"
+      },
+      {
+        "key": "e_1_2_9_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1467-9868.00353"
+      },
+      {
+        "key": "e_1_2_9_45_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1111/j.2517-6161.1977.tb01603.x",
+        "article-title": "An asymptotic equivalence of choice of model by cross‐validation and Akaike's criterion",
+        "volume": "39",
+        "author": "Stone M.",
+        "year": "1977",
+        "journal-title": "Journal of the Royal Statistical Society, Series B, Methodological"
+      },
+      {
+        "key": "e_1_2_9_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1912557"
+      },
+      {
+        "key": "e_1_2_9_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1392013"
+      },
+      {
+        "key": "e_1_2_9_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1391640"
+      },
+      {
+        "key": "e_1_2_9_49_1",
+        "volume-title": "Econometric Analysis of Count Data",
+        "author": "Winkelmann R.",
+        "year": "2008"
+      },
+      {
+        "key": "e_1_2_9_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF02562681"
+      }
+    ],
+    "container-title": [
+      "Biometrics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1541-0420.2009.01191.x",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1541-0420.2009.01191.x",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          9
+        ]
+      ],
+      "date-time": "2025-02-09T04:18:50Z",
+      "timestamp": 1739074730000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/biometrics/article/65/4/1254-1261/7333505"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          11,
+          23
+        ]
+      ]
+    },
+    "references-count": 49,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1111/j.1541-0420.2009.01191.x"
+    ],
+    "URL": "https://doi.org/10.1111/j.1541-0420.2009.01191.x",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0006-341X",
+      "1541-0420"
+    ],
+    "issn-type": [
+      {
+        "value": "0006-341X",
+        "type": "print"
+      },
+      {
+        "value": "1541-0420",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          11,
+          23
+        ]
+      ]
+    },
+    "_title_similarity": 1.0
+  }
+}

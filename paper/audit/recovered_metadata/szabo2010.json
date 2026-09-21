@@ -1,0 +1,273 @@
+{
+  "key": "szabo2010",
+  "requested_title": "Predicting the popularity of online content",
+  "retrieved_from": "https://api.crossref.org/works/10.1145/1787234.1787254",
+  "review_required": false,
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          8
+        ]
+      ],
+      "date-time": "2026-09-08T06:29:53Z",
+      "timestamp": 1788848993121,
+      "version": "build-2803163510"
+    },
+    "reference-count": 10,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "issue": "8",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2010-08-01T00:00:00Z",
+          "timestamp": 1280620800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Commun. ACM"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          8
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Early patterns of Digg diggs and YouTube views reflect long-term user interest.</jats:p>",
+    "DOI": "10.1145/1787234.1787254",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2010-07-27T10:10:03Z",
+      "timestamp": 1280225403000
+    },
+    "page": "80-88",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 723,
+    "title": [
+      "Predicting the popularity of online content"
+    ],
+    "prefix": "10.1145",
+    "volume": "53",
+    "author": [
+      {
+        "given": "Gabor",
+        "family": "Szabo",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Hewlett-Packard Labs, Palo Alto, CA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bernardo A.",
+        "family": "Huberman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hewlett-Packard Labs, Palo Alto, CA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          8
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_1_1_1",
+        "unstructured": "Alexa Web Information service; http://www.alexa.com  Alexa Web Information service; http://www.alexa.com"
+      },
+      {
+        "key": "e_1_2_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1298306.1298309"
+      },
+      {
+        "key": "e_1_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IWQOS.2008.32"
+      },
+      {
+        "key": "e_1_2_1_4_1",
+        "unstructured": "Digg API; http://digg.com/api/docs/overview  Digg API; http://digg.com/api/docs/overview"
+      },
+      {
+        "key": "e_1_2_1_5_1",
+        "volume-title": "Inc.",
+        "author": "Feller W.",
+        "year": "1968"
+      },
+      {
+        "key": "e_1_2_1_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1298306.1298310"
+      },
+      {
+        "key": "e_1_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MIC.2007.136"
+      },
+      {
+        "key": "e_1_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1242572.1242643"
+      },
+      {
+        "key": "e_1_2_1_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.0704916104"
+      },
+      {
+        "key": "e_1_2_1_10_1",
+        "unstructured": "YouTube API; http://code.google.com/apis/youtube/overview.html  YouTube API; http://code.google.com/apis/youtube/overview.html"
+      }
+    ],
+    "container-title": [
+      "Communications of the ACM"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/1787234.1787254",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/1787234.1787254",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T07:22:55Z",
+      "timestamp": 1750231375000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/1787234.1787254"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          8
+        ]
+      ]
+    },
+    "references-count": 10,
+    "journal-issue": {
+      "issue": "8",
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            8
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1145/1787234.1787254"
+    ],
+    "URL": "https://doi.org/10.1145/1787234.1787254",
+    "relation": {},
+    "ISSN": [
+      "0001-0782",
+      "1557-7317"
+    ],
+    "issn-type": [
+      {
+        "value": "0001-0782",
+        "type": "print"
+      },
+      {
+        "value": "1557-7317",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2010-08-01",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "_title_similarity": 1.0
+  }
+}

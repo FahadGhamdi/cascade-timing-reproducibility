@@ -1,0 +1,36 @@
+\hypertarget{data-forecast-target-and-information-sets}{%
+\section{Data, forecast target and information sets}}
+
+\hypertarget{recorded-activity-at-a-fixed-endpoint}{%
+\subsection{Recorded activity at a fixed endpoint}}
+
+For cascade root \(i\), let \(t_{ij}\) denote the root-relative integer timestamp of a nonroot record. For \(w\in\{300,900,3600\}\) seconds, the observed prefix and response are
+
+\begin{align}
+\mathcal H_i(w)&=\{t_{ij}:0\le t_{ij}<w\},\\
+Y_{i,w}&=\sum_j\mathbf1\{w\le t_{ij}<86400\}.
+\end{align}
+
+Thus all three predictions end 24 hours after the root; the remaining forecast duration shortens as the prefix grows. We remove exactly the designated root record and preserve other zero-time records, ties and repeated records. The target is the count recorded in the release. Dataset selection and incomplete knowledge of collection coverage limit its interpretation as complete real-world diffusion.
+
+\hypertarget{source-specific-cohorts}{%
+\subsection{Source-specific cohorts}}
+
+Each source contributes 13,000 roots: 6,000 for training, 2,000 for validation and 5,000 for testing. Roots remain intact across their three windows. Cohort selection uses identities, origin metadata, prior-use exclusions and declared quality status; observed response sizes and model scores do not rank candidate roots. The combined study has 26,000 roots and 78,000 distinct root-window cases, including 30,000 test cases.
+
+The DeepHawkes Weibo release contains 119,313 messages from 1 June 2016. Nine source roots are excluded for invalid timestamps or missing root-user identity. Root users are assigned to disjoint role pools by a fixed hash, and roots are selected within the pools by a second fixed ordering. There are 3,467 root-user groups among the 5,000 test roots. This design assesses held-out root users within the archived release; other shared participants and topics can still connect roots \cite{deephawkes2017}.
+
+The SEISMIC release is selected from Twitter activity in October--November 2011, retaining English-author root tweets without hashtags that reached at least 50 retweets. We exclude the 18,000 roots used in earlier development studies and all entries associated with four duplicated root identities. Training roots have origin day below 4; validation roots lie in \([5.05,7)\); test roots have origin day at least 8.05. Latest earlier-role response endpoints precede earliest later-role root origins. This establishes label maturity in the archive, while the release's future-popularity selection still prevents interpretation as an unselected live deployment sample \cite{seismic2015}.
+
+Table~\ref{tab:profile} describes the test responses. These descriptive summaries were assembled after evaluation; they did not guide model selection. Raw CRPS is analyzed separately by source because the count scales and selection mechanisms differ.
+
+\input{tables/profile}
+
+\hypertarget{information-contrast}{%
+\subsection{Information contrast}}
+
+The baseline information set \(I_0\) contains \(\log(1+n_{i,w})\) and \(\log w\), where \(n_{i,w}=|\mathcal H_i(w)|\). The augmented set \(I_1\) adds seven timing summaries computed exclusively from the prefix:
+
+\input{tables/features}
+
+The prefix count remains available to interpret the sentinel values. Input matrices exclude identifiers, root-user identity, absolute origin time, followers, text, global graphs and future records. Linear-model scaling is fitted on training rows only. All three windows are pooled for fitting, with window duration supplied as a feature. The comparison measures the benefit of this seven-feature set under the specified estimators; it does not identify the separate contribution of each feature. {\small\textit{Preparation:~\cite{openai2026}.}}

@@ -1,0 +1,160 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "python_3_12": true,
+  "packages": {
+    "autograd": {
+      "expected": "1.9.1",
+      "observed": null
+    },
+    "autograd-gamma": {
+      "expected": "0.5.0",
+      "observed": null
+    },
+    "cloudpickle": {
+      "expected": "3.1.2",
+      "observed": null
+    },
+    "contourpy": {
+      "expected": "1.4.0",
+      "observed": "1.3.3"
+    },
+    "cycler": {
+      "expected": "0.12.1",
+      "observed": "0.12.1"
+    },
+    "fonttools": {
+      "expected": "4.65.0",
+      "observed": "4.61.1"
+    },
+    "formulaic": {
+      "expected": "1.2.2",
+      "observed": null
+    },
+    "interface-meta": {
+      "expected": "2.0.1",
+      "observed": null
+    },
+    "joblib": {
+      "expected": "1.6.0",
+      "observed": "1.5.3"
+    },
+    "kiwisolver": {
+      "expected": "1.5.1",
+      "observed": "1.4.9"
+    },
+    "lifelines": {
+      "expected": "0.30.3",
+      "observed": null
+    },
+    "llvmlite": {
+      "expected": "0.46.0",
+      "observed": null
+    },
+    "matplotlib": {
+      "expected": "3.10.8",
+      "observed": "3.10.8"
+    },
+    "mpmath": {
+      "expected": "1.3.0",
+      "observed": null
+    },
+    "narwhals": {
+      "expected": "2.26.0",
+      "observed": null
+    },
+    "ngboost": {
+      "expected": "0.5.11",
+      "observed": null
+    },
+    "numba": {
+      "expected": "0.63.1",
+      "observed": null
+    },
+    "numpy": {
+      "expected": "2.3.5",
+      "observed": "2.3.5"
+    },
+    "packaging": {
+      "expected": "26.3",
+      "observed": "26.3"
+    },
+    "pandas": {
+      "expected": "2.2.3",
+      "observed": "2.2.3"
+    },
+    "pillow": {
+      "expected": "12.3.0",
+      "observed": "12.3.0"
+    },
+    "pyparsing": {
+      "expected": "3.3.2",
+      "observed": "3.3.2"
+    },
+    "python-dateutil": {
+      "expected": "2.9.0.post0",
+      "observed": "2.9.0.post0"
+    },
+    "pytz": {
+      "expected": "2026.3.post1",
+      "observed": "2026.3.post1"
+    },
+    "scikit-learn": {
+      "expected": "1.8.0",
+      "observed": "1.8.0"
+    },
+    "scipy": {
+      "expected": "1.17.0",
+      "observed": "1.17.0"
+    },
+    "six": {
+      "expected": "1.17.0",
+      "observed": "1.17.0"
+    },
+    "sympy": {
+      "expected": "1.14.0",
+      "observed": null
+    },
+    "threadpoolctl": {
+      "expected": "3.6.0",
+      "observed": "3.6.0"
+    },
+    "tqdm": {
+      "expected": "4.70.1",
+      "observed": null
+    },
+    "typing-extensions": {
+      "expected": "4.16.0",
+      "observed": "4.16.0"
+    },
+    "tzdata": {
+      "expected": "2026.4",
+      "observed": "2026.3"
+    },
+    "wrapt": {
+      "expected": "2.4.1",
+      "observed": null
+    }
+  },
+  "mismatches": [
+    "autograd",
+    "autograd-gamma",
+    "cloudpickle",
+    "contourpy",
+    "fonttools",
+    "formulaic",
+    "interface-meta",
+    "joblib",
+    "kiwisolver",
+    "lifelines",
+    "llvmlite",
+    "mpmath",
+    "narwhals",
+    "ngboost",
+    "numba",
+    "sympy",
+    "tqdm",
+    "tzdata",
+    "wrapt"
+  ],
+  "passed": false
+}

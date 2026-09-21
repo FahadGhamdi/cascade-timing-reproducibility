@@ -1,0 +1,12 @@
+{
+  "Peng_2510.25348v3.pdf": {
+    "url": "https://arxiv.org/pdf/2510.25348v3",
+    "bytes": 1096688,
+    "status": "downloaded"
+  },
+  "ACCESS_official_template.zip": {
+    "url": "https://ieeeaccess.ieee.org/wp-content/uploads/2026/05/ACCESS_latex_template_20260513-1-1.zip",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  }
+}

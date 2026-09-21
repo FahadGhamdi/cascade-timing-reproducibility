@@ -1,0 +1,1300 @@
+{
+  "scope": "Dependency and byte/source map, not an executable runner; no commands executed here",
+  "paper_title_from_current_task": "What Does Timing Add to Size? Probabilistic Forecasts of Recorded Cascade Growth on Two Archives",
+  "local_latest_editorial_title": "Prefix Size and Timing in Probabilistic Forecasts of Recorded Cascade Growth",
+  "current_title_local_project_verified": false,
+  "stages": [
+    {
+      "stage_id": "raw",
+      "purpose": "الإصدارات الخام المثبتة للأرشيفين",
+      "dependencies": [],
+      "entrypoint_original_path": null,
+      "entrypoint_evidence": [
+        "BRACE-Phase13B-20260912/FROZEN_DATA_PROTOCOL.json.source_files",
+        "BRACE-Phase13A-20260912/provenance/WEIBO_DOWNLOAD_RECEIPT.json",
+        "BRACE-Phase13B-20260912/provenance/SOURCE_RECOVERY_RECEIPT.json"
+      ],
+      "inputs": [],
+      "outputs": [
+        "BRACE-Phase13A-20260912/data/dataset_weibo_deephawkes.txt",
+        "BRACE-Phase13B-20260912/data/seismic_index.csv",
+        "BRACE-Phase13B-20260912/data/seismic_data.csv"
+      ],
+      "working_directory": null,
+      "command": null,
+      "command_status": "not_applicable",
+      "configuration": {
+        "seismic_data": {
+          "bytes": 299132268,
+          "sha256": "916fb069b2227167e6031c95340d975d90c04ff751d0f07898e1cf64ed48bb08"
+        },
+        "seismic_index": {
+          "bytes": 8323152,
+          "sha256": "edf23b4310e8c3c8454e7dcf6e9b72c1d795fdcb930f290f4703574a55c6ffdd"
+        },
+        "weibo": {
+          "bytes": 480394704,
+          "sha256": "4e429a0da839c1e5161ddbf3c8b1dbe82b32722082bf65553016f93782cc4eea"
+        }
+      },
+      "recorded_limits_and_reexecution_guards": null,
+      "collection_status": "assets_available_not_reexecuted",
+      "notes": [
+        "ملفات مصدر مسطحة كما استعملت، وليس تنزيلًا حديثًا أو إعادة بناء corpus. SEISMIC محفوظ مرة واحدة داخل13B-kit مع alias للملف المحلي."
+      ],
+      "executed_in_this_task": false
+    },
+    {
+      "stage_id": "13A",
+      "purpose": "تدقيق Weibo وroot metadata اللازمة لاختيار13B",
+      "dependencies": [
+        "raw"
+      ],
+      "entrypoint_original_path": "BRACE-Phase13A-20260912/phase13a.py",
+      "entrypoint_evidence": "BRACE-Phase13A-20260912/MAC_PHASE13A_LAUNCH.log",
+      "inputs": [
+        "BRACE-Phase13A-20260912/data/dataset_weibo_deephawkes.txt",
+        "BRACE-Phase13A-20260912/reference",
+        "BRACE-Phase13A-20260912/MANIFEST.json"
+      ],
+      "outputs": [
+        "BRACE-Phase13A-20260912/recovery/BRACE_PHASE13A_RETURN.zip::ROOT_AUDIT.csv.gz",
+        "BRACE-Phase13A-20260912/recovery/BRACE_PHASE13A_RETURN.zip::DATA_AUDIT.json",
+        "BRACE-Phase13A-20260912/recovery/BRACE_PHASE13A_RETURN.zip::SOURCE_IDENTITY.json"
+      ],
+      "working_directory": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13A-20260912",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-u",
+        "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13A-20260912/phase13a.py",
+        "run",
+        "--dataset",
+        "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13A-20260912/data/dataset_weibo_deephawkes.txt",
+        "--out",
+        "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13A-20260912/run_phase13a/ingestion"
+      ],
+      "command_status": "recorded_historical_child_command",
+      "configuration": null,
+      "recorded_limits_and_reexecution_guards": {
+        "timeout_seconds": 1200,
+        "wrapper": "BRACE-Phase13A-20260912/run_mac_phase13a.py",
+        "guards": [
+          "run_phase13a exists",
+          "recovery/BRACE_PHASE13A_RETURN exists",
+          "RETURN ZIP exists"
+        ],
+        "do_not_remove_guards": true
+      },
+      "collection_status": "assets_available_not_reexecuted",
+      "notes": [
+        "wrapper الأصلي والاختبارات محفوظة دون تشغيل؛ تفسير المرشحات غير المعتمدة كTaoke محفوظ فقط ضمن حزمة ingestion المجمدة."
+      ],
+      "executed_in_this_task": false
+    },
+    {
+      "stage_id": "13B",
+      "purpose": "التنظيف والاستبعادات والأفواج والأدوار والخصائص والأهداف والبادئات",
+      "dependencies": [
+        "raw",
+        "13A"
+      ],
+      "entrypoint_original_path": "BRACE-Phase13B-20260912/run_mac_phase13b.py",
+      "entrypoint_evidence": "BRACE-Phase13B-20260912/MAC_PHASE13B_LAUNCH.log",
+      "inputs": [
+        "BRACE-Phase13A-20260912/data/dataset_weibo_deephawkes.txt",
+        "BRACE_Phase13B_Kit_20260912.zip::data/seismic_data.csv",
+        "BRACE_Phase13B_Kit_20260912.zip::data/seismic_index.csv",
+        "BRACE_Phase13B_Kit_20260912.zip::provenance/PHASE13A_ROOT_AUDIT.csv.gz",
+        "BRACE_Phase13B_Kit_20260912.zip::provenance/LEGACY_SEISMIC_MEMBERSHIPS.json",
+        "BRACE_Phase13B_Kit_20260912.zip::FROZEN_DATA_PROTOCOL.json",
+        "BRACE_Phase13B_Kit_20260912.zip::reference/PORTABLE_CONTENT_MANIFEST.json"
+      ],
+      "outputs": [
+        "BRACE-Phase13B-20260912/recovery/BRACE_PHASE13B_RETURN.zip::prepared_data/COHORT.csv",
+        "BRACE-Phase13B-20260912/recovery/BRACE_PHASE13B_RETURN.zip::prepared_data/prepared/{source}/{ROLE}_FEATURES.csv.gz",
+        "BRACE-Phase13B-20260912/recovery/BRACE_PHASE13B_RETURN.zip::prepared_data/prepared/{source}/{ROLE}_TARGETS.csv.gz",
+        "BRACE-Phase13B-20260912/recovery/BRACE_PHASE13B_RETURN.zip::prepared_data/prepared/{source}/{ROLE}_PREFIXES.jsonl.gz"
+      ],
+      "working_directory": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13B-20260912",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "-u",
+        "run_mac_phase13b.py",
+        "--weibo",
+        "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13A-20260912/data/dataset_weibo_deephawkes.txt",
+        "--kit-zip",
+        "/Users/fahad/Documents/Research-Projects/RADIC/BRACE_Phase13B_Kit_20260912.zip"
+      ],
+      "command_status": "recorded_historical_wrapper_command",
+      "configuration": {
+        "I0": [
+          "log1p_n_prefix",
+          "log_window_seconds"
+        ],
+        "I1_added": [
+          "first_event_fraction",
+          "recency_fraction",
+          "median_gap_fraction",
+          "gap_cv",
+          "zero_gap_fraction",
+          "last_quarter_fraction",
+          "last_tenth_fraction"
+        ],
+        "endpoint_seconds_from_root": 86400,
+        "feature_float_comparison_absolute_tolerance": 1e-12,
+        "fit_protocol_status": "pending a bounded TRAIN-only cost/compatibility pilot; no fits authorized by this runner",
+        "freeze_date": "2026-09-12",
+        "integer_statistics": [
+          "n_prefix",
+          "first_nonroot_s",
+          "last_nonroot_s",
+          "gap_count",
+          "gap_sum_s",
+          "gap_square_sum_s2",
+          "median_gap_twice_s",
+          "zero_gap_count",
+          "last_quarter_count",
+          "last_tenth_count"
+        ],
+        "max_seconds_per_source": 900,
+        "phase13b_model_operations": 0,
+        "practical_relative_improvement_threshold": 0.02,
+        "primary_aggregation": "average three prefix losses within root, then average roots; seed handling fixed in fit protocol",
+        "primary_comparison_families": [
+          "hurdle",
+          "qrf",
+          "ngboost"
+        ],
+        "primary_contrasts": 6,
+        "primary_score": "discrete_CRPS",
+        "protocol_id": "BRACE13B-count-time-v1",
+        "samples_per_source": {
+          "test": 5000,
+          "train": 6000,
+          "validation": 2000
+        },
+        "seismic_calendar_blocks": {
+          "test_lower_inclusive": "8.05",
+          "train_upper_exclusive": "4",
+          "validation_lower_inclusive": "5.05",
+          "validation_upper_exclusive": "7"
+        },
+        "selection_salt": "BRACE13B-count-time-v1",
+        "source_files": {
+          "seismic_data": {
+            "bytes": 299132268,
+            "sha256": "916fb069b2227167e6031c95340d975d90c04ff751d0f07898e1cf64ed48bb08"
+          },
+          "seismic_index": {
+            "bytes": 8323152,
+            "sha256": "edf23b4310e8c3c8454e7dcf6e9b72c1d795fdcb930f290f4703574a55c6ffdd"
+          },
+          "weibo": {
+            "bytes": 480394704,
+            "sha256": "4e429a0da839c1e5161ddbf3c8b1dbe82b32722082bf65553016f93782cc4eea"
+          }
+        },
+        "time_rule": "prefix: 0 <= t < w; target: w <= t < 86400; one designated root excluded",
+        "uncertainty": "paired root-user cluster resampling for Weibo; root resampling for SEISMIC with dependence limitation; six-contrast Bonferroni family",
+        "weibo_duplicate_tokens": "retained as released activity records",
+        "weibo_group_cutoffs_basis_points": {
+          "modulus": 10000,
+          "train_end_exclusive": 6000,
+          "validation_end_exclusive": 8000
+        },
+        "weibo_primary_exclusions": {
+          "80431": "invalid_relative_timestamp",
+          "87919": "missing_root_user",
+          "87962": "missing_root_user",
+          "87997": "missing_root_user",
+          "88004": "missing_root_user",
+          "88035": "missing_root_user",
+          "88065": "missing_root_user",
+          "88066": "missing_root_user",
+          "89151": "invalid_relative_timestamp"
+        },
+        "windows_seconds": [
+          300,
+          900,
+          3600
+        ]
+      },
+      "recorded_limits_and_reexecution_guards": {
+        "max_seconds_per_source": 900,
+        "wrapper_output_existence_guard": true,
+        "do_not_remove_guards": true
+      },
+      "collection_status": "assets_available_not_reexecuted",
+      "notes": [
+        "شيفرة prepare_phase13b.py الفعلية داخل kit وRETURN؛ ملف عضويات التجارب السابقة قائمة استبعاد مطلوبة، وليس نسخ محتوى old أو تشغيل تلك التجارب."
+      ],
+      "executed_in_this_task": false
+    },
+    {
+      "stage_id": "13D-source-provenance",
+      "purpose": "المصدر العددي الموروث؛ ليس خطوة لازمة لإعادة تدريب13E من حزمته الجاهزة",
+      "dependencies": [
+        "13B"
+      ],
+      "entrypoint_original_path": "BRACE-Phase13E-20260912/kit/provenance/BRACE_PHASE13D_RETURN_20260912T212807Z.zip::source/run_phase13d.py",
+      "entrypoint_evidence": "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::source/EXPERIMENT_FREEZE.json",
+      "inputs": [
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::source/provenance/BRACE_PHASE13D_RETURN_20260912T212807Z.zip"
+      ],
+      "outputs": [
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::source/vendor/certified_count_score.py"
+      ],
+      "working_directory": null,
+      "command": null,
+      "command_status": "not_reconstructed_not_required_for_current_replay",
+      "configuration": null,
+      "recorded_limits_and_reexecution_guards": {
+        "no_revival_of_historical_pilots": true
+      },
+      "collection_status": "provenance_archives_collected_runtime_vendor_available",
+      "notes": [
+        "سلسلة13C/CR1/13D المتداخلة محفوظة ببايتاتها؛ لا حاجة لتشغيلها لإعادة استخدام scorer الموجود فعليًا في13E. ملفات reference التاريخية التي تشير إليها manifests داخلية ليست كلها حمولة تلك RETURN؛ راجع INHERITED_MANIFEST_REFERENCES.csv."
+      ],
+      "executed_in_this_task": false
+    },
+    {
+      "stage_id": "kit-assembly",
+      "purpose": "ربط13B بحزم TRAIN/VALIDATION وTEST وبمصدر14",
+      "dependencies": [
+        "13B"
+      ],
+      "entrypoint_original_path": null,
+      "entrypoint_evidence": [
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::source/provenance/DATA_SUBSET_RECEIPT.json",
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::source/provenance/TEST_DATA_RECEIPT.json",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::source/provenance/TRAIN_INPUT_BINDING.json"
+      ],
+      "inputs": [
+        "BRACE-Phase13B-20260912/recovery/BRACE_PHASE13B_RETURN.zip::prepared_data"
+      ],
+      "outputs": [
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::source/data",
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::source/data",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::source/data"
+      ],
+      "working_directory": null,
+      "command": null,
+      "command_status": "original_assembly_entrypoint_not_found",
+      "configuration": null,
+      "recorded_limits_and_reexecution_guards": null,
+      "collection_status": "bound_original_outputs_available_assembly_script_not_identified",
+      "notes": [
+        "لا نقطة دخول وهمية. ملفات الإدخال الفعلية كاملة ومطابقة بايتًا؛ إعادة تركيب حزم المصادر الآلية من الصفر لم توثق بسكربت تجميع مستقل عُثر عليه. يمكن للمشغل اللاحق استعمال الحزم المجمدة كما هي."
+      ],
+      "executed_in_this_task": false
+    },
+    {
+      "stage_id": "13E",
+      "purpose": "تدريب المرشحين والاختيار المشترك وقفل النماذج",
+      "dependencies": [
+        "13B",
+        "kit-assembly",
+        "13D-source-provenance"
+      ],
+      "entrypoint_original_path": "BRACE-Phase13E-20260912/kit/run_phase13e.py",
+      "entrypoint_evidence": [
+        "BRACE-Phase13E-20260912/kit/run_phase13e.py:30",
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::run/STARTED.json",
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::run/PHASE13E_REPORT.json"
+      ],
+      "inputs": [
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::source/CONFIG.json",
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::source/JOBS.json",
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::source/EXPERIMENT_FREEZE.json",
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::source/data",
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::source/vendor"
+      ],
+      "outputs": [
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::run/jobs",
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::run/CANDIDATE_TABLE.json",
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::run/SELECTION_REPORT.json",
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip::run/MODEL_LOCK.json"
+      ],
+      "working_directory": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13E-20260912/kit",
+      "command": [
+        "<recorded-Python-3.12.14>",
+        "run_phase13e.py",
+        "--out",
+        "<fresh-approved-output-outside-kit>"
+      ],
+      "command_status": "candidate_from_original_argparse_and_recorded_mode_not_exact_parent_argv",
+      "configuration": {
+        "bootstrap_in_this_phase": 0,
+        "budget": {
+          "global_seconds": 21600,
+          "job_execution_seconds": 900,
+          "job_initialization_seconds": 180,
+          "nb_max_fun": 1500,
+          "nb_max_iter": 1000,
+          "prediction_chunk": 128
+        },
+        "calibration": {
+          "coverage_levels": [
+            50,
+            80,
+            90,
+            95
+          ],
+          "p0_reliability_bins": 10,
+          "pit_bins": 10,
+          "pit_uniform_salt": "BRACE13E-PIT-v1",
+          "posthoc_recalibration": false
+        },
+        "casper_attempts_in_this_phase": 0,
+        "count_score": {
+          "max_grid": 1048576,
+          "max_mean_parameter": 10000000,
+          "tail_tolerance": 1e-08
+        },
+        "data_contract": "BRACE13B-count-time-v1",
+        "expected_jobs": 154,
+        "future_primary_inference": {
+          "alpha_family": 0.05,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 20260916,
+          "contrasts": 6,
+          "interval": "paired percentile Bonferroni, quantiles 0.05/12 and 1-0.05/12",
+          "practical_relative_reduction": 0.02,
+          "quantile_method": "linear",
+          "relative_reduction_reporting": "point summary; six absolute contrasts have primary confidence intervals",
+          "seed_handling": "average losses across fixed seeds within root, not CDF mixing or seed resampling",
+          "seismic_unit": "root; unresolved cross-root dependence",
+          "weibo_unit": "root-user cluster; ratio of resampled root-sums to resampled root-counts"
+        },
+        "grids": {
+          "conditional_empirical": [
+            {
+              "k": 250
+            },
+            {
+              "k": 100
+            },
+            {
+              "k": 50
+            },
+            {
+              "k": 25
+            }
+          ],
+          "empirical_window": [
+            {}
+          ],
+          "hurdle": [
+            {
+              "ridge": 1.0
+            },
+            {
+              "ridge": 0.1
+            },
+            {
+              "ridge": 0.01
+            },
+            {
+              "ridge": 0.001
+            }
+          ],
+          "nb2_glm": [
+            {
+              "ridge": 1.0
+            },
+            {
+              "ridge": 0.1
+            },
+            {
+              "ridge": 0.01
+            },
+            {
+              "ridge": 0.001
+            }
+          ],
+          "ngboost": [
+            {
+              "depth": 1,
+              "leaf": 10,
+              "stages": 100
+            },
+            {
+              "depth": 1,
+              "leaf": 10,
+              "stages": 300
+            },
+            {
+              "depth": 2,
+              "leaf": 10,
+              "stages": 100
+            },
+            {
+              "depth": 2,
+              "leaf": 10,
+              "stages": 300
+            }
+          ],
+          "poisson_glm": [
+            {
+              "ridge": 1.0
+            },
+            {
+              "ridge": 0.1
+            },
+            {
+              "ridge": 0.01
+            },
+            {
+              "ridge": 0.001
+            }
+          ],
+          "qrf": [
+            {
+              "depth": 8,
+              "leaf": 50,
+              "trees": 128
+            },
+            {
+              "depth": 8,
+              "leaf": 10,
+              "trees": 128
+            },
+            {
+              "depth": 12,
+              "leaf": 50,
+              "trees": 128
+            },
+            {
+              "depth": 12,
+              "leaf": 10,
+              "trees": 128
+            }
+          ]
+        },
+        "learned_families": [
+          "hurdle",
+          "qrf",
+          "ngboost",
+          "nb2_glm",
+          "poisson_glm"
+        ],
+        "maximum_component_fit_calls": 160,
+        "maximum_learned_procedures": 144,
+        "maximum_locked_models_including_references": 40,
+        "maximum_validation_forecasts": 924000,
+        "ngboost_score": {
+          "batch": 128,
+          "body_tail_switch": 0.1,
+          "direct_max": 1048576,
+          "direct_min": 4096,
+          "far_max": 1125899906842624,
+          "max_blocks": 65536,
+          "max_mean_parameter": 10000000,
+          "seconds": 30,
+          "tolerance": 1e-08
+        },
+        "primary_families": [
+          "hurdle",
+          "qrf",
+          "ngboost"
+        ],
+        "protocol_id": "BRACE13E-shared-capacity-selection-v1",
+        "seeds": [
+          20260913,
+          20260914,
+          20260915
+        ],
+        "selection": {
+          "criterion": "mean validation root CRPS, averaged equally over I0/I1 and prescribed seeds",
+          "eligibility": "all rows and seeds for both information sets complete; likelihood solvers converge; forests and boosting finish their prescribed fitting procedure",
+          "refit_after_selection": false,
+          "shared_candidate_within_source_family": true,
+          "tie_absolute_tolerance": 1e-08,
+          "tie_break": "lowest declared candidate index"
+        },
+        "sources": [
+          "weibo",
+          "seismic"
+        ],
+        "stochastic_families": [
+          "qrf",
+          "ngboost"
+        ],
+        "test_evaluation_in_this_phase": 0,
+        "test_roots_per_source_future": 5000,
+        "train_roots_per_source": 6000,
+        "validation_roots_per_source": 2000,
+        "windows": [
+          300,
+          900,
+          3600
+        ]
+      },
+      "recorded_limits_and_reexecution_guards": {
+        "budget": {
+          "global_seconds": 21600,
+          "job_execution_seconds": 900,
+          "job_initialization_seconds": 180,
+          "nb_max_fun": 1500,
+          "nb_max_iter": 1000,
+          "prediction_chunk": 128
+        },
+        "output_mkdir_exist_ok": false,
+        "global_seconds": 21600,
+        "expected_jobs": 154
+      },
+      "collection_status": "assets_available_not_reexecuted",
+      "notes": [
+        "select_models.py وشبكة البحث وإخفاقات74 درجة محفوظة؛ لا train+validation refit. جميع المرشحين ونماذجهم ضمن RETURN، لا الاقتصار على MODEL_LOCK."
+      ],
+      "executed_in_this_task": false,
+      "worker_environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      },
+      "worker_environment_evidence": "original runner watch() env.update; does not establish every parent-shell environment variable",
+      "historical_environment": {
+        "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]",
+        "versions": {
+          "autograd": "1.9.1",
+          "autograd-gamma": "0.5.0",
+          "cloudpickle": "3.1.2",
+          "contourpy": "1.4.0",
+          "cycler": "0.12.1",
+          "fonttools": "4.65.0",
+          "formulaic": "1.2.2",
+          "interface-meta": "2.0.1",
+          "joblib": "1.6.0",
+          "kiwisolver": "1.5.1",
+          "lifelines": "0.30.3",
+          "llvmlite": "0.46.0",
+          "matplotlib": "3.10.8",
+          "mpmath": "1.3.0",
+          "narwhals": "2.26.0",
+          "ngboost": "0.5.11",
+          "numba": "0.63.1",
+          "numpy": "2.3.5",
+          "packaging": "26.3",
+          "pandas": "2.2.3",
+          "pillow": "12.3.0",
+          "pyparsing": "3.3.2",
+          "python-dateutil": "2.9.0.post0",
+          "pytz": "2026.3.post1",
+          "scikit-learn": "1.8.0",
+          "scipy": "1.17.0",
+          "six": "1.17.0",
+          "sympy": "1.14.0",
+          "threadpoolctl": "3.6.0",
+          "tqdm": "4.70.1",
+          "typing-extensions": "4.16.0",
+          "tzdata": "2026.4",
+          "wrapt": "2.4.1"
+        }
+      }
+    },
+    {
+      "stage_id": "13F",
+      "purpose": "اختبار40 كائنًا محتفظًا به ومعايرة واستدلال أساسي دون fit",
+      "dependencies": [
+        "13E",
+        "13B",
+        "kit-assembly"
+      ],
+      "entrypoint_original_path": "BRACE-Phase13F-20260913/kit/run_phase13f.py",
+      "entrypoint_evidence": [
+        "BRACE-Phase13F-20260913/kit/run_phase13f.py:30",
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::run/STARTED.json",
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::run/PHASE13F_REPORT.json"
+      ],
+      "inputs": [
+        "BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip",
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::source/TEST_JOBS.json",
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::source/provenance/MODEL_LOCK.json",
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::source/data",
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::source/locked_source"
+      ],
+      "outputs": [
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::run/jobs/*/SCORES.jsonl",
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::run/analysis",
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip::run/analysis/figures"
+      ],
+      "working_directory": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13F-20260913/kit",
+      "command": [
+        "<recorded-Python-3.12.14>",
+        "run_phase13f.py",
+        "--phase13e-return",
+        "<exact-13E-original-archive>",
+        "--out",
+        "<fresh-approved-output-outside-kit>"
+      ],
+      "command_status": "candidate_from_original_argparse_and_recorded_mode_not_exact_parent_argv",
+      "configuration": {
+        "bootstrap": {
+          "alpha_family": 0.05,
+          "batch": 100,
+          "bit_generator": "PCG64",
+          "draws": 10000,
+          "lower_quantile": 0.004166666666666667,
+          "primary_family_size": 6,
+          "quantile_method": "linear",
+          "relative_effect": "point summary only",
+          "seed": 20260916,
+          "seismic_unit": "root",
+          "source_order": [
+            "weibo",
+            "seismic"
+          ],
+          "upper_quantile": 0.9958333333333333,
+          "weibo_unit": "root-user cluster, root-weighted ratio"
+        },
+        "budget": {
+          "analysis_seconds": 1800,
+          "chunk": 128,
+          "global_forecast_seconds": 21600,
+          "initialization_seconds": 180,
+          "job_execution_seconds": 1800
+        },
+        "duplicate_sensitivity": "exclude flagged Weibo TEST roots from descriptive contrasts only; no refit or extra significance test",
+        "expected_models": 40,
+        "failure_rule": "no full-procedure mean or comparison when any frozen seed/window/root score is missing; no deletion, replacement, fit or score-limit revision",
+        "frozen_model_lock_sha256": "e14986cf0105f4974c6b8c161897bd872360d25fdc5ea09482945451060dd172",
+        "maximum_forecasts": 600000,
+        "maximum_root_model_rows": 200000,
+        "maximum_root_procedure_rows": 120000,
+        "new_fits": 0,
+        "new_test_forecasts_in_preparation": 0,
+        "parent_protocol": "BRACE13E-shared-capacity-selection-v1",
+        "phase13e_archive": {
+          "bytes": 370201877,
+          "filename": "BRACE_PHASE13E_RETURN_20260912T222937Z.zip",
+          "payload_files": 1756,
+          "sha256": "b38668401ae3e1094fa8c9853983348b99f6d5bed525a3f397cbd4ee7a8770a8"
+        },
+        "primary_families": [
+          "hurdle",
+          "qrf",
+          "ngboost"
+        ],
+        "protocol_id": "BRACE13F-locked-test-v1",
+        "seed_aggregation": "mean of losses over prescribed seeds within root, never CDF mixing",
+        "shared_score_config_sha256": "059de6aa924922105855f46144bf6e87114632128b058aa8df3274fac258f5f8",
+        "sources": [
+          "weibo",
+          "seismic"
+        ],
+        "test_roots_per_source": 5000,
+        "windows": [
+          300,
+          900,
+          3600
+        ]
+      },
+      "recorded_limits_and_reexecution_guards": {
+        "budget": {
+          "analysis_seconds": 1800,
+          "chunk": 128,
+          "global_forecast_seconds": 21600,
+          "initialization_seconds": 180,
+          "job_execution_seconds": 1800
+        },
+        "output_mkdir_exist_ok": false,
+        "fit_calls": 0,
+        "selection_calls": 0
+      },
+      "collection_status": "assets_available_not_reexecuted",
+      "notes": [
+        "TEST worker يستخرج النماذج وفق TEST_JOBS.archive_member من13E ويحتاج تسلسل الوحدات الأصلية لفكها لاحقًا؛ لم نفكها في الجمع."
+      ],
+      "executed_in_this_task": false,
+      "worker_environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      },
+      "worker_environment_evidence": "original runner watch() env.update; does not establish every parent-shell environment variable",
+      "historical_environment": {
+        "executable": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13C-20260912/.venv/bin/python",
+        "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]",
+        "versions": {
+          "autograd": "1.9.1",
+          "autograd-gamma": "0.5.0",
+          "cloudpickle": "3.1.2",
+          "contourpy": "1.4.0",
+          "cycler": "0.12.1",
+          "fonttools": "4.65.0",
+          "formulaic": "1.2.2",
+          "interface-meta": "2.0.1",
+          "joblib": "1.6.0",
+          "kiwisolver": "1.5.1",
+          "lifelines": "0.30.3",
+          "llvmlite": "0.46.0",
+          "matplotlib": "3.10.8",
+          "mpmath": "1.3.0",
+          "narwhals": "2.26.0",
+          "ngboost": "0.5.11",
+          "numba": "0.63.1",
+          "numpy": "2.3.5",
+          "packaging": "26.3",
+          "pandas": "2.2.3",
+          "pillow": "12.3.0",
+          "pyparsing": "3.3.2",
+          "python-dateutil": "2.9.0.post0",
+          "pytz": "2026.3.post1",
+          "scikit-learn": "1.8.0",
+          "scipy": "1.17.0",
+          "six": "1.17.0",
+          "sympy": "1.14.0",
+          "threadpoolctl": "3.6.0",
+          "tqdm": "4.70.1",
+          "typing-extensions": "4.16.0",
+          "tzdata": "2026.4",
+          "wrapt": "2.4.1"
+        }
+      }
+    },
+    {
+      "stage_id": "14",
+      "purpose": "المنسق الأصلي: stage A ثم42 وظائف ضجيج ثم التحليل والرسوم",
+      "dependencies": [
+        "13F",
+        "13E",
+        "kit-assembly"
+      ],
+      "entrypoint_original_path": "BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913/run_phase14.py",
+      "entrypoint_evidence": [
+        "BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913/run_phase14.py:82",
+        "BRACE-Phase14-20260913/PHASE14_EXECUTION_LOCK.json",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/PHASE14_REPORT.json"
+      ],
+      "inputs": [
+        "BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::source/CONFIG_14.json",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::source/NOISE_JOBS.json",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::source/data",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::source/frozen",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::source/reference",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::source/provenance/TRAIN_INPUT_BINDING.json"
+      ],
+      "outputs": [
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/stage_a",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/noise_jobs",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/noise_matrices",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/stage_b",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/figures_final"
+      ],
+      "working_directory": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913",
+      "command": [
+        "<recorded-Python-3.12.14>",
+        "run_phase14.py",
+        "--phase13f-return",
+        "<exact-13F-original-archive>",
+        "--out",
+        "<fresh-approved-output-outside-kit>"
+      ],
+      "command_status": "candidate_from_original_argparse_and_recorded_lock_not_exact_parent_argv",
+      "configuration": {
+        "protocol_id": "BRACE14-post13F-supplement-v1",
+        "sources": [
+          "weibo",
+          "seismic"
+        ],
+        "windows": [
+          300,
+          900,
+          3600
+        ],
+        "bins": [
+          "0",
+          "1-2",
+          "3-9",
+          "10-49",
+          "50+"
+        ],
+        "primary_families": [
+          "hurdle",
+          "qrf",
+          "ngboost"
+        ],
+        "noise_replicates": [
+          0,
+          1,
+          2
+        ],
+        "noise_master_seed": 2026091801,
+        "model_seeds": [
+          20260913,
+          20260914,
+          20260915
+        ],
+        "noise_distribution": "Uniform(-sqrt(3),sqrt(3)), seven mutually independent columns",
+        "noise_counterfactual_label": "dimension-matched negative control; not pure capacity identification",
+        "strata_bootstrap": {
+          "draws": 2000,
+          "seed": 2026091701,
+          "alpha": 0.05,
+          "minimum_groups_for_interval": 30,
+          "batch": 100,
+          "scope": "exploratory pointwise only; no simultaneous significance claims"
+        },
+        "noise_bootstrap": {
+          "draws": 10000,
+          "seed": 2026091802,
+          "alpha": 0.05,
+          "family_size": 12,
+          "batch": 100,
+          "scope": "supplementary family; fixed fitted models and fixed noise realizations"
+        },
+        "budget": {
+          "initialization_seconds": 180,
+          "synthetic_seconds": 180,
+          "job_seconds": 2400,
+          "global_noise_seconds": 21600,
+          "analysis_seconds": 1800,
+          "chunk": 128,
+          "noise_procedures": 42,
+          "noise_component_fits_max": 48,
+          "noise_test_rows_max": 630000
+        },
+        "phase13f_archive": {
+          "name": "BRACE_PHASE13F_RETURN_20260913T064116Z.zip",
+          "bytes": 160964430,
+          "sha256": "592e185fc9a0ad96265b407af71a3e80e9d66ccbe9da140a3bd32c36bfb51ce0"
+        },
+        "phase13b_archive": {
+          "name": "BRACE_PHASE13B_RETURN.zip",
+          "bytes": 11656737,
+          "sha256": "2fe65dba9969eeb12c1ae35b51b3f5420442732d2f53a1a28de5bbf760018187"
+        }
+      },
+      "recorded_limits_and_reexecution_guards": {
+        "budget": {
+          "initialization_seconds": 180,
+          "synthetic_seconds": 180,
+          "job_seconds": 2400,
+          "global_noise_seconds": 21600,
+          "analysis_seconds": 1800,
+          "chunk": 128,
+          "noise_procedures": 42,
+          "noise_component_fits_max": 48,
+          "noise_test_rows_max": 630000
+        },
+        "existing_output_blocks_run": true,
+        "adjacent_lock": "PHASE14_EXECUTION_LOCK.json",
+        "lock_open_mode": "x",
+        "do_not_remove_guards": true
+      },
+      "collection_status": "assets_available_not_reexecuted",
+      "notes": [
+        "التنفيذ مكتمل رغم pending في source/editorial؛ لا تعاد التجربة بناء على هذه العبارة.",
+        "صفحات الورقة وجدول ترقيم الأشكال الحالي خارج هذه المرحلة."
+      ],
+      "executed_in_this_task": false,
+      "worker_environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      },
+      "worker_environment_evidence": "original runner watch() env.update; does not establish every parent-shell environment variable",
+      "historical_environment": {
+        "executable": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13C-20260912/.venv/bin/python",
+        "packages": {
+          "autograd": "1.9.1",
+          "autograd-gamma": "0.5.0",
+          "cloudpickle": "3.1.2",
+          "contourpy": "1.4.0",
+          "cycler": "0.12.1",
+          "fonttools": "4.65.0",
+          "formulaic": "1.2.2",
+          "interface-meta": "2.0.1",
+          "joblib": "1.6.0",
+          "kiwisolver": "1.5.1",
+          "lifelines": "0.30.3",
+          "llvmlite": "0.46.0",
+          "matplotlib": "3.10.8",
+          "mpmath": "1.3.0",
+          "narwhals": "2.26.0",
+          "ngboost": "0.5.11",
+          "numba": "0.63.1",
+          "numpy": "2.3.5",
+          "packaging": "26.3",
+          "pandas": "2.2.3",
+          "pillow": "12.3.0",
+          "pyparsing": "3.3.2",
+          "python-dateutil": "2.9.0.post0",
+          "pytz": "2026.3.post1",
+          "scikit-learn": "1.8.0",
+          "scipy": "1.17.0",
+          "six": "1.17.0",
+          "sympy": "1.14.0",
+          "threadpoolctl": "3.6.0",
+          "tqdm": "4.70.1",
+          "typing-extensions": "4.16.0",
+          "tzdata": "2026.4",
+          "wrapt": "2.4.1"
+        },
+        "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]"
+      }
+    },
+    {
+      "stage_id": "14A",
+      "purpose": "شرائح90 وMSLE والمرجع الشرطي من الدرجات المحفوظة",
+      "dependencies": [
+        "14"
+      ],
+      "entrypoint_original_path": "BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913/strata14.py",
+      "entrypoint_evidence": "BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913/run_phase14.py",
+      "inputs": [
+        "13F saved score streams and TEST source"
+      ],
+      "outputs": [
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/stage_a/TIMING_STRATA.csv",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/stage_a/STRATUM_LEVELS.csv",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/stage_a/MSLE_SAVED_MEDIANS.csv",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/stage_a/STRATA_BOOTSTRAP.npz",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/stage_a/PROCEDURE_LOSSES.npz"
+      ],
+      "working_directory": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913",
+      "command": [
+        "<same-python>",
+        "strata14.py",
+        "--parent",
+        "<run>/parent13f",
+        "--out",
+        "<run>/stage_a"
+      ],
+      "command_status": "child_command_template_explicit_in_original_runner",
+      "configuration": null,
+      "recorded_limits_and_reexecution_guards": {
+        "invoked_once_by14": true
+      },
+      "collection_status": "assets_available_not_reexecuted",
+      "notes": [],
+      "executed_in_this_task": false,
+      "worker_environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      },
+      "worker_environment_evidence": "original runner watch() env.update; does not establish every parent-shell environment variable",
+      "historical_environment": {
+        "executable": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13C-20260912/.venv/bin/python",
+        "packages": {
+          "autograd": "1.9.1",
+          "autograd-gamma": "0.5.0",
+          "cloudpickle": "3.1.2",
+          "contourpy": "1.4.0",
+          "cycler": "0.12.1",
+          "fonttools": "4.65.0",
+          "formulaic": "1.2.2",
+          "interface-meta": "2.0.1",
+          "joblib": "1.6.0",
+          "kiwisolver": "1.5.1",
+          "lifelines": "0.30.3",
+          "llvmlite": "0.46.0",
+          "matplotlib": "3.10.8",
+          "mpmath": "1.3.0",
+          "narwhals": "2.26.0",
+          "ngboost": "0.5.11",
+          "numba": "0.63.1",
+          "numpy": "2.3.5",
+          "packaging": "26.3",
+          "pandas": "2.2.3",
+          "pillow": "12.3.0",
+          "pyparsing": "3.3.2",
+          "python-dateutil": "2.9.0.post0",
+          "pytz": "2026.3.post1",
+          "scikit-learn": "1.8.0",
+          "scipy": "1.17.0",
+          "six": "1.17.0",
+          "sympy": "1.14.0",
+          "threadpoolctl": "3.6.0",
+          "tqdm": "4.70.1",
+          "typing-extensions": "4.16.0",
+          "tzdata": "2026.4",
+          "wrapt": "2.4.1"
+        },
+        "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]"
+      }
+    },
+    {
+      "stage_id": "14B-fit",
+      "purpose": "ملاءمة الضجيج وفق7 أعمدة و3 تحقيقات وبذور مجمدة",
+      "dependencies": [
+        "14"
+      ],
+      "entrypoint_original_path": "BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913/noise_worker14.py",
+      "entrypoint_evidence": "BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913/run_phase14.py",
+      "inputs": [
+        "source/data",
+        "source/frozen",
+        "source/NOISE_JOBS.json"
+      ],
+      "outputs": [
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/noise_jobs/<job>/MODEL.joblib",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/noise_jobs/<job>/SCORES.jsonl",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/noise_matrices"
+      ],
+      "working_directory": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913",
+      "command": [
+        "<same-python>",
+        "noise_worker14.py",
+        "--job",
+        "<NOISE_JOBS.job_id>",
+        "--out",
+        "<run>/noise_jobs/<job_id>"
+      ],
+      "command_status": "child_command_template_explicit_in_original_runner",
+      "configuration": null,
+      "recorded_limits_and_reexecution_guards": {
+        "invoked_once_by14": true
+      },
+      "collection_status": "assets_available_not_reexecuted",
+      "notes": [],
+      "executed_in_this_task": false,
+      "worker_environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      },
+      "worker_environment_evidence": "original runner watch() env.update; does not establish every parent-shell environment variable",
+      "historical_environment": {
+        "executable": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13C-20260912/.venv/bin/python",
+        "packages": {
+          "autograd": "1.9.1",
+          "autograd-gamma": "0.5.0",
+          "cloudpickle": "3.1.2",
+          "contourpy": "1.4.0",
+          "cycler": "0.12.1",
+          "fonttools": "4.65.0",
+          "formulaic": "1.2.2",
+          "interface-meta": "2.0.1",
+          "joblib": "1.6.0",
+          "kiwisolver": "1.5.1",
+          "lifelines": "0.30.3",
+          "llvmlite": "0.46.0",
+          "matplotlib": "3.10.8",
+          "mpmath": "1.3.0",
+          "narwhals": "2.26.0",
+          "ngboost": "0.5.11",
+          "numba": "0.63.1",
+          "numpy": "2.3.5",
+          "packaging": "26.3",
+          "pandas": "2.2.3",
+          "pillow": "12.3.0",
+          "pyparsing": "3.3.2",
+          "python-dateutil": "2.9.0.post0",
+          "pytz": "2026.3.post1",
+          "scikit-learn": "1.8.0",
+          "scipy": "1.17.0",
+          "six": "1.17.0",
+          "sympy": "1.14.0",
+          "threadpoolctl": "3.6.0",
+          "tqdm": "4.70.1",
+          "typing-extensions": "4.16.0",
+          "tzdata": "2026.4",
+          "wrapt": "2.4.1"
+        },
+        "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]"
+      }
+    },
+    {
+      "stage_id": "14B-analysis",
+      "purpose": "المقارنات12 وتصحيحها المستقل",
+      "dependencies": [
+        "14"
+      ],
+      "entrypoint_original_path": "BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913/analyze_noise14.py",
+      "entrypoint_evidence": "BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913/run_phase14.py",
+      "inputs": [
+        "stage_a",
+        "noise_jobs"
+      ],
+      "outputs": [
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/stage_b/NOISE_COMPARISONS.csv",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/stage_b/NOISE_BOOTSTRAP.npz",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/stage_b/NOISE_REALIZATION_SUMMARIES.csv"
+      ],
+      "working_directory": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913",
+      "command": [
+        "<same-python>",
+        "analyze_noise14.py",
+        "--stage-a",
+        "<run>/stage_a",
+        "--jobs",
+        "<run>/noise_jobs",
+        "--out",
+        "<run>/stage_b"
+      ],
+      "command_status": "child_command_template_explicit_in_original_runner",
+      "configuration": null,
+      "recorded_limits_and_reexecution_guards": {
+        "invoked_once_by14": true
+      },
+      "collection_status": "assets_available_not_reexecuted",
+      "notes": [],
+      "executed_in_this_task": false,
+      "worker_environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      },
+      "worker_environment_evidence": "original runner watch() env.update; does not establish every parent-shell environment variable",
+      "historical_environment": {
+        "executable": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13C-20260912/.venv/bin/python",
+        "packages": {
+          "autograd": "1.9.1",
+          "autograd-gamma": "0.5.0",
+          "cloudpickle": "3.1.2",
+          "contourpy": "1.4.0",
+          "cycler": "0.12.1",
+          "fonttools": "4.65.0",
+          "formulaic": "1.2.2",
+          "interface-meta": "2.0.1",
+          "joblib": "1.6.0",
+          "kiwisolver": "1.5.1",
+          "lifelines": "0.30.3",
+          "llvmlite": "0.46.0",
+          "matplotlib": "3.10.8",
+          "mpmath": "1.3.0",
+          "narwhals": "2.26.0",
+          "ngboost": "0.5.11",
+          "numba": "0.63.1",
+          "numpy": "2.3.5",
+          "packaging": "26.3",
+          "pandas": "2.2.3",
+          "pillow": "12.3.0",
+          "pyparsing": "3.3.2",
+          "python-dateutil": "2.9.0.post0",
+          "pytz": "2026.3.post1",
+          "scikit-learn": "1.8.0",
+          "scipy": "1.17.0",
+          "six": "1.17.0",
+          "sympy": "1.14.0",
+          "threadpoolctl": "3.6.0",
+          "tqdm": "4.70.1",
+          "typing-extensions": "4.16.0",
+          "tzdata": "2026.4",
+          "wrapt": "2.4.1"
+        },
+        "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]"
+      }
+    },
+    {
+      "stage_id": "14-figures",
+      "purpose": "رسوم النتائج الأصلية",
+      "dependencies": [
+        "14"
+      ],
+      "entrypoint_original_path": "BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913/figures14.py",
+      "entrypoint_evidence": "BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913/run_phase14.py",
+      "inputs": [
+        "stage_a",
+        "stage_b"
+      ],
+      "outputs": [
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/figures_final/*.png",
+        "BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip::run/figures_final/*.pdf"
+      ],
+      "working_directory": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase14-20260913/BRACE_Phase14_Supplementary_Kit_20260913",
+      "command": [
+        "<same-python>",
+        "figures14.py",
+        "--stage-a",
+        "<run>/stage_a",
+        "--stage-b",
+        "<run>/stage_b",
+        "--out",
+        "<run>/figures_final"
+      ],
+      "command_status": "child_command_template_explicit_in_original_runner",
+      "configuration": null,
+      "recorded_limits_and_reexecution_guards": {
+        "invoked_once_by14": true
+      },
+      "collection_status": "assets_available_not_reexecuted",
+      "notes": [],
+      "executed_in_this_task": false,
+      "worker_environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      },
+      "worker_environment_evidence": "original runner watch() env.update; does not establish every parent-shell environment variable",
+      "historical_environment": {
+        "executable": "/Users/fahad/Documents/Research-Projects/RADIC/BRACE-Phase13C-20260912/.venv/bin/python",
+        "packages": {
+          "autograd": "1.9.1",
+          "autograd-gamma": "0.5.0",
+          "cloudpickle": "3.1.2",
+          "contourpy": "1.4.0",
+          "cycler": "0.12.1",
+          "fonttools": "4.65.0",
+          "formulaic": "1.2.2",
+          "interface-meta": "2.0.1",
+          "joblib": "1.6.0",
+          "kiwisolver": "1.5.1",
+          "lifelines": "0.30.3",
+          "llvmlite": "0.46.0",
+          "matplotlib": "3.10.8",
+          "mpmath": "1.3.0",
+          "narwhals": "2.26.0",
+          "ngboost": "0.5.11",
+          "numba": "0.63.1",
+          "numpy": "2.3.5",
+          "packaging": "26.3",
+          "pandas": "2.2.3",
+          "pillow": "12.3.0",
+          "pyparsing": "3.3.2",
+          "python-dateutil": "2.9.0.post0",
+          "pytz": "2026.3.post1",
+          "scikit-learn": "1.8.0",
+          "scipy": "1.17.0",
+          "six": "1.17.0",
+          "sympy": "1.14.0",
+          "threadpoolctl": "3.6.0",
+          "tqdm": "4.70.1",
+          "typing-extensions": "4.16.0",
+          "tzdata": "2026.4",
+          "wrapt": "2.4.1"
+        },
+        "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]"
+      }
+    }
+  ],
+  "portability_notes": [
+    "Original absolute interpreter paths refer to historical machine; environment directories intentionally excluded. Version locks and historical environment records included.",
+    "Existing run directories and locks are evidence; never remove them. New execution requires separate authorization and layout decisions.",
+    "Do not run verify-only or --help in this collection task; runners may create output or synthetic operations.",
+    "No independently recorded parent-shell argv found for13E/F/14; command templates marked inferred.",
+    "No exact original single orchestrator for raw→all kits found. Preserve ready source kits and explicit source/destination mappings."
+  ]
+}

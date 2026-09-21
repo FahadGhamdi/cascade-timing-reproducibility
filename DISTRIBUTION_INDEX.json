@@ -1,0 +1,235 @@
+{
+  "scope": "Independent complete ZIP files, not multipart segments; unzip each into a common new delivery directory. Original nested archives remain intact.",
+  "payloads": [
+    {
+      "archive": "ORIGINALS_PAYLOAD_01.zip",
+      "absolute_path": "/Users/fahad/Documents/Research-Projects/RADIC/ORIGINALS_EXPORT_20260914T074651Z/ORIGINALS_PAYLOAD_01.zip",
+      "bytes": 154527266,
+      "sha256": "a4c25e2a871a2aec45fdb61cd183f9cae999cdfbde3328d022bda2608ff68c32",
+      "group": "Weibo raw + complete13A ingestion kit and RETURN",
+      "members": {
+        "originals/BRACE-Phase13A-20260912/LITERATURE_MATRIX.md": {
+          "bytes": 10566,
+          "sha256": "386098289e6cf05678860944c8fbb74679c714ca112b043cfbd52d0314730332"
+        },
+        "originals/BRACE-Phase13A-20260912/MAC_PHASE13A_LAUNCH.log": {
+          "bytes": 885,
+          "sha256": "eac1559219c023bddbb393cdb0434b1da47afdb0f9a13a4de1ef578e44d89ede"
+        },
+        "originals/BRACE-Phase13A-20260912/MAC_PHASE13A_TASK.md": {
+          "bytes": 6137,
+          "sha256": "fc54e8d3c3807ca251f003626865a7d8a89c0b0f8c44c03a1d90fa1cc5f4f265"
+        },
+        "originals/BRACE-Phase13A-20260912/MANIFEST.json": {
+          "bytes": 3941,
+          "sha256": "bed48fc3108ddaf293718f3fd3847bdc68ac7b841417222247d681213b8bea7a"
+        },
+        "originals/BRACE-Phase13A-20260912/NEXT_EXPERIMENT_PROTOCOL_DRAFT.md": {
+          "bytes": 6450,
+          "sha256": "91f53eb1cbaf322724f129cf6ce49912dcbe1a6f04a5a8e98aeba98ca0e31413"
+        },
+        "originals/BRACE-Phase13A-20260912/PHASE13A_DECISION_AR.md": {
+          "bytes": 9400,
+          "sha256": "f1533aa017ecf6a35373455f195c46d2711bd989cebdb27419fc1b79aa1a93dd"
+        },
+        "originals/BRACE-Phase13A-20260912/README_AR.md": {
+          "bytes": 3791,
+          "sha256": "2bee8f2ff3648a2310976b980467c9236c29a13d2f6694dfd159fe98c6d153dc"
+        },
+        "originals/BRACE-Phase13A-20260912/REFERENCE_VALIDATION.json": {
+          "bytes": 1560,
+          "sha256": "62c67570b17ccc0d045ac1f5896ab58a04e35bae750db74b756ad13a9cd16ef3"
+        },
+        "originals/BRACE-Phase13A-20260912/data/dataset_weibo_deephawkes.txt": {
+          "bytes": 480394704,
+          "sha256": "4e429a0da839c1e5161ddbf3c8b1dbe82b32722082bf65553016f93782cc4eea"
+        },
+        "originals/BRACE-Phase13A-20260912/inspect_taoke.py": {
+          "bytes": 3981,
+          "sha256": "ee97084247198b39085a81c429a6ae59acca5ff4147c6245a845172e4436f094"
+        },
+        "originals/BRACE-Phase13A-20260912/phase13a.py": {
+          "bytes": 17723,
+          "sha256": "2ecb241c1debf826ee88e2d100ed76200fea8f7b710e17c6ab7db0cf7056dc49"
+        },
+        "originals/BRACE-Phase13A-20260912/provenance/SOURCE_REGISTER.json": {
+          "bytes": 1446,
+          "sha256": "f8c98d4675cab4eae3f9fb870ede1e8782b74d834ddd4fe14c663f16c71723d9"
+        },
+        "originals/BRACE-Phase13A-20260912/provenance/WEIBO_DOWNLOAD_RECEIPT.json": {
+          "bytes": 374,
+          "sha256": "7cb5e2fcff64c3c80431f330721182c4a5c87a038ea10fd24130718ff3639791"
+        },
+        "originals/BRACE-Phase13A-20260912/provenance/retrieval_manifest.json": {
+          "bytes": 1833,
+          "sha256": "f5ea66dba54aab515a3effbec890b1b4e4e403b38075039f9efad2072517929d"
+        },
+        "originals/BRACE-Phase13A-20260912/provenance/retrieval_manifest_2.json": {
+          "bytes": 1275,
+          "sha256": "a8932f37393ba3315b9852cbbc53e9d84bf8f461c0636679c2c9e355735be74d"
+        },
+        "originals/BRACE-Phase13A-20260912/provenance/retrieval_manifest_3.json": {
+          "bytes": 1191,
+          "sha256": "6170aa0b673314745c6ef8f344f06c62a45f01cca4ccdbec37e34aafe3001da7"
+        },
+        "originals/BRACE-Phase13A-20260912/provenance/retrieval_manifest_4.json": {
+          "bytes": 1164,
+          "sha256": "5ed70565fd49c024c7bbde9e3b694b88aa4b9e808f3472b6e4f2cf28315eccb5"
+        },
+        "originals/BRACE-Phase13A-20260912/recovery/BRACE_PHASE13A_RETURN.zip": {
+          "bytes": 2881516,
+          "sha256": "bad1a1d4c6ba885ebced7a96f0923f37c8172635433a1d79992020e5dad37be6"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/COHORT_POLICY_DRAFT.json": {
+          "bytes": 509,
+          "sha256": "d877f02ad7c3b89cca7bdba14b8bfca92c30d49604c013a26f690c493cac4aee"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/DATA_AUDIT.json": {
+          "bytes": 3244,
+          "sha256": "092f10efe1c7375ad7c24bdf4f83132e9fdab564a449cc2b950b3eeacc880398"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/EXECUTION.json": {
+          "bytes": 445,
+          "sha256": "91e0411216f507a4ba8b4ae9123469737fd11d20fbb80a2844c47b6c7bd7fa3c"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/PARSE_ERRORS.json": {
+          "bytes": 36,
+          "sha256": "13b23c0c5a856992c657fa322468896c3315413c94c793869c3f020bd21d6bec"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/RESULTS_REPORT.md": {
+          "bytes": 522,
+          "sha256": "61f05920ed03cdda0c5711dbff2a4fc3d4e0607f7d8e78bb1ca97a9734870fc6"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/ROOT_AUDIT.csv.gz": {
+          "bytes": 2864556,
+          "sha256": "9786a309dbb5bbab0c64ba895691bf9a5c3d2bd289f17731256faabd6beb7c27"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/SOURCE_IDENTITY.json": {
+          "bytes": 409,
+          "sha256": "b39adce2790bc4895b8b860b282a65919a781964fbe1ec8d1f4a88a6c3dd569c"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/TAOKE_SCHEMA_AUDIT.json": {
+          "bytes": 5547,
+          "sha256": "aa29947269120f89bc17eb131da1627cf9da484e692bf06b98d38c34780eeeac"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/WEIBO_FLAGGED_ROOTS.json": {
+          "bytes": 2850,
+          "sha256": "d1c38dd69fc12cd855723be43e5c78a4292e70ba1eadc4fc8465170efcf2fccb"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/WRAPPER_FAILURE_PATH_CHECK.json": {
+          "bytes": 393,
+          "sha256": "e1ba02b018b754151ad8a1d001a7d36db434e4df4f982bbcf153ceb00065a802"
+        },
+        "originals/BRACE-Phase13A-20260912/reference/phase13a_executed.py": {
+          "bytes": 17723,
+          "sha256": "2ecb241c1debf826ee88e2d100ed76200fea8f7b710e17c6ab7db0cf7056dc49"
+        },
+        "originals/BRACE-Phase13A-20260912/run_mac_phase13a.py": {
+          "bytes": 6706,
+          "sha256": "e91e28c6b5f9154375be66d34795cccaf140666c97daa0356c0b5778690a717d"
+        },
+        "originals/BRACE-Phase13A-20260912/run_phase13a/RETURN_RECEIPT.json": {
+          "bytes": 322,
+          "sha256": "efbd4f030556afe18b279582aa598037bc8c052dea3b696f57ecec828bf02e29"
+        },
+        "originals/BRACE-Phase13A-20260912/test_phase13a.py": {
+          "bytes": 4430,
+          "sha256": "8a65df05b8fb5de4814884129bced7aaa49ebb000ce79065e50330d4776e763c"
+        }
+      },
+      "standalone_zip": true
+    },
+    {
+      "archive": "ORIGINALS_PAYLOAD_02.zip",
+      "absolute_path": "/Users/fahad/Documents/Research-Projects/RADIC/ORIGINALS_EXPORT_20260914T074651Z/ORIGINALS_PAYLOAD_02.zip",
+      "bytes": 165591911,
+      "sha256": "e66a357622dad5f9153da316e46a1ec8e694c482b1191428733315a64a1b208b",
+      "group": "SEISMIC raw in original13B kit +13B RETURN and launch receipts",
+      "members": {
+        "originals/BRACE-Phase13B-20260912/MAC_PHASE13B_LAUNCH.log": {
+          "bytes": 1687,
+          "sha256": "3b0e04321c6c6d2ab8837eda6ede5e56ad794b9ab3d6c1b985ab132270619598"
+        },
+        "originals/BRACE-Phase13B-20260912/recovery/BRACE_PHASE13B_RETURN.zip": {
+          "bytes": 11656737,
+          "sha256": "2fe65dba9969eeb12c1ae35b51b3f5420442732d2f53a1a28de5bbf760018187"
+        },
+        "originals/BRACE-Phase13B-20260912/recovery/RETURN_RECEIPT.json": {
+          "bytes": 358,
+          "sha256": "0176f0686fe06f4a4a7cc058edbfefeb2041051faffbdceea2a0850659960bb5"
+        },
+        "originals/BRACE_Phase13B_Kit_20260912.zip": {
+          "bytes": 153933442,
+          "sha256": "8c763712764cbb41f393e980a1769c65a35ea8af07782564dee22846710bf0a4"
+        }
+      },
+      "standalone_zip": true
+    },
+    {
+      "archive": "ORIGINALS_PAYLOAD_03.zip",
+      "absolute_path": "/Users/fahad/Documents/Research-Projects/RADIC/ORIGINALS_EXPORT_20260914T074651Z/ORIGINALS_PAYLOAD_03.zip",
+      "bytes": 753643732,
+      "sha256": "9f92dfe942f32a84a9b896824aaec4bc08f7cc4c5f8a517ef4f89e21961c4aff",
+      "group": "13E complete candidates/selection +13F test +14 full supplement +receipts/lock",
+      "members": {
+        "originals/BRACE-Phase13E-20260912/SETUP_VERIFICATION.json": {
+          "bytes": 538,
+          "sha256": "15e47317042e2629902ef773b84771b4d18ccaba7ff2d33f8baf196bc0722c1c"
+        },
+        "originals/BRACE-Phase13E-20260912/recovery/BRACE_PHASE13E_RETURN_20260912T222937Z.zip": {
+          "bytes": 370201877,
+          "sha256": "b38668401ae3e1094fa8c9853983348b99f6d5bed525a3f397cbd4ee7a8770a8"
+        },
+        "originals/BRACE-Phase13E-20260912/recovery/INDEPENDENT_VERIFICATION.json": {
+          "bytes": 711,
+          "sha256": "fe62020d34b48b669dca701a763f19b7a4d2557da52c555cedd41a444f2fd9ef"
+        },
+        "originals/BRACE-Phase13E-20260912/recovery/PACKAGE_RECEIPT.json": {
+          "bytes": 669,
+          "sha256": "433256e9fa30844a9a3f116f10a019a37479534b72a46789554f5c460c51d13d"
+        },
+        "originals/BRACE-Phase13F-20260913/SETUP_VERIFICATION.json": {
+          "bytes": 801,
+          "sha256": "e539d6b76bd65c6184cbdb0afad9b6f185ade5a82a496646d49958977c99d68f"
+        },
+        "originals/BRACE-Phase13F-20260913/recovery/BRACE_PHASE13F_RETURN_20260913T064116Z.zip": {
+          "bytes": 160964430,
+          "sha256": "592e185fc9a0ad96265b407af71a3e80e9d66ccbe9da140a3bd32c36bfb51ce0"
+        },
+        "originals/BRACE-Phase13F-20260913/recovery/INDEPENDENT_VERIFICATION.json": {
+          "bytes": 713,
+          "sha256": "cbd0f9da3cb9b798e6a72328559ed526d7abb220146b6592562384007fcdcf78"
+        },
+        "originals/BRACE-Phase13F-20260913/recovery/PACKAGE_RECEIPT.json": {
+          "bytes": 671,
+          "sha256": "f9b61a696ec339e173bfa55f35f280e52de9d513c14158b8881c0406576c3154"
+        },
+        "originals/BRACE-Phase14-20260913/PHASE14_EXECUTION_LOCK.json": {
+          "bytes": 194,
+          "sha256": "e210a37a35667011a97af0ed57ea986d887a8f80288cd09c1fbb81ffe3519353"
+        },
+        "originals/BRACE-Phase14-20260913/SETUP_VERIFICATION.json": {
+          "bytes": 1420,
+          "sha256": "dacdba312a243b6013cd8206b7670fa29446ddb5a90a7224e6e0c601e5fc4dbe"
+        },
+        "originals/BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z.zip": {
+          "bytes": 222470817,
+          "sha256": "5295b94b6c6bfef77b14bbe94d16ed977e489e05dafe5e0b667d49cd1f7d2784"
+        },
+        "originals/BRACE-Phase14-20260913/recovery/BRACE_PHASE14_RETURN_20260913T192805Z_RECEIPT.json": {
+          "bytes": 306,
+          "sha256": "cf92f07b0366c176f9435ea9532ca6a6f58295110741ad853b3fad8d1b7c7701"
+        },
+        "originals/BRACE-Phase14-20260913/recovery/FINAL_RETURN_VERIFICATION.json": {
+          "bytes": 320,
+          "sha256": "603fe150510282cb68a930ede9d844b8eabfe9328ea3d0e49c70e26dde72b7d0"
+        }
+      },
+      "standalone_zip": true
+    }
+  ],
+  "restore_map": "RESTORE_MAP.json",
+  "inventory": "ORIGINALS_INVENTORY.csv",
+  "members_unique_across_payloads": true,
+  "all_original_files_covered_once": true
+}

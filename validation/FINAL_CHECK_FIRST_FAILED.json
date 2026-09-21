@@ -1,0 +1,25 @@
+{
+  "stage": "check-all",
+  "verified_files": 2940,
+  "steps": [
+    {
+      "name": "raw",
+      "seconds": 19.666546610000296,
+      "returncode": 0
+    },
+    {
+      "name": "primary",
+      "seconds": 8.076283280000098,
+      "returncode": 0,
+      "execution": "unchanged original function in process"
+    }
+  ],
+  "status": "failed",
+  "full_refit_to_test_reproduction": false,
+  "interpretation": "Frozen-parent stage replay; original locks preserved.",
+  "raw_preparation": {
+    "passed": true,
+    "portable_entries": 22
+  },
+  "error": "Compressed file ended before the end-of-stream marker was reached"
+}

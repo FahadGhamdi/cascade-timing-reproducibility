@@ -1,0 +1,34 @@
+{
+  "figures_complete": true,
+  "new_selection": 0,
+  "noise_analysis": {
+    "accounting": {
+      "component_fit_calls": 48,
+      "new_procedure_fit_attempts": 42,
+      "prediction_failure_rows": 0,
+      "predictions_attempted": 630000,
+      "predictions_returned": 630000,
+      "score_attempts": 630000,
+      "score_failures": 0,
+      "score_successes": 630000
+    },
+    "available_contrasts": 12,
+    "bootstrap_vectors": 20000,
+    "complete_procedures": 6,
+    "new_selection": 0,
+    "noise_realizations": 3,
+    "old_model_refits": 0,
+    "post13F_supplement": true,
+    "scheduled_jobs": 42,
+    "status": "supplement_completed_with_explicit_completeness",
+    "validation_evaluations": 0
+  },
+  "original_models_refitted": 0,
+  "parent_unchanged": true,
+  "source_after": {
+    "all_match": true,
+    "files": 108
+  },
+  "status": "supplement_completed_with_explicit_completeness",
+  "validation_evaluations": 0
+}

@@ -1,0 +1,22 @@
+test_bin_boundaries (__main__.Checks.test_bin_boundaries) ... ok
+test_bin_denominators_preserve_root_weights (__main__.Checks.test_bin_denominators_preserve_root_weights) ... ok
+test_bootstrap_stream_batch_reproducibility (__main__.Checks.test_bootstrap_stream_batch_reproducibility) ... ok
+test_empty_bootstrap_denominator_is_not_zero_effect (__main__.Checks.test_empty_bootstrap_denominator_is_not_zero_effect) ... ok
+test_negative_and_fractional_count_rejected (__main__.Checks.test_negative_and_fractional_count_rejected) ... ok
+test_noise_reproducibility (__main__.Checks.test_noise_reproducibility) ... ok
+test_noise_stream_separation (__main__.Checks.test_noise_stream_separation) ... ok
+test_noise_support (__main__.Checks.test_noise_support) ... ok
+test_rejected_noise_identity (__main__.Checks.test_rejected_noise_identity) ... ok
+test_seed_loss_not_score_of_averaged_median (__main__.Checks.test_seed_loss_not_score_of_averaged_median) ... ok
+test_unequal_cluster_weighting (__main__.Checks.test_unequal_cluster_weighting) ... ok
+test_unsafe_zip_names (__main__.Checks.test_unsafe_zip_names) ... ok
+test_blocked_package_preserves_failure_and_snapshots (qualification14.ControlChecks.test_blocked_package_preserves_failure_and_snapshots) ... ok
+test_complete_stream_rejects_target_duplicate_tail_and_missing_row (qualification14.ControlChecks.test_complete_stream_rejects_target_duplicate_tail_and_missing_row) ... ok
+test_existing_output_blocks_invocation_before_fitting (qualification14.ControlChecks.test_existing_output_blocks_invocation_before_fitting) ... ok
+test_missing_seed_withholds_full_mean (qualification14.ControlChecks.test_missing_seed_withholds_full_mean) ... ok
+test_worker_timeout_is_explicit (qualification14.ControlChecks.test_worker_timeout_is_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.428s
+
+OK

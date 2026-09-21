@@ -1,0 +1,226 @@
+[
+  {
+    "file": "evidence/ARCHIVE_REVIEW.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/ENVIRONMENT.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/BOOTSTRAP_DESIGN.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/TEST_SAMPLE_DESCRIPTIVES.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/MODEL_LOCK.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/INDEPENDENT_REVIEW.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/CALIBRATION.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/PROCEDURE_METRICS.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/PRIMARY_COMPARISONS.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/ANALYSIS_REPORT.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/DUPLICATE_SENSITIVITY.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/PHASE13F_REPORT.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/ARCHIVE_REVIEW.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/NOISE_MATRIX_BINDINGS.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/STRATA_BOOTSTRAP.npz",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/MAC_INDEPENDENT_AUDIT.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/PREFLIGHT.log",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/REAGGREGATION.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/STAGE_B_BOOTSTRAP_DESIGN.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/ORIGINAL_KIT_DELIVERY_QA.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/NOISE_BOOTSTRAP.npz",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/STAGE_A_BOOTSTRAP_DESIGN.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/PROCEDURE_COMPLETENESS.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/ENVIRONMENT.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/MAC_SETUP_VERIFICATION.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/MAC_REVIEW.md",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/REVIEW_EXECUTION.log",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/PHASE14_REPORT.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/PARENT_VERIFICATION.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/NOISE_COMPARISONS.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/STAGE_B_REPORT.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/INDEPENDENT_PHASE14_REVIEW.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/STAGE_A_REFERENCE_COMPARISON.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/STRATA_RESULTS.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/JOB_REVIEW.json",
+    "identical": true
+  },
+  {
+    "file": "evidence/phase14/STAGE_A_REPORT.json",
+    "identical": true
+  },
+  {
+    "file": "tables/STRATUM_LEVELS.csv",
+    "identical": true
+  },
+  {
+    "file": "tables/TIMING_STRATA.csv",
+    "identical": true
+  },
+  {
+    "file": "tables/MSLE_SAVED_MEDIANS.csv",
+    "identical": true
+  },
+  {
+    "file": "tables/NOISE_REALIZATION_SUMMARIES.csv",
+    "identical": true
+  },
+  {
+    "file": "tables/EMPIRICAL_REFERENCES_BY_STRATUM.csv",
+    "identical": true
+  },
+  {
+    "file": "tables/PER_WINDOW_PRIMARY_FAMILIES.md",
+    "identical": true
+  },
+  {
+    "file": "tables/NOISE_CONTROL_TABLE.md",
+    "identical": true
+  },
+  {
+    "file": "tables/INTERVAL_COVERAGE.md",
+    "identical": true
+  },
+  {
+    "file": "tables/NOISE_COMPARISONS.csv",
+    "identical": true
+  },
+  {
+    "file": "tables/ALL_PROCEDURES.md",
+    "identical": true
+  },
+  {
+    "file": "tables/TEST_SAMPLE_PROFILE.md",
+    "identical": true
+  },
+  {
+    "file": "tables/PRIMARY_TABLE.md",
+    "identical": true
+  },
+  {
+    "file": "protocols/CONFIG_14.json",
+    "identical": true
+  },
+  {
+    "file": "protocols/PROTOCOL_PHASE14.md",
+    "identical": true
+  },
+  {
+    "file": "protocols/PROTOCOL_PHASE13F.md",
+    "identical": true
+  },
+  {
+    "file": "protocols/PROTOCOL_PHASE13B.md",
+    "identical": true
+  },
+  {
+    "file": "protocols/PROTOCOL_PHASE13E.md",
+    "identical": true
+  },
+  {
+    "file": "protocols/LITERATURE_MATRIX_BEFORE_TEST.md",
+    "identical": true
+  },
+  {
+    "file": "protocols/PROTOCOL_FREEZE_RECEIPT.json",
+    "identical": true
+  },
+  {
+    "file": "protocols/NOISE_JOBS.json",
+    "identical": true
+  }
+]

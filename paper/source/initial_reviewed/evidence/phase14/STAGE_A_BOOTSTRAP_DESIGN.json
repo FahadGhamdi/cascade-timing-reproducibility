@@ -1,0 +1,18 @@
+[
+  {
+    "draws": 2000,
+    "indices_sha256": "cd142fbd3664262de45f487df7929fd69f25a9ddeeddf15c593c964db201cba6",
+    "interval_scope": "pointwise exploratory; no simultaneous significance claims",
+    "roots": 5000,
+    "source": "weibo",
+    "units": 3467
+  },
+  {
+    "draws": 2000,
+    "indices_sha256": "b6bafe89eb3ccd14c48a06424038a1070e729f6ed7b454bd95b046cc67fc12ad",
+    "interval_scope": "pointwise exploratory; no simultaneous significance claims",
+    "roots": 5000,
+    "source": "seismic",
+    "units": 5000
+  }
+]

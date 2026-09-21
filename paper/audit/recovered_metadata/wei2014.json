@@ -1,0 +1,636 @@
+{
+  "key": "wei2014",
+  "requested_title": "Calibration tests for count data",
+  "retrieved_from": "https://api.crossref.org/works?query.title=Calibration+tests+for+count+data&rows=3",
+  "review_required": false,
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          31
+        ]
+      ],
+      "date-time": "2026-07-31T13:08:55Z",
+      "timestamp": 1785503335859,
+      "version": "3.56.0"
+    },
+    "reference-count": 40,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2014-07-01T00:00:00Z",
+          "timestamp": 1404172800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "TEST"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1007/s11749-014-0380-8",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          7,
+          1
+        ]
+      ],
+      "date-time": "2014-07-01T13:55:10Z",
+      "timestamp": 1404222910000
+    },
+    "page": "787-805",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 22,
+    "title": [
+      "Calibration tests for count data"
+    ],
+    "prefix": "10.1007",
+    "volume": "23",
+    "author": [
+      {
+        "given": "Wei",
+        "family": "Wei",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Leonhard",
+        "family": "Held",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2014,
+          7,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "380_CR1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1175/1520-0493(1950)078<0001:VOFEIT>2.0.CO;2",
+        "volume": "78",
+        "author": "GW Brier",
+        "year": "1950",
+        "unstructured": "Brier GW (1950) Verification of forecasts expressed in terms of probability. Mon Weather Rev 78:1–3",
+        "journal-title": "Mon Weather Rev"
+      },
+      {
+        "issue": "4",
+        "key": "380_CR2",
+        "doi-asserted-by": "crossref",
+        "first-page": "841",
+        "DOI": "10.2307/2527341",
+        "volume": "39",
+        "author": "PF Christoffersen",
+        "year": "1998",
+        "unstructured": "Christoffersen PF (1998) Evaluating interval forecasts. Int Econ Rev 39(4):841–862",
+        "journal-title": "Int Econ Rev"
+      },
+      {
+        "issue": "1",
+        "key": "380_CR3",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.1016/j.jeconom.2005.07.026",
+        "volume": "135",
+        "author": "V Corradi",
+        "year": "2006",
+        "unstructured": "Corradi V, Swanson NR (2006) Predictive density and conditional confidence interval accuracy tests. J Econ 135(1):187–228",
+        "journal-title": "J Econ"
+      },
+      {
+        "key": "380_CR4",
+        "doi-asserted-by": "crossref",
+        "first-page": "562",
+        "DOI": "10.1093/biomet/45.3-4.562",
+        "volume": "45",
+        "author": "DR Cox",
+        "year": "1958",
+        "unstructured": "Cox DR (1958) Two further applications of a model for binary regression. Biometrika 45:562–565",
+        "journal-title": "Biometrika"
+      },
+      {
+        "key": "380_CR5",
+        "doi-asserted-by": "crossref",
+        "first-page": "1254",
+        "DOI": "10.1111/j.1541-0420.2009.01191.x",
+        "volume": "65",
+        "author": "C Czado",
+        "year": "2009",
+        "unstructured": "Czado C, Gneiting T, Held L (2009) Predictive model assessment for count data. Biometrics 65:1254–1261",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "380_CR6",
+        "doi-asserted-by": "crossref",
+        "first-page": "278",
+        "DOI": "10.2307/2981683",
+        "volume": "147",
+        "author": "AP Dawid",
+        "year": "1984",
+        "unstructured": "Dawid AP (1984) Statistical theory: the prequential appoach. J Royal Stat Soc Ser A 147:278–292",
+        "journal-title": "J Royal Stat Soc Ser A"
+      },
+      {
+        "key": "380_CR7",
+        "doi-asserted-by": "crossref",
+        "first-page": "65",
+        "DOI": "10.1214/aos/1018031101",
+        "volume": "27",
+        "author": "AP Dawid",
+        "year": "1999",
+        "unstructured": "Dawid AP, Sebastiani P (1999) Coherent dispersion criteria for optimal experimental design. Ann Stat 27:65–81",
+        "journal-title": "Ann Stat"
+      },
+      {
+        "key": "380_CR8",
+        "volume-title": "Probability and statistics",
+        "author": "M DeGroot",
+        "year": "2012",
+        "unstructured": "DeGroot M, Schervish M (2012) Probability and statistics, 4th edn. Addison-Wesley, Boston",
+        "edition": "4"
+      },
+      {
+        "issue": "3",
+        "key": "380_CR9",
+        "doi-asserted-by": "crossref",
+        "first-page": "253",
+        "DOI": "10.1080/07350015.1995.10524599",
+        "volume": "13",
+        "author": "FX Diebold",
+        "year": "1995",
+        "unstructured": "Diebold FX, Mariano RS (1995) Comparing predictive accuracy. J Bus Econ Stat 13(3):253–263",
+        "journal-title": "J Bus Econ Stat"
+      },
+      {
+        "key": "380_CR10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Diebold FX, Gunther TA, Tay AS (1998) Evaluating density forecasts with applications to financial risk management. Int Econ Rev 39(4):863–883",
+        "DOI": "10.2307/2527342"
+      },
+      {
+        "issue": "12",
+        "key": "380_CR11",
+        "doi-asserted-by": "crossref",
+        "first-page": "2935",
+        "DOI": "10.1175/JCLI3729.1",
+        "volume": "19",
+        "author": "JB Elsner",
+        "year": "2006",
+        "unstructured": "Elsner JB, Jagger TH (2006) Prediction models for annual US hurricane counts. J Clim 19(12):2935–2952",
+        "journal-title": "J Clim"
+      },
+      {
+        "key": "380_CR12",
+        "doi-asserted-by": "crossref",
+        "first-page": "985",
+        "DOI": "10.1175/1520-0450(1969)008<0985:ASSFPF>2.0.CO;2",
+        "volume": "8",
+        "author": "ES Epstein",
+        "year": "1969",
+        "unstructured": "Epstein ES (1969) A scoring system for probability forecasts of ranked categories. J Appl Meteorol 8:985–987",
+        "journal-title": "J Appl Meteorol"
+      },
+      {
+        "key": "380_CR13",
+        "doi-asserted-by": "crossref",
+        "first-page": "547",
+        "DOI": "10.2307/2983331",
+        "volume": "159",
+        "author": "CP Farrington",
+        "year": "1996",
+        "unstructured": "Farrington CP, Andrews NJ, Beale AD, Catchpole MA (1996) A statistical algorithm for the early detection of outbreaks of infectious disease. J Royal Stat Soc Ser A 159:547–563",
+        "journal-title": "J Royal Stat Soc Ser A"
+      },
+      {
+        "issue": "4",
+        "key": "380_CR14",
+        "doi-asserted-by": "crossref",
+        "first-page": "479",
+        "DOI": "10.1007/s11222-008-9109-4",
+        "volume": "19",
+        "author": "S Frühwirth-Schnatter",
+        "year": "2009",
+        "unstructured": "Frühwirth-Schnatter S, Frühwirth R, Held L, Rue H (2009) Improved auxiliary mixture sampling for hierarchical models of non-Gaussian data. Stat Comput 19(4):479–492",
+        "journal-title": "Stat Comput"
+      },
+      {
+        "key": "380_CR15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gneiting T (2008) Editorial: Probabilistic forecasting. J Roy Statist Soc Ser A 171(2), pp. 319–321. doi: 10.1111/j.1467-985X.2007.00522.x",
+        "DOI": "10.1111/j.1467-985X.2007.00522.x"
+      },
+      {
+        "key": "380_CR16",
+        "doi-asserted-by": "crossref",
+        "first-page": "243",
+        "DOI": "10.1111/j.1467-9868.2007.00587.x",
+        "volume": "69",
+        "author": "T Gneiting",
+        "year": "2007",
+        "unstructured": "Gneiting T, Balabdaoui F, Raftery AE (2007) Probabilistic forecasts, calibration and sharpness. J Royal Stat Soc Ser B 69:243–268",
+        "journal-title": "J Royal Stat Soc Ser B"
+      },
+      {
+        "issue": "2",
+        "key": "380_CR17",
+        "doi-asserted-by": "crossref",
+        "first-page": "211",
+        "DOI": "10.1007/s11749-008-0114-x",
+        "volume": "17",
+        "author": "T Gneiting",
+        "year": "2008",
+        "unstructured": "Gneiting T, Stanberry LI, Grimit EP, Held L, Johnson NA (2008) Assessing probabilistic forecasts of multivariate quantities, with an application to ensemble predictions of surface winds. Test 17(2):211–235",
+        "journal-title": "Test"
+      },
+      {
+        "key": "380_CR18",
+        "doi-asserted-by": "crossref",
+        "first-page": "107",
+        "DOI": "10.1111/j.2517-6161.1952.tb00104.x",
+        "volume": "14",
+        "author": "IJ Good",
+        "year": "1952",
+        "unstructured": "Good IJ (1952) Rational decisions. J Royal Stat Soc Ser B 14:107–114",
+        "journal-title": "J Royal Stat Soc Ser B"
+      },
+      {
+        "issue": "2",
+        "key": "380_CR19",
+        "doi-asserted-by": "crossref",
+        "first-page": "254",
+        "DOI": "10.1080/07350015.1998.10524759",
+        "volume": "16",
+        "author": "DI Harvey",
+        "year": "1998",
+        "unstructured": "Harvey DI, Leybourne SJ, Newbold P (1998) Tests for forecast encompassing. J Bus Econ Stat 16(2):254–259",
+        "journal-title": "J Bus Econ Stat"
+      },
+      {
+        "issue": "24",
+        "key": "380_CR20",
+        "doi-asserted-by": "crossref",
+        "first-page": "4179",
+        "DOI": "10.1002/sim.2674",
+        "volume": "25",
+        "author": "SH Heisterkamp",
+        "year": "2006",
+        "unstructured": "Heisterkamp SH, Dekkers AL, Heijne JC (2006) Automated detection of infectious disease outbreaks: hierarchical time series models. Stat Med 25(24):4179–4196",
+        "journal-title": "Stat Med"
+      },
+      {
+        "issue": "6",
+        "key": "380_CR21",
+        "doi-asserted-by": "crossref",
+        "first-page": "824",
+        "DOI": "10.1002/bimj.201200037",
+        "volume": "54",
+        "author": "L Held",
+        "year": "2012",
+        "unstructured": "Held L, Paul M (2012) Modeling seasonality in space-time infectious disease surveillance data. Biom J 54(6):824–843",
+        "journal-title": "Biom J"
+      },
+      {
+        "key": "380_CR22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Held L, Höhle M, Hofmann M (2005) A statistical framework for the analysis of multivariate infectious disease surveillance counts. Stat Model 5:187–199",
+        "DOI": "10.1191/1471082X05st098oa"
+      },
+      {
+        "issue": "3",
+        "key": "380_CR23",
+        "doi-asserted-by": "crossref",
+        "first-page": "422",
+        "DOI": "10.1093/biostatistics/kxj016",
+        "volume": "7",
+        "author": "L Held",
+        "year": "2006",
+        "unstructured": "Held L, Hofmann M, Höhle M, Schmid V (2006) A two-component model for counts of infectious diseases. Biostatistics 7(3):422–437",
+        "journal-title": "Biostatistics"
+      },
+      {
+        "issue": "4",
+        "key": "380_CR24",
+        "doi-asserted-by": "crossref",
+        "first-page": "1295",
+        "DOI": "10.1111/j.1541-0420.2010.01406.x",
+        "volume": "66",
+        "author": "L Held",
+        "year": "2010",
+        "unstructured": "Held L, Rufibach K, Balabdaoui F (2010) A score regression approach to assess calibration of continuous probabilistic predictions. Biometrics 66(4):1295–1305",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "380_CR25",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/CBO9780511973420",
+        "volume-title": "Negative binomial regression",
+        "author": "JM Hilbe",
+        "year": "2011",
+        "unstructured": "Hilbe JM (2011) Negative binomial regression, 2nd edn. Cambridge University Press, Cambridge",
+        "edition": "2"
+      },
+      {
+        "key": "380_CR26",
+        "doi-asserted-by": "crossref",
+        "first-page": "78",
+        "DOI": "10.1214/aoms/1177705989",
+        "volume": "31",
+        "author": "S Katti",
+        "year": "1960",
+        "unstructured": "Katti S (1960) The moments of the absolute difference and the absolute deviation of distributions. Ann Math Stat 31:78–85",
+        "journal-title": "Ann Math Stat"
+      },
+      {
+        "issue": "2",
+        "key": "380_CR27",
+        "doi-asserted-by": "crossref",
+        "first-page": "69",
+        "DOI": "10.1016/S0893-9659(98)00013-5",
+        "volume": "11",
+        "author": "C Knessl",
+        "year": "1998",
+        "unstructured": "Knessl C (1998) Integral representations and asymptotic expansions for Shannon and Renyi entropies. Appl Math Lett 11(2):69–74",
+        "journal-title": "Appl Math Lett"
+      },
+      {
+        "key": "380_CR28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Manitz J, Höhle M (2013) Bayesian outbreak detection algorithm for monitoring reported cases of campylobacteriosis in Germany. Biom J.",
+        "DOI": "10.1002/bimj.201200141"
+      },
+      {
+        "issue": "2",
+        "key": "380_CR29",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.1175/MWR3284.1",
+        "volume": "135",
+        "author": "S Mason",
+        "year": "2007",
+        "unstructured": "Mason S, Galpin J, Goddard L, Graham N, Rajartnam B (2007) Conditional exceedance probabilities. Mon Weather Rev 135(2):363–372",
+        "journal-title": "Mon Weather Rev"
+      },
+      {
+        "issue": "2",
+        "key": "380_CR30",
+        "doi-asserted-by": "crossref",
+        "first-page": "315",
+        "DOI": "10.1016/j.ijforecast.2004.11.001",
+        "volume": "21",
+        "author": "B McCabe",
+        "year": "2005",
+        "unstructured": "McCabe B, Martin G (2005) Bayesian predictions of low count time series. Int J Forecast 21(2):315–330",
+        "journal-title": "Int J Forecast"
+      },
+      {
+        "issue": "2",
+        "key": "380_CR31",
+        "doi-asserted-by": "crossref",
+        "first-page": "253",
+        "DOI": "10.1111/j.1467-9868.2010.00762.x",
+        "volume": "73",
+        "author": "BP McCabe",
+        "year": "2011",
+        "unstructured": "McCabe BP, Martin GM, Harris D (2011) Efficient probabilistic forecasts for counts. J Royal Stat Soc Ser B (Stat Methodol) 73(2):253–272",
+        "journal-title": "J Royal Stat Soc Ser B (Stat Methodol)"
+      },
+      {
+        "key": "380_CR32",
+        "doi-asserted-by": "crossref",
+        "first-page": "1330",
+        "DOI": "10.1175/1520-0493(1987)115<1330:AGFFFV>2.0.CO;2",
+        "volume": "115",
+        "author": "AH Murphy",
+        "year": "1987",
+        "unstructured": "Murphy AH, Winkler RL (1987) A general framework for forecast verification. Mon Weather Rev 115:1330–1338",
+        "journal-title": "Mon Weather Rev"
+      },
+      {
+        "key": "380_CR33",
+        "doi-asserted-by": "crossref",
+        "first-page": "1413",
+        "DOI": "10.1002/sim.2274",
+        "volume": "25",
+        "author": "K Nelson",
+        "year": "2006",
+        "unstructured": "Nelson K, Leroux B (2006) Statistical models for autocorrelated data. Stat Med 25:1413–1430",
+        "journal-title": "Stat Med"
+      },
+      {
+        "issue": "7",
+        "key": "380_CR34",
+        "doi-asserted-by": "crossref",
+        "first-page": "1206",
+        "DOI": "10.1002/sim.5595",
+        "volume": "32",
+        "author": "A Noufaily",
+        "year": "2013",
+        "unstructured": "Noufaily A, Enki DG, Farrington P, Garthwaite P, Andrews N, Charlett A (2013) An improved algorithm for outbreak detection in multiple surveillance systems. Stat Med 32(7):1206–1222",
+        "journal-title": "Stat Med"
+      },
+      {
+        "key": "380_CR35",
+        "doi-asserted-by": "crossref",
+        "first-page": "6250",
+        "DOI": "10.1002/sim.3440",
+        "volume": "27",
+        "author": "M Paul",
+        "year": "2008",
+        "unstructured": "Paul M, Held L, Toschke A (2008) Multivariate modelling of infectious disease surveillance data. Stat Med 27:6250–6267",
+        "journal-title": "Stat Med"
+      },
+      {
+        "key": "380_CR36",
+        "doi-asserted-by": "crossref",
+        "first-page": "283",
+        "DOI": "10.1002/for.3980040305",
+        "volume": "4",
+        "author": "JQ Smith",
+        "year": "1985",
+        "unstructured": "Smith JQ (1985) Diagnostic checks of non-standard time series models. J Forecast 4:283–291",
+        "journal-title": "J Forecast"
+      },
+      {
+        "key": "380_CR37",
+        "doi-asserted-by": "crossref",
+        "first-page": "421",
+        "DOI": "10.1002/sim.4780050506",
+        "volume": "5",
+        "author": "DJ Spiegelhalter",
+        "year": "1986",
+        "unstructured": "Spiegelhalter DJ (1986) Probabilistic prediction in patient management. Stat Med 5:421–433",
+        "journal-title": "Stat Med"
+      },
+      {
+        "key": "380_CR38",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-0-387-77244-8",
+        "volume-title": "Clinical prediction models",
+        "author": "E Steyerberg",
+        "year": "2009",
+        "unstructured": "Steyerberg E (2009) Clinical prediction models. Springer, New York"
+      },
+      {
+        "key": "380_CR39",
+        "volume-title": "Econometric analysis of count data",
+        "author": "R Winkelmann",
+        "year": "2008",
+        "unstructured": "Winkelmann R (2008) Econometric analysis of count data, 5th edn. Springer, New York",
+        "edition": "5"
+      },
+      {
+        "issue": "1",
+        "key": "380_CR40",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1007/BF02562681",
+        "volume": "5",
+        "author": "RL Winkler",
+        "year": "1996",
+        "unstructured": "Winkler RL (1996) Scoring rules and the evaluation of probabilities. Test 5(1):1–60",
+        "journal-title": "Test"
+      }
+    ],
+    "container-title": [
+      "TEST"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11749-014-0380-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1007/s11749-014-0380-8/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11749-014-0380-8",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          28
+        ]
+      ],
+      "date-time": "2024-05-28T12:58:44Z",
+      "timestamp": 1716901124000
+    },
+    "score": 34.384003,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/s11749-014-0380-8"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          7,
+          1
+        ]
+      ]
+    },
+    "references-count": 40,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "380"
+    ],
+    "URL": "https://doi.org/10.1007/s11749-014-0380-8",
+    "ISSN": [
+      "1133-0686",
+      "1863-8260"
+    ],
+    "issn-type": [
+      {
+        "value": "1133-0686",
+        "type": "print"
+      },
+      {
+        "value": "1863-8260",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          7,
+          1
+        ]
+      ]
+    },
+    "_title_similarity": 1.0
+  }
+}

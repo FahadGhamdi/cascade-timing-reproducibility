@@ -1,0 +1,39 @@
+\hypertarget{evaluation-and-statistical-analysis}{%
+\section{Evaluation and statistical analysis}}
+
+\hypertarget{scores-and-calibration}{%
+\subsection{Scores and calibration}}
+
+The primary score is discrete CRPS, also expressible as a ranked probability score on integer support:
+
+\[
+\operatorname{CRPS}(F,y)=\sum_{k=0}^{\infty}\left[F(k)-\mathbf1\{y\le k\}\right]^2.
+\]
+
+Secondary diagnostics are Brier loss \cite{brier1950} for \(Y=0\), absolute error of the predictive median, central 90\% interval score and width, and coverage at 50\%, 80\%, 90\% and 95\%. Count calibration uses randomized PIT and nonrandomized PIT-bin mass, with ten fixed bins, alongside no-growth reliability bins. The randomized value lies between \(F(y-1)\) and \(F(y)\), using a reproducible uniform shared across procedures for each case. The nonrandomized construction allocates probability mass across the same interval; boundary cases are specified in the implementation. These diagnostics follow established count-forecast assessment principles \cite{czado2009}.
+
+Central discrete intervals may be conservative, and marginal coverage alone does not establish calibration conditional on predictors. We interpret coverage with interval width, interval score and PIT. The numerical score contract and retained failures are documented in Supplementary Section S3. No test-driven recalibration is performed.
+
+\hypertarget{estimands-and-paired-uncertainty}{%
+\subsection{Estimands and paired uncertainty}}
+
+For a root, we average loss over its three windows and then over the prescribed model seeds. Let \(\bar L^{(a)}_{i,f}\) denote that average for information set \(a\) and family \(f\). The primary contrast is
+
+\[
+\Delta_{s,f}=\frac{1}{N_s}\sum_{i\in s}\left(\bar L^{(1)}_{i,f}-\bar L^{(0)}_{i,f}\right),
+\]
+
+for three families and two sources. Negative values favor timing. The stochastic-procedure target averages losses of separately fitted seeded models; it does not score an ensemble mixture. Relative reduction, \(1-\bar L^{(1)}/\bar L^{(0)}\), is a point summary. No operational practical-significance cutoff is imposed; Supplementary Section S8 preserves the earlier protocol convention.
+
+Ten thousand paired bootstrap vectors are drawn per source and reused across its three contrasts. Weibo resamples root-user groups uniformly, then divides sampled loss sums by sampled root counts to preserve root weighting. SEISMIC resamples roots. All windows and seeds remain within their root. Percentile bounds at \(0.05/12\) and \(1-0.05/12\) give approximate 99.1667\% intervals for each contrast, using Bonferroni adjustment over six comparisons at family level 0.05.
+
+These intervals condition on the retained fitted models, selected samples and resampling assumptions. They exclude uncertainty from retraining, source selection and unresolved dependence beyond the recorded grouping. Per-window metrics, between-family rankings, calibration and duplicate sensitivity are descriptive. The planned sensitivity removes duplicate-token-flagged Weibo test roots from the descriptive contrasts only, preserving the primary sample and fitted models.
+
+\hypertarget{supplementary-interpretation-after-primary-testing}{%
+\subsection{Supplementary interpretation after primary testing}}
+
+Two supplementary analyses were specified after the primary results were known. Within each source and each prefix window, saved losses are stratified by 0, 1--2, 3--9, 10--49 and at least 50 recorded nonroot events. All three families and both empirical references are retained. Windows are not pooled to infer a density pattern. For the 90 timing contrasts, 2,000 common resamples per source preserve the primary sampling units and root weighting. Pointwise 95\% intervals are reported only with at least 30 observed sampling units and sufficient valid resamples. These are exploratory subgroup intervals, separate from the six primary comparisons. Fixed bins and complete tables limit selective presentation; they do not remove the post-test origin of the analysis.
+
+The complementary negative control adds seven independent Uniform(-\(\sqrt{3}\), \(\sqrt{3}\)) coordinates to I0. Three fixed noise realizations are crossed with the original model seeds, sharing each realization across families and generating separate training and test streams. New control models use the previously selected settings without validation reselection. Original I0/I1 forecasts remain fixed. We average losses over windows, fitting seeds and noise realizations, then compare noise-I0 and I1-noise. A separate family of 12 supplementary contrasts uses 10,000 paired bootstrap vectors per source with the original grouping and root weighting, and percentile bounds at 0.05/24 and 1-0.05/24. These approximate 99.5833\% individual intervals condition on the fitted models and three fixed realizations; they do not quantify variability over arbitrary new training samples or noise draws.
+
+This control matches input dimension. It assesses uninformative augmentation under the specified fitting procedure, while leaving differences in predictor dependence, split opportunities and effective flexibility. Noise can itself improve a forest's accuracy, and unrestricted timing-feature permutation can force extrapolation. These precedents motivate retaining every control outcome and avoiding a pure-capacity interpretation \cite{mentch2022,hooker2021}. Supplementary Section S8 gives the specification and complete results. The supplementary analysis followed observation of the primary test results; its multiplicity family is separate from the original six comparisons. {\small\textit{Preparation:~\cite{openai2026}.}}

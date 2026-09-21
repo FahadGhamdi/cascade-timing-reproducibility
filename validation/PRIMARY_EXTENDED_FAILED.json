@@ -1,0 +1,15 @@
+{
+  "stage": "primary",
+  "verified_files": 2940,
+  "steps": [
+    {
+      "name": "primary",
+      "seconds": 8.112716294000165,
+      "returncode": 0
+    }
+  ],
+  "status": "failed",
+  "full_refit_to_test_reproduction": false,
+  "interpretation": "Frozen-parent stage replay; original locks preserved.",
+  "error": "Compressed file ended before the end-of-stream marker was reached"
+}

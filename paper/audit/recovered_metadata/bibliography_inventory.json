@@ -1,0 +1,217 @@
+{
+  "count": 35,
+  "keys": [
+    "szabo2010",
+    "pinto2013",
+    "cheng2014",
+    "mishra2016",
+    "tideh2016",
+    "haimovich2022",
+    "counts2008",
+    "proper2007",
+    "czado2009",
+    "scoring2019",
+    "martin2016",
+    "hooker2021",
+    "rpp2014",
+    "wei2014",
+    "kolassa2016",
+    "calibration2007",
+    "gneiting2011",
+    "brier1950",
+    "deephawkes2017",
+    "casflow2023",
+    "hip2017",
+    "zhou2021",
+    "seismic2015",
+    "maseptide2018",
+    "casper2022",
+    "ctcp2023",
+    "casft2024",
+    "cascadebench2026",
+    "qrf2006",
+    "ngboost2020",
+    "cawley2010",
+    "hofman2017",
+    "mentch2022",
+    "deepcas2016",
+    "openai2026"
+  ],
+  "audit": [
+    [
+      "szabo2010",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1145/1787234.1787254"
+    ],
+    [
+      "pinto2013",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1145/2433396.2433443"
+    ],
+    [
+      "cheng2014",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1145/2566486.2567997"
+    ],
+    [
+      "mishra2016",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1145/2983323.2983812"
+    ],
+    [
+      "tideh2016",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1609/icwsm.v10i1.14717"
+    ],
+    [
+      "haimovich2022",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.14778/3503585.3503593"
+    ],
+    [
+      "counts2008",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.18637/jss.v027.i08"
+    ],
+    [
+      "proper2007",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1198/016214506000001437"
+    ],
+    [
+      "czado2009",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1111/j.1541-0420.2009.01191.x"
+    ],
+    [
+      "scoring2019",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.18637/jss.v090.i12"
+    ],
+    [
+      "martin2016",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1145/2872427.2883001"
+    ],
+    [
+      "hooker2021",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1007/s11222-021-10057-z"
+    ],
+    [
+      "rpp2014",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1609/aaai.v28i1.8739"
+    ],
+    [
+      "wei2014",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1007/s11749-014-0380-8"
+    ],
+    [
+      "kolassa2016",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1016/j.ijforecast.2015.12.004"
+    ],
+    [
+      "calibration2007",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1111/j.1467-9868.2007.00587.x"
+    ],
+    [
+      "gneiting2011",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1198/jasa.2011.r10138"
+    ],
+    [
+      "brier1950",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1175/1520-0493(1950)078<0001:vofeit>2.0.co;2"
+    ],
+    [
+      "deephawkes2017",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1145/3132847.3132973"
+    ],
+    [
+      "casflow2023",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1109/tkde.2021.3126475"
+    ],
+    [
+      "hip2017",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1145/3038912.3052650"
+    ],
+    [
+      "zhou2021",
+      "Publisher-deposited DOI metadata checked against title",
+      "10.1145/3433000"
+    ],
+    [
+      "seismic2015",
+      "Author/publisher paper or bibliographic page",
+      "https://snap.stanford.edu/seismic/"
+    ],
+    [
+      "maseptide2018",
+      "Author/publisher paper or bibliographic page",
+      "https://arxiv.org/abs/1802.09304v2"
+    ],
+    [
+      "casper2022",
+      "Author/publisher paper or bibliographic page",
+      "https://proceedings.mlr.press/v162/zhang22a.html"
+    ],
+    [
+      "ctcp2023",
+      "Author/publisher paper or bibliographic page",
+      "https://arxiv.org/abs/2306.03756"
+    ],
+    [
+      "casft2024",
+      "Author/publisher paper or bibliographic page",
+      "https://arxiv.org/abs/2409.16619"
+    ],
+    [
+      "cascadebench2026",
+      "Author/publisher paper or bibliographic page",
+      "https://arxiv.org/abs/2510.25348v3"
+    ],
+    [
+      "qrf2006",
+      "Author/publisher paper or bibliographic page",
+      "https://www.jmlr.org/papers/v7/meinshausen06a.html"
+    ],
+    [
+      "ngboost2020",
+      "Author/publisher paper or bibliographic page",
+      "https://proceedings.mlr.press/v119/duan20a.html"
+    ],
+    [
+      "cawley2010",
+      "Author/publisher paper or bibliographic page",
+      "https://www.jmlr.org/papers/v11/cawley10a.html"
+    ],
+    [
+      "hofman2017",
+      "Author/publisher paper or bibliographic page",
+      "https://www.microsoft.com/en-us/research/publication/prediction-explanation-social-systems/"
+    ],
+    [
+      "mentch2022",
+      "Author/publisher paper or bibliographic page",
+      "https://jmlr.org/papers/v23/20-1264.html"
+    ],
+    [
+      "deepcas2016",
+      "Author/publisher paper or bibliographic page",
+      "https://arxiv.org/abs/1611.05373"
+    ],
+    [
+      "openai2026",
+      "Author/publisher paper or bibliographic page",
+      "https://openai.com/codex/"
+    ]
+  ]
+}

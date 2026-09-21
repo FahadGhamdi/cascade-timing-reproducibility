@@ -1,0 +1,9 @@
+{
+  "max_historical_metric_difference": 4.547473508864641e-13,
+  "new_CRPS_calculations": 0,
+  "new_MSLE_calculations": 600000,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "procedures": 24,
+  "saved_rows": 600000
+}

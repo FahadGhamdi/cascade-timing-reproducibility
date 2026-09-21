@@ -1,0 +1,503 @@
+{
+  "config_sha256": "059de6aa924922105855f46144bf6e87114632128b058aa8df3274fac258f5f8",
+  "models": [
+    {
+      "candidate": 0,
+      "family": "hurdle",
+      "models": [
+        {
+          "bytes": 90818,
+          "info": "I0",
+          "job_id": "weibo__hurdle__c0__I0__s20260913",
+          "path": "jobs/weibo__hurdle__c0__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "b72f65a56cdcd6634faa448354bb7830de96bdda8f956de314d8e6aebc4d328e"
+        },
+        {
+          "bytes": 91097,
+          "info": "I1",
+          "job_id": "weibo__hurdle__c0__I1__s20260913",
+          "path": "jobs/weibo__hurdle__c0__I1__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "8ee2ea091282e5cd6904c8bf40a5ac86d7dfdc6b9b06699362aa5ce4dcbed490"
+        }
+      ],
+      "params": {
+        "ridge": 1.0
+      },
+      "selection_crps": 143.0741416208454,
+      "source": "weibo",
+      "status": "selected"
+    },
+    {
+      "candidate": 3,
+      "family": "qrf",
+      "models": [
+        {
+          "bytes": 5787493,
+          "info": "I0",
+          "job_id": "weibo__qrf__c3__I0__s20260913",
+          "path": "jobs/weibo__qrf__c3__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "6333102705bfd83599f64749aa6d43a869df5c9cf2443136823dcb0f4250392a"
+        },
+        {
+          "bytes": 6053253,
+          "info": "I1",
+          "job_id": "weibo__qrf__c3__I1__s20260913",
+          "path": "jobs/weibo__qrf__c3__I1__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "8d0ef831647d84de9dcd21ec02594cf63387d0bdf0bfb88c539927faeb7c0d27"
+        },
+        {
+          "bytes": 5766771,
+          "info": "I0",
+          "job_id": "weibo__qrf__c3__I0__s20260914",
+          "path": "jobs/weibo__qrf__c3__I0__s20260914/MODEL.joblib",
+          "seed": 20260914,
+          "sha256": "896aa0baa3013b20ef9e2f0fb58fa4ee1e0137e99942e3b5d7de8c1f6e9acd8b"
+        },
+        {
+          "bytes": 6098410,
+          "info": "I1",
+          "job_id": "weibo__qrf__c3__I1__s20260914",
+          "path": "jobs/weibo__qrf__c3__I1__s20260914/MODEL.joblib",
+          "seed": 20260914,
+          "sha256": "69bb3fe87e12c45c9d153210d9b0d3ad19f0adf7e3fabc39ad5b721abe64d356"
+        },
+        {
+          "bytes": 5777685,
+          "info": "I0",
+          "job_id": "weibo__qrf__c3__I0__s20260915",
+          "path": "jobs/weibo__qrf__c3__I0__s20260915/MODEL.joblib",
+          "seed": 20260915,
+          "sha256": "3182d788c0061e05bf30b5717edb2c3724feba855c9634ef4e8dcd893ab54ae5"
+        },
+        {
+          "bytes": 6064884,
+          "info": "I1",
+          "job_id": "weibo__qrf__c3__I1__s20260915",
+          "path": "jobs/weibo__qrf__c3__I1__s20260915/MODEL.joblib",
+          "seed": 20260915,
+          "sha256": "f957874c06b067e5b553b0cf5789c311ce7913209767487212452ca5b3128406"
+        }
+      ],
+      "params": {
+        "depth": 12,
+        "leaf": 10,
+        "trees": 128
+      },
+      "selection_crps": 111.95263875552082,
+      "source": "weibo",
+      "status": "selected"
+    },
+    {
+      "candidate": 0,
+      "family": "ngboost",
+      "models": [
+        {
+          "bytes": 108340,
+          "info": "I0",
+          "job_id": "weibo__ngboost__c0__I0__s20260913",
+          "path": "jobs/weibo__ngboost__c0__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "10d69b844a49339df6796857f75ceb945716776eda674f8feed9fe95607b8dd6"
+        },
+        {
+          "bytes": 109186,
+          "info": "I1",
+          "job_id": "weibo__ngboost__c0__I1__s20260913",
+          "path": "jobs/weibo__ngboost__c0__I1__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "863dd1d6218a7c9e4da3bbc7d332927343682fc58f44f15c2087420024c5892a"
+        },
+        {
+          "bytes": 108343,
+          "info": "I0",
+          "job_id": "weibo__ngboost__c0__I0__s20260914",
+          "path": "jobs/weibo__ngboost__c0__I0__s20260914/MODEL.joblib",
+          "seed": 20260914,
+          "sha256": "9fa6e332ad636ae1502e4758d2d29ca341807aed5fa69e6ee8df74d16b2cbab5"
+        },
+        {
+          "bytes": 109174,
+          "info": "I1",
+          "job_id": "weibo__ngboost__c0__I1__s20260914",
+          "path": "jobs/weibo__ngboost__c0__I1__s20260914/MODEL.joblib",
+          "seed": 20260914,
+          "sha256": "ef5fd754b7de7a143f7be1575d1af6616547faff48d44cf477a044060cdc44b9"
+        },
+        {
+          "bytes": 108339,
+          "info": "I0",
+          "job_id": "weibo__ngboost__c0__I0__s20260915",
+          "path": "jobs/weibo__ngboost__c0__I0__s20260915/MODEL.joblib",
+          "seed": 20260915,
+          "sha256": "726ace2227957a28aa2d0e6ed861cfeb18b35732691dfd53b321b076d7739472"
+        },
+        {
+          "bytes": 109181,
+          "info": "I1",
+          "job_id": "weibo__ngboost__c0__I1__s20260915",
+          "path": "jobs/weibo__ngboost__c0__I1__s20260915/MODEL.joblib",
+          "seed": 20260915,
+          "sha256": "5181994c6fc1ea76ec08a0fec9c6eca038c683869513782ac2f4f239adb5e647"
+        }
+      ],
+      "params": {
+        "depth": 1,
+        "leaf": 10,
+        "stages": 100
+      },
+      "selection_crps": 129.37790577918227,
+      "source": "weibo",
+      "status": "selected"
+    },
+    {
+      "candidate": 0,
+      "family": "nb2_glm",
+      "models": [
+        {
+          "bytes": 90770,
+          "info": "I0",
+          "job_id": "weibo__nb2_glm__c0__I0__s20260913",
+          "path": "jobs/weibo__nb2_glm__c0__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "44a4185e092788ad70e95a70675f6def2cd0c785b266c5f8c104a4d931799045"
+        },
+        {
+          "bytes": 90958,
+          "info": "I1",
+          "job_id": "weibo__nb2_glm__c0__I1__s20260913",
+          "path": "jobs/weibo__nb2_glm__c0__I1__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "ce2048916ce123eaa914570cce1f2962d57814a109910750419cca7b412c3925"
+        }
+      ],
+      "params": {
+        "ridge": 1.0
+      },
+      "selection_crps": 141.3462822534608,
+      "source": "weibo",
+      "status": "selected"
+    },
+    {
+      "candidate": 3,
+      "family": "poisson_glm",
+      "models": [
+        {
+          "bytes": 91190,
+          "info": "I0",
+          "job_id": "weibo__poisson_glm__c3__I0__s20260913",
+          "path": "jobs/weibo__poisson_glm__c3__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "97170191fde97c5caa0fbd2d8a822d18a44d385ed18323a089543a81ae36b784"
+        },
+        {
+          "bytes": 91367,
+          "info": "I1",
+          "job_id": "weibo__poisson_glm__c3__I1__s20260913",
+          "path": "jobs/weibo__poisson_glm__c3__I1__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "6026722b72289d66c92775838343cbcd5d1c47149c4728f834f02847546ad199"
+        }
+      ],
+      "params": {
+        "ridge": 0.001
+      },
+      "selection_crps": 133.64212275618414,
+      "source": "weibo",
+      "status": "selected"
+    },
+    {
+      "candidate": 0,
+      "family": "empirical_window",
+      "models": [
+        {
+          "bytes": 90598,
+          "info": "I0",
+          "job_id": "weibo__empirical_window__c0__I0__s20260913",
+          "path": "jobs/weibo__empirical_window__c0__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "43f935804272b6d8893dbed86f13ce498cd7d832bce5a261dda13696c80f3eeb"
+        }
+      ],
+      "params": {},
+      "selection_crps": 145.7927615833353,
+      "source": "weibo",
+      "status": "selected"
+    },
+    {
+      "candidate": 3,
+      "family": "conditional_empirical",
+      "models": [
+        {
+          "bytes": 90603,
+          "info": "I0",
+          "job_id": "weibo__conditional_empirical__c3__I0__s20260913",
+          "path": "jobs/weibo__conditional_empirical__c3__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "b1577f93a9de3806d3bf537bf6731701eeb673fa6ebaea17f48874ccd8067a18"
+        }
+      ],
+      "params": {
+        "k": 25
+      },
+      "selection_crps": 118.97148559999995,
+      "source": "weibo",
+      "status": "selected"
+    },
+    {
+      "candidate": 3,
+      "family": "hurdle",
+      "models": [
+        {
+          "bytes": 162623,
+          "info": "I0",
+          "job_id": "seismic__hurdle__c3__I0__s20260913",
+          "path": "jobs/seismic__hurdle__c3__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "0dd3e16388a90e936cdc0582cd4fc3e9ca6a4b060bbbe7506f90fc6dd3a4f2c1"
+        },
+        {
+          "bytes": 162934,
+          "info": "I1",
+          "job_id": "seismic__hurdle__c3__I1__s20260913",
+          "path": "jobs/seismic__hurdle__c3__I1__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "dda0eeb8a11ba1af3cba8a9a952c7fc403087a3c14f1ae6478cb733f07b7d555"
+        }
+      ],
+      "params": {
+        "ridge": 0.001
+      },
+      "selection_crps": 48.8418888228553,
+      "source": "seismic",
+      "status": "selected"
+    },
+    {
+      "candidate": 3,
+      "family": "qrf",
+      "models": [
+        {
+          "bytes": 7449377,
+          "info": "I0",
+          "job_id": "seismic__qrf__c3__I0__s20260913",
+          "path": "jobs/seismic__qrf__c3__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "4a55e9d8f88ce14353989b2c867cb2d14ef8f2a116ab2dd0cf76025aa4696752"
+        },
+        {
+          "bytes": 7766649,
+          "info": "I1",
+          "job_id": "seismic__qrf__c3__I1__s20260913",
+          "path": "jobs/seismic__qrf__c3__I1__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "81c9a4c61af42701e488ca9c53849afaedaee142650054e19077ec6d7d5751a3"
+        },
+        {
+          "bytes": 7477786,
+          "info": "I0",
+          "job_id": "seismic__qrf__c3__I0__s20260914",
+          "path": "jobs/seismic__qrf__c3__I0__s20260914/MODEL.joblib",
+          "seed": 20260914,
+          "sha256": "126569b94d72d85eb8833d5921716c7430363e4b129965d0d074ce224f2765b6"
+        },
+        {
+          "bytes": 7774495,
+          "info": "I1",
+          "job_id": "seismic__qrf__c3__I1__s20260914",
+          "path": "jobs/seismic__qrf__c3__I1__s20260914/MODEL.joblib",
+          "seed": 20260914,
+          "sha256": "a90011b672b28eb0fa0fbbd9996a4f11e3d453a812759183bbd77d9a6a3634e5"
+        },
+        {
+          "bytes": 7456186,
+          "info": "I0",
+          "job_id": "seismic__qrf__c3__I0__s20260915",
+          "path": "jobs/seismic__qrf__c3__I0__s20260915/MODEL.joblib",
+          "seed": 20260915,
+          "sha256": "e28c71fa86d46cd662abea0582a77ec4df8746ba6ffd2235a288d368a8cabc69"
+        },
+        {
+          "bytes": 7758366,
+          "info": "I1",
+          "job_id": "seismic__qrf__c3__I1__s20260915",
+          "path": "jobs/seismic__qrf__c3__I1__s20260915/MODEL.joblib",
+          "seed": 20260915,
+          "sha256": "501c7abce9927e12e3c2b9a7623d6ad083f358afa670ca661694e42b9e77d374"
+        }
+      ],
+      "params": {
+        "depth": 12,
+        "leaf": 10,
+        "trees": 128
+      },
+      "selection_crps": 41.52550294019525,
+      "source": "seismic",
+      "status": "selected"
+    },
+    {
+      "candidate": 3,
+      "family": "ngboost",
+      "models": [
+        {
+          "bytes": 261195,
+          "info": "I0",
+          "job_id": "seismic__ngboost__c3__I0__s20260913",
+          "path": "jobs/seismic__ngboost__c3__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "27e9f108b009c55188c81bed2b37fa48c91c69ab0c291719f2ec555a54aaa068"
+        },
+        {
+          "bytes": 266140,
+          "info": "I1",
+          "job_id": "seismic__ngboost__c3__I1__s20260913",
+          "path": "jobs/seismic__ngboost__c3__I1__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "5c765290120eeb766a80687da6e5de0dc40fa26a577cd5800c90e91e54c5b1c1"
+        },
+        {
+          "bytes": 261231,
+          "info": "I0",
+          "job_id": "seismic__ngboost__c3__I0__s20260914",
+          "path": "jobs/seismic__ngboost__c3__I0__s20260914/MODEL.joblib",
+          "seed": 20260914,
+          "sha256": "ae6fd1a8b90589f25643fb199132a14254e0c992f12f91b4c878f24af6cff8a3"
+        },
+        {
+          "bytes": 266324,
+          "info": "I1",
+          "job_id": "seismic__ngboost__c3__I1__s20260914",
+          "path": "jobs/seismic__ngboost__c3__I1__s20260914/MODEL.joblib",
+          "seed": 20260914,
+          "sha256": "bb82762f00d71c4249b2e77103cd883ca515b12e86ef180f0659f075140dc80f"
+        },
+        {
+          "bytes": 261193,
+          "info": "I0",
+          "job_id": "seismic__ngboost__c3__I0__s20260915",
+          "path": "jobs/seismic__ngboost__c3__I0__s20260915/MODEL.joblib",
+          "seed": 20260915,
+          "sha256": "1a5dce80610014fc47fc85c00c42d2768365d66a958f73726ff410fd6da517ca"
+        },
+        {
+          "bytes": 266147,
+          "info": "I1",
+          "job_id": "seismic__ngboost__c3__I1__s20260915",
+          "path": "jobs/seismic__ngboost__c3__I1__s20260915/MODEL.joblib",
+          "seed": 20260915,
+          "sha256": "8f1282878d007bd30e725b3464037baef21cb14f2357cda2bd6782616b24790e"
+        }
+      ],
+      "params": {
+        "depth": 2,
+        "leaf": 10,
+        "stages": 300
+      },
+      "selection_crps": 41.471565287018876,
+      "source": "seismic",
+      "status": "selected"
+    },
+    {
+      "candidate": 3,
+      "family": "nb2_glm",
+      "models": [
+        {
+          "bytes": 162545,
+          "info": "I0",
+          "job_id": "seismic__nb2_glm__c3__I0__s20260913",
+          "path": "jobs/seismic__nb2_glm__c3__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "2798b5d9935550d7e2ed22c286882025f39c54c37696e8f573bf72afdb4f676b"
+        },
+        {
+          "bytes": 162794,
+          "info": "I1",
+          "job_id": "seismic__nb2_glm__c3__I1__s20260913",
+          "path": "jobs/seismic__nb2_glm__c3__I1__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "ced2fc82cfc012bf27b87ad46527315df050bd3e77003a652841f7e8f28e1fba"
+        }
+      ],
+      "params": {
+        "ridge": 0.001
+      },
+      "selection_crps": 49.09158362638968,
+      "source": "seismic",
+      "status": "selected"
+    },
+    {
+      "candidate": 3,
+      "family": "poisson_glm",
+      "models": [
+        {
+          "bytes": 162867,
+          "info": "I0",
+          "job_id": "seismic__poisson_glm__c3__I0__s20260913",
+          "path": "jobs/seismic__poisson_glm__c3__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "56e8a5a121aefcf8e5489df3af8e4e7cfc09422a830db543a411f0a5dc8af9e5"
+        },
+        {
+          "bytes": 163077,
+          "info": "I1",
+          "job_id": "seismic__poisson_glm__c3__I1__s20260913",
+          "path": "jobs/seismic__poisson_glm__c3__I1__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "e6669177d55b6ccad70b9182af364fdab2d2f812da92379a48d52dc6273b6072"
+        }
+      ],
+      "params": {
+        "ridge": 0.001
+      },
+      "selection_crps": 64.49045012405159,
+      "source": "seismic",
+      "status": "selected"
+    },
+    {
+      "candidate": 0,
+      "family": "empirical_window",
+      "models": [
+        {
+          "bytes": 162238,
+          "info": "I0",
+          "job_id": "seismic__empirical_window__c0__I0__s20260913",
+          "path": "jobs/seismic__empirical_window__c0__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "642ad34c318220effc64d8d664c7714187389d992d69efb52d619e995eb95806"
+        }
+      ],
+      "params": {},
+      "selection_crps": 56.071054981482,
+      "source": "seismic",
+      "status": "selected"
+    },
+    {
+      "candidate": 1,
+      "family": "conditional_empirical",
+      "models": [
+        {
+          "bytes": 162257,
+          "info": "I0",
+          "job_id": "seismic__conditional_empirical__c1__I0__s20260913",
+          "path": "jobs/seismic__conditional_empirical__c1__I0__s20260913/MODEL.joblib",
+          "seed": 20260913,
+          "sha256": "c132876d3a4524d61679048bb71143c793041c3aaa17d330e6d72e58a6af92b3"
+        }
+      ],
+      "params": {
+        "k": 100
+      },
+      "selection_crps": 43.90808609999992,
+      "source": "seismic",
+      "status": "selected"
+    }
+  ],
+  "primary_comparisons_reserved": 6,
+  "protocol_id": "BRACE13E-shared-capacity-selection-v1",
+  "refit_after_selection": false,
+  "role_of_scores": "VALIDATION used for selection, not unbiased final performance",
+  "source_freeze_sha256": "c3b38e2493a2cb20753212ffc9601d1c5042e63063d14290fcc51a5011cddc6d",
+  "test_evaluations": 0
+}

@@ -1,0 +1,8 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "pymupdf": "1.26.6",
+  "compiler": "pdfLaTeX with BibTeX, latexmk; local TeX Live",
+  "runtime_experiments_run": false
+}

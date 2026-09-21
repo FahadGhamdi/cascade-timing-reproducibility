@@ -1,0 +1,18 @@
+\hypertarget{introduction}{%
+\section{Introduction}}
+
+Early activity is a strong predictor of online popularity. An informative benchmark must therefore ask what a richer representation contributes beyond a competitive forecast based on current size. Early-volume models and subsequent work on temporal patterns establish this question's precedents \cite{szabo2010,pinto2013,cheng2014}.
+
+A count distribution describes the probability of no further recorded activity, typical growth and large outcomes in one forecast. The continuous ranked probability score (CRPS) evaluates this distribution; count-calibration diagnostics show where its probabilities remain unreliable. Examining both can reveal improvements that a point-error ranking alone does not describe \cite{proper2007,czado2009}.
+
+We ask: \textbf{How much do compact timing summaries add to size-based probabilistic forecasts, and how does the observed benefit vary with the available prefix activity?} We study the Weibo release associated with DeepHawkes and the SEISMIC Twitter archive, fitting each source separately. The primary comparison adds a fixed seven-feature set to prefix size and observation duration within three established model families. Settings and seed schedules are shared across the two information sets and locked before testing. Conditional empirical, ordinary negative-binomial and Poisson forecasts make the size-based reference explicit.
+
+Our contribution is an empirical assessment of this restricted forecasting problem. Six planned test contrasts establish the direction and magnitude of the procedure-level timing benefit. Comparisons with conditional empirical forecasts put those gains in context. Separately specified supplementary analyses examine prefix-size strata and a dimension-matched independent-noise control. Together they distinguish average gains, heterogeneous subgroup behavior and the performance of uninformative added coordinates. Count-calibration and duplicate sensitivity complete the interpretation. We evaluate the compact summaries within general-purpose distributional learners; comparing full event-history processes and specialized cascade architectures is a separate scope.
+
+Predictability research motivates careful interpretation of residual error. Martin et al.~distinguish limits associated with data and models from intrinsic uncertainty, while Hofman et al.~connect prediction, explanation and evaluation in social systems. Our finite set of fitted procedures estimates neither a Bayes-optimal forecast nor an intrinsic ceiling. The observable quantity here is improvement under stated information and estimation choices \cite{martin2016,hofman2017}.
+
+Figure~\ref{fig:design} summarizes the data roles, information contrast and analysis chronology.
+
+\begin{figure*}[t]\centering
+\resizebox{\textwidth}{!}{\input{figures/methodology.tikz}}
+\caption{Study design and forecast target. Sources are fitted separately. Candidate settings are shared across information sets and locked before the primary test. The two supplementary specifications follow observation of the primary results and retain their separate interpretation. Event positions in the timeline are schematic; every target ends at root plus 24 hours.}\label{fig:design}\end{figure*} {\small\textit{Preparation:~\cite{openai2026}.}}

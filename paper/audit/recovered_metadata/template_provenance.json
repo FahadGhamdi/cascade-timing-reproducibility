@@ -1,0 +1,32 @@
+[
+  {
+    "file": "ieee_access_package/overleaf/ieeeaccess.cls",
+    "url": "https://raw.githubusercontent.com/erwinrmendez/ieee-access-template/master/latex/ieeeaccess.cls",
+    "sha256": "bda4b3d85cafe8dac815657cddd28d4a8c6370ff10fd6c137c76e468a45a01f4",
+    "bytes": 43122
+  },
+  {
+    "file": "ieee_access_package/overleaf/images/Logo.png",
+    "url": "https://raw.githubusercontent.com/erwinrmendez/ieee-access-template/master/images/Logo.png",
+    "sha256": "7e04ba7f0c579f3765941680e2a19437e15a81b84a138d73c54bd4afead752cd",
+    "bytes": 9705
+  },
+  {
+    "file": "ieee_access_package/overleaf/images/bullet.png",
+    "url": "https://raw.githubusercontent.com/erwinrmendez/ieee-access-template/master/images/bullet.png",
+    "sha256": "754772e36aab389556f98c14f5deeb4031e792b68a766dc5f9766e76e114fffc",
+    "bytes": 430
+  },
+  {
+    "file": "ieee_access_package/overleaf/images/notaglineLogo.png",
+    "url": "https://raw.githubusercontent.com/erwinrmendez/ieee-access-template/master/images/notaglineLogo.png",
+    "sha256": "955e9a07fb35ffbc8a41597b8c6e7ec4cedf6a8652f5c73a33957044aae64900",
+    "bytes": 3150
+  },
+  {
+    "file": "ieee_access_package/metadata/template_mirror_README.md",
+    "url": "https://raw.githubusercontent.com/erwinrmendez/ieee-access-template/master/README.md",
+    "sha256": "876dabf6d6c6f097fd80bde8920745d6ca104180b298071cf8fa91f98a7a67a1",
+    "bytes": 4440
+  }
+]

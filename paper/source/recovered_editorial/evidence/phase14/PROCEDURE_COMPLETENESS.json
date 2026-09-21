@@ -1,0 +1,44 @@
+[
+  {
+    "complete": true,
+    "complete_jobs": 3,
+    "family": "hurdle",
+    "required_jobs": 3,
+    "source": "weibo"
+  },
+  {
+    "complete": true,
+    "complete_jobs": 9,
+    "family": "qrf",
+    "required_jobs": 9,
+    "source": "weibo"
+  },
+  {
+    "complete": true,
+    "complete_jobs": 9,
+    "family": "ngboost",
+    "required_jobs": 9,
+    "source": "weibo"
+  },
+  {
+    "complete": true,
+    "complete_jobs": 3,
+    "family": "hurdle",
+    "required_jobs": 3,
+    "source": "seismic"
+  },
+  {
+    "complete": true,
+    "complete_jobs": 9,
+    "family": "qrf",
+    "required_jobs": 9,
+    "source": "seismic"
+  },
+  {
+    "complete": true,
+    "complete_jobs": 9,
+    "family": "ngboost",
+    "required_jobs": 9,
+    "source": "seismic"
+  }
+]

@@ -1,0 +1,543 @@
+{
+  "key": "haimovich2022",
+  "requested_title": "Popularity prediction for social media over arbitrary time horizons",
+  "retrieved_from": "https://api.crossref.org/works/10.14778/3503585.3503593",
+  "review_required": false,
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2026-04-03T15:15:09Z",
+      "timestamp": 1775229309924,
+      "version": "3.50.1"
+    },
+    "reference-count": 54,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Proc. VLDB Endow."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Predicting the popularity of social media content in real time requires approaches that efficiently operate at global scale. Popularity prediction is important for many applications, including detection of harmful viral content to enable timely content moderation. The prediction task is difficult because views result from interactions between user interests, content features, resharing, feed ranking, and network structure. We consider the problem of accurately predicting popularity both at any given prediction time since a content item's creation and for arbitrary time horizons into the future. In order to achieve high accuracy for different prediction time horizons, it is essential for models to use static features (of content and user) as well as observed popularity growth up to prediction time.</jats:p>\n          <jats:p>We propose a feature-based approach based on a self-excited Hawkes point process model, which involves prediction of the content's popularity at one or more reference horizons in tandem with a point predictor of an effective growth parameter that reflects the timescale of popularity growth. This results in a highly scalable method for popularity prediction over arbitrary prediction time horizons that also achieves a high degree of accuracy, compared to several leading baselines, on a dataset of public page content on Facebook over a two-month period, covering billions of content views and hundreds of thousands of distinct content items. The model has shown competitive prediction accuracy against a strong baseline that consists of separately trained models for specific prediction time horizons.</jats:p>",
+    "DOI": "10.14778/3503585.3503593",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          14
+        ]
+      ],
+      "date-time": "2022-04-14T22:18:07Z",
+      "timestamp": 1649974687000
+    },
+    "page": "841-849",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Popularity prediction for social media over arbitrary time horizons"
+    ],
+    "prefix": "10.14778",
+    "volume": "15",
+    "author": [
+      {
+        "given": "Daniel",
+        "family": "Haimovich",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Core Data Science, Meta Platforms"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Dima",
+        "family": "Karamshuk",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Core Data Science, Meta Platforms"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Thomas J.",
+        "family": "Leeper",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Core Data Science, Meta Platforms"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Evgeniy",
+        "family": "Riabenko",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Core Data Science, Meta Platforms"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Milan",
+        "family": "Vojnovic",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "LSE"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          14
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_1_1_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2433396.2433473"
+      },
+      {
+        "key": "e_1_2_1_2_1",
+        "volume-title": "Proc. of IEEE/WIC/ACM WI-IAT '10",
+        "author": "Asur Sitaram",
+        "unstructured": "Sitaram Asur and Bernardo A. Huberman . 2010. Predicting the Future with Social Media . In Proc. of IEEE/WIC/ACM WI-IAT '10 . Sitaram Asur and Bernardo A. Huberman. 2010. Predicting the Future with Social Media. In Proc. of IEEE/WIC/ACM WI-IAT '10."
+      },
+      {
+        "key": "e_1_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2433396.2433401"
+      },
+      {
+        "key": "e_1_2_1_4_1",
+        "volume-title": "Proc. of ACM EC '09",
+        "author": "Bakshy Eytan",
+        "unstructured": "Eytan Bakshy , Brian Karrer , and Lada A. Adamic . 2009. Social Influence and the Diffusion of User-created Content . In Proc. of ACM EC '09 . 325--334. Eytan Bakshy, Brian Karrer, and Lada A. Adamic. 2009. Social Influence and the Diffusion of User-created Content. In Proc. of ACM EC '09. 325--334."
+      },
+      {
+        "key": "e_1_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2187836.2187907"
+      },
+      {
+        "key": "e_1_2_1_6_1",
+        "volume-title": "Proc. of AAAI ICWSM '15",
+        "author": "Bauckhage Christian",
+        "year": "2015",
+        "unstructured": "Christian Bauckhage , Fabian Hadiji , and Kristian Kersting . 2015 . How Viral Are Viral Videos? . In Proc. of AAAI ICWSM '15 . Christian Bauckhage, Fabian Hadiji, and Kristian Kersting. 2015. How Viral Are Viral Videos?. In Proc. of AAAI ICWSM '15."
+      },
+      {
+        "key": "e_1_2_1_7_1",
+        "volume-title": "Proc. of AAAI ICWSM '13",
+        "author": "Bauckhage Christian",
+        "year": "2013",
+        "unstructured": "Christian Bauckhage , Kristian Kersting , and Fabian Hadiji . 2013 . Mathematical Models of Fads Explain the Temporal Dynamics of Internet Memes . In Proc. of AAAI ICWSM '13 . Christian Bauckhage, Kristian Kersting, and Fabian Hadiji. 2013. Mathematical Models of Fads Explain the Temporal Dynamics of Internet Memes. In Proc. of AAAI ICWSM '13."
+      },
+      {
+        "key": "e_1_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3132847.3132973"
+      },
+      {
+        "key": "e_1_2_1_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3336191.3371834"
+      },
+      {
+        "key": "e_1_2_1_10_1",
+        "volume-title": "Proc. of NIPS '13",
+        "author": "Chen George H.",
+        "year": "2013",
+        "unstructured": "George H. Chen , Stanislav Nikolov , and Devavrat Shah . 2013 . A Latent Source Model for Nonparametric Time Series Classification . In Proc. of NIPS '13 . George H. Chen, Stanislav Nikolov, and Devavrat Shah. 2013. A Latent Source Model for Nonparametric Time Series Classification. In Proc. of NIPS '13."
+      },
+      {
+        "key": "e_1_2_1_11_1",
+        "volume-title": "Proc. of IEEE ICDE '19",
+        "author": "Chen X.",
+        "unstructured": "X. Chen , F. Zhou , K. Zhang , G. Trajcevski , T. Zhong , and F. Zhang . 2019. Information Diffusion Prediction via Recurrent Cascades Convolution . In Proc. of IEEE ICDE '19 . =. X. Chen, F. Zhou, K. Zhang, G. Trajcevski, T. Zhong, and F. Zhang. 2019. Information Diffusion Prediction via Recurrent Cascades Convolution. In Proc. of IEEE ICDE '19. =."
+      },
+      {
+        "key": "e_1_2_1_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2567948"
+      },
+      {
+        "key": "e_1_2_1_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2872427.2882993"
+      },
+      {
+        "key": "e_1_2_1_14_1",
+        "volume-title": "Proc. of AAAI ICWSM '18",
+        "author": "Cheng Justin",
+        "year": "2018",
+        "unstructured": "Justin Cheng , Jon Kleinberg , Jure Leskovec , David Liben-Nowell , Bogdan State , Karthik Subbian , and Lada Adamic . 2018 . Do Diffusion Protocols Govern Cascade Growth? . In Proc. of AAAI ICWSM '18 . Justin Cheng, Jon Kleinberg, Jure Leskovec, David Liben-Nowell, Bogdan State, Karthik Subbian, and Lada Adamic. 2018. Do Diffusion Protocols Govern Cascade Growth?. In Proc. of AAAI ICWSM '18."
+      },
+      {
+        "key": "e_1_2_1_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1475-4932.2012.00809.x"
+      },
+      {
+        "key": "e_1_2_1_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2487575.2487639"
+      },
+      {
+        "key": "e_1_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1239/aap/1316792671"
+      },
+      {
+        "key": "e_1_2_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/S0097539701398363"
+      },
+      {
+        "key": "e_1_2_1_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2939672.2939875"
+      },
+      {
+        "key": "e_1_2_1_20_1",
+        "volume-title": "Stochastic gradient boosting. Computational statistics & data analysis 38, 4",
+        "author": "Friedman Jerome H",
+        "year": "2002",
+        "unstructured": "Jerome H Friedman . 2002. Stochastic gradient boosting. Computational statistics & data analysis 38, 4 ( 2002 ), 367--378. Jerome H Friedman. 2002. Stochastic gradient boosting. Computational statistics & data analysis 38, 4 (2002), 367--378."
+      },
+      {
+        "key": "e_1_2_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/988672.988739"
+      },
+      {
+        "key": "e_1_2_1_22_1",
+        "volume-title": "Proc. of WWW '12",
+        "author": "Guille Adrien",
+        "year": "2012",
+        "unstructured": "Adrien Guille and Hakim Hacid . 2012 . A Predictive Model for the Temporal Dynamics of Information Diffusion in Online Social Netw .. In Proc. of WWW '12 . Adrien Guille and Hakim Hacid. 2012. A Predictive Model for the Temporal Dynamics of Information Diffusion in Online Social Netw.. In Proc. of WWW '12."
+      },
+      {
+        "key": "e_1_2_1_23_1",
+        "volume-title": "Scalable Prediction of Information Cascades over Arbitrary Time Horizons. Technical report, https://arxiv.org/abs/2009.02092",
+        "author": "Haimovich Daniel",
+        "year": "2021",
+        "unstructured": "Daniel Haimovich , Dima Karamshuk , Thomas J Leeper , Evgeniy Riabenko , and Milan Vojnovic . 2021. Scalable Prediction of Information Cascades over Arbitrary Time Horizons. Technical report, https://arxiv.org/abs/2009.02092 ( 2021 ). Daniel Haimovich, Dima Karamshuk, Thomas J Leeper, Evgeniy Riabenko, and Milan Vojnovic. 2021. Scalable Prediction of Information Cascades over Arbitrary Time Horizons. Technical report, https://arxiv.org/abs/2009.02092 (2021)."
+      },
+      {
+        "key": "e_1_2_1_24_1",
+        "volume-title": "Proc. of WWW '11",
+        "author": "Hong Liangjie",
+        "unstructured": "Liangjie Hong , Ovidiu Dan , and Brian D. Davison . 2011. Predicting Popular Messages in Twitter . In Proc. of WWW '11 . Liangjie Hong, Ovidiu Dan, and Brian D. Davison. 2011. Predicting Popular Messages in Twitter. In Proc. of WWW '11."
+      },
+      {
+        "key": "e_1_2_1_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2487788.2488017"
+      },
+      {
+        "key": "e_1_2_1_26_1",
+        "volume-title": "Proc. of AAAI ICWSM '16",
+        "author": "Kobayashi Ryota",
+        "year": "2016",
+        "unstructured": "Ryota Kobayashi and Renaud Lambiotte . 2016 . TiDeH: Time-Dependent Hawkes Process for Predicting Retweet Dynamics . In Proc. of AAAI ICWSM '16 . Ryota Kobayashi and Renaud Lambiotte. 2016. TiDeH: Time-Dependent Hawkes Process for Predicting Retweet Dynamics. In Proc. of AAAI ICWSM '16."
+      },
+      {
+        "key": "e_1_2_1_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3336191.3371821"
+      },
+      {
+        "key": "e_1_2_1_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2396761.2398634"
+      },
+      {
+        "key": "e_1_2_1_29_1",
+        "volume-title": "Proc. of ICML '19",
+        "author": "Lamprier Sylvain",
+        "year": "2019",
+        "unstructured": "Sylvain Lamprier . 2019 . A Recurrent Neural Cascade-based Model for Continuous-Time Diffusion . In Proc. of ICML '19 . Sylvain Lamprier. 2019. A Recurrent Neural Cascade-based Model for Continuous-Time Diffusion. In Proc. of ICML '19."
+      },
+      {
+        "key": "e_1_2_1_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3038912.3052643"
+      },
+      {
+        "key": "e_1_2_1_31_1",
+        "volume-title": "Bhowmick",
+        "author": "Li Hui",
+        "year": "2020",
+        "unstructured": "Hui Li , Hui Li , and Sourav S . Bhowmick . 2020 . CHASSIS : Conformity Meets Online Information Diffusion. In Proc. of SIGMOD '20. Hui Li, Hui Li, and Sourav S. Bhowmick. 2020. CHASSIS: Conformity Meets Online Information Diffusion. In Proc. of SIGMOD '20."
+      },
+      {
+        "key": "e_1_2_1_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v33i01.3301200"
+      },
+      {
+        "key": "e_1_2_1_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/asi.22844"
+      },
+      {
+        "key": "e_1_2_1_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2339530.2339537"
+      },
+      {
+        "key": "e_1_2_1_35_1",
+        "volume-title": "Proc. of NIPS '17",
+        "author": "Mei Hongyuan",
+        "year": "2017",
+        "unstructured": "Hongyuan Mei and Jason Eisner . 2017 . The Neural Hawkes Process: A Neurally Self-modulating Multivariate Point Process . In Proc. of NIPS '17 . Hongyuan Mei and Jason Eisner. 2017. The Neural Hawkes Process: A Neurally Self-modulating Multivariate Point Process. In Proc. of NIPS '17."
+      },
+      {
+        "key": "e_1_2_1_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2983323.2983812"
+      },
+      {
+        "key": "e_1_2_1_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.osnem.2019.05.002"
+      },
+      {
+        "key": "e_1_2_1_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3178876.3186108"
+      },
+      {
+        "key": "e_1_2_1_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3038912.3052650"
+      },
+      {
+        "key": "e_1_2_1_40_1",
+        "volume-title": "Proc. of AAAI '14",
+        "author": "Shen Huawei",
+        "year": "2014",
+        "unstructured": "Huawei Shen , Dashun Wang , Chaoming Song , and Albert-László Barabási . 2014 . Modeling and Predicting Popularity Dynamics via Reinforced Poisson Processes . In Proc. of AAAI '14 . Huawei Shen, Dashun Wang, Chaoming Song, and Albert-László Barabási. 2014. Modeling and Predicting Popularity Dynamics via Reinforced Poisson Processes. In Proc. of AAAI '14."
+      },
+      {
+        "key": "e_1_2_1_41_1",
+        "volume-title": "Proc. of UAI '10",
+        "author": "Simma Aleksandr",
+        "unstructured": "Aleksandr Simma and Michael I. Jordan . 2010. Modeling Events with Cascades of Poisson Processes . In Proc. of UAI '10 . Aleksandr Simma and Michael I. Jordan. 2010. Modeling Events with Cascades of Poisson Processes. In Proc. of UAI '10."
+      },
+      {
+        "key": "e_1_2_1_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3038912.3052718"
+      },
+      {
+        "key": "e_1_2_1_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1787234.1787254"
+      },
+      {
+        "key": "e_1_2_1_44_1",
+        "volume-title": "Proc. of USENIX ATC '17",
+        "author": "Tang Linpeng",
+        "year": "2017",
+        "unstructured": "Linpeng Tang , Qi Huang , Amit Puntambekar , Ymir Vigfusson , Wyatt Lloyd , and Kai Li . 2017 . Popularity Prediction of Facebook Videos for Higher Quality Streaming . In Proc. of USENIX ATC '17 . Linpeng Tang, Qi Huang, Amit Puntambekar, Ymir Vigfusson, Wyatt Lloyd, and Kai Li. 2017. Popularity Prediction of Facebook Videos for Higher Quality Streaming. In Proc. of USENIX ATC '17."
+      },
+      {
+        "key": "e_1_2_1_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2124295.2124320"
+      },
+      {
+        "key": "e_1_2_1_46_1",
+        "unstructured": "James Vincent. 2020. Facebook is now using AI to sort content for quicker moderation. The Verge - https://www.theverge.com/2020/11/13/21562596/facebook-ai-moderation.  James Vincent. 2020. Facebook is now using AI to sort content for quicker moderation. The Verge - https://www.theverge.com/2020/11/13/21562596/facebook-ai-moderation."
+      },
+      {
+        "key": "e_1_2_1_47_1",
+        "volume-title": "Proc. of AAAI '15",
+        "author": "Wang Senzhang",
+        "year": "2015",
+        "unstructured": "Senzhang Wang , Zhao Yan , Xia Hu , Philip S. Yu , and Zhoujun Li . 2015 . Burst Time Prediction in Cascades . In Proc. of AAAI '15 . Senzhang Wang, Zhao Yan, Xia Hu, Philip S. Yu, and Zhoujun Li. 2015. Burst Time Prediction in Cascades. In Proc. of AAAI '15."
+      },
+      {
+        "key": "e_1_2_1_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1935826.1935863"
+      },
+      {
+        "key": "e_1_2_1_49_1",
+        "volume-title": "Proc. of ICML '13",
+        "author": "Yang Shuang-Hong",
+        "year": "2013",
+        "unstructured": "Shuang-Hong Yang and Hongyuan Zha . 2013 . Mixture of Mutually Exciting Processes for Viral Diffusion . In Proc. of ICML '13 . Shuang-Hong Yang and Hongyuan Zha. 2013. Mixture of Mutually Exciting Processes for Viral Diffusion. In Proc. of ICML '13."
+      },
+      {
+        "key": "e_1_2_1_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3184558.3191634"
+      },
+      {
+        "key": "e_1_2_1_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2783258.2783401"
+      },
+      {
+        "key": "e_1_2_1_52_1",
+        "first-page": "2",
+        "article-title": "A Survey of Information Cascade Analysis",
+        "volume": "54",
+        "author": "Zhou Fan",
+        "year": "2021",
+        "unstructured": "Fan Zhou , Xovee Xu , Goce Trajcevski , and Kunpeng Zhang . 2021 . A Survey of Information Cascade Analysis : Models, Predictions, and Recent Advances. Comput. Surveys 54 , 2 (March 2021). Fan Zhou, Xovee Xu, Goce Trajcevski, and Kunpeng Zhang. 2021. A Survey of Information Cascade Analysis: Models, Predictions, and Recent Advances. Comput. Surveys 54, 2 (March 2021).",
+        "journal-title": "Models, Predictions, and Recent Advances. Comput. Surveys"
+      },
+      {
+        "key": "e_1_2_1_53_1",
+        "volume-title": "Proc. of AISTATS '13",
+        "author": "Zhou Ke",
+        "year": "2013",
+        "unstructured": "Ke Zhou , Hongyuan Zha , and Le Song . 2013 . Learning Social Infectivity in Sparse Low-rank Networks Using Multi-dimensional Hawkes Processes . In Proc. of AISTATS '13 . Ke Zhou, Hongyuan Zha, and Le Song. 2013. Learning Social Infectivity in Sparse Low-rank Networks Using Multi-dimensional Hawkes Processes. In Proc. of AISTATS '13."
+      },
+      {
+        "key": "e_1_2_1_54_1",
+        "volume-title": "Proc. of ICML '13",
+        "author": "Zhou Ke",
+        "year": "2013",
+        "unstructured": "Ke Zhou , Hongyuan Zha , and Le Song . 2013 . Learning Triggering Kernels for Multi-Dimensional Hawkes Processes . In Proc. of ICML '13 . Ke Zhou, Hongyuan Zha, and Le Song. 2013. Learning Triggering Kernels for Multi-Dimensional Hawkes Processes. In Proc. of ICML '13."
+      }
+    ],
+    "container-title": [
+      "Proceedings of the VLDB Endowment"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.14778/3503585.3503593",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          28
+        ]
+      ],
+      "date-time": "2022-12-28T10:27:49Z",
+      "timestamp": 1672223269000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.14778/3503585.3503593"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    },
+    "references-count": 54,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.14778/3503585.3503593"
+    ],
+    "URL": "https://doi.org/10.14778/3503585.3503593",
+    "relation": {},
+    "ISSN": [
+      "2150-8097"
+    ],
+    "issn-type": [
+      {
+        "value": "2150-8097",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    },
+    "_title_similarity": 1.0
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "I0": 109.57028129429455,
+    "I1": 107.05011118370774,
+    "delta_I1_minus_I0": -2.5201701105868,
+    "excluded_roots": 3,
+    "family": "hurdle",
+    "kept_roots": 4997,
+    "source": "weibo",
+    "status": "descriptive_only_no_additional_test"
+  },
+  {
+    "I0": 90.72538198683515,
+    "I1": 86.98811034600604,
+    "delta_I1_minus_I0": -3.7372716408291073,
+    "excluded_roots": 3,
+    "family": "qrf",
+    "kept_roots": 4997,
+    "source": "weibo",
+    "status": "descriptive_only_no_additional_test"
+  },
+  {
+    "I0": 97.85377500155217,
+    "I1": 97.21239920788938,
+    "delta_I1_minus_I0": -0.6413757936627942,
+    "excluded_roots": 3,
+    "family": "ngboost",
+    "kept_roots": 4997,
+    "source": "weibo",
+    "status": "descriptive_only_no_additional_test"
+  }
+]

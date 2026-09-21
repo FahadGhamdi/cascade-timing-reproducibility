@@ -1,0 +1,10 @@
+{
+  "time_utc": "2026-09-13T11:20:06.637985+00:00",
+  "frozen_before_new_stratum_outcomes_and_noise_model_fitting": true,
+  "post13F_aggregate_and_window_results_already_known": true,
+  "hashes": {
+    "PROTOCOL_PHASE14.md": "346cb2397e3d8473ca5023bf8e48f01e5b889ba756a9708b9945b740e0123e83",
+    "CONFIG_14.json": "1e1dcd4564495be893379d398cdd66860c4c97f5d73e51e4c81655b1b05ef4ba",
+    "NOISE_JOBS.json": "03c06f3c3d28533b2e6ce5bb93894184351aca650483e950d134ab6fe12eedbe"
+  }
+}

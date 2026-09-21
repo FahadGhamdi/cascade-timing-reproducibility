@@ -1,0 +1,27 @@
+\hypertarget{related-work-and-the-comparison-being-made}{%
+\section{Related work and the comparison being made}}
+
+\hypertarget{early-popularity-event-histories-and-finite-horizons}{%
+\subsection{Early popularity, event histories and finite horizons}}
+
+Early-volume prediction has a long history. Pinto et al.~use patterns of early YouTube views to improve popularity forecasts; the shape of initial activity is therefore an established precedent, not a new discovery of this study. Their point-prediction task differs from our count-distribution contrast \cite{pinto2013}. Szabo and Huberman relate early and later popularity, while Cheng et al.~investigate predictability as cascade observations accumulate. Mishra et al.~directly compare feature-driven and point-process approaches and find competitive performance from basic user features and event-time summaries, with further gains from process-derived information. Their study is a close precedent for our motivation; our experiment concentrates on within-family information changes and integer-count distributions \cite{szabo2010,cheng2014,mishra2016}.
+
+Reinforced Poisson processes model reinforcement and time-varying popularity \cite{rpp2014}. Self-exciting approaches represent diffusion through event histories. The Hawkes intensity process separates exogenous promotion from endogenous response \cite{hip2017}, illustrating why marks and external inputs change the prediction contract. SEISMIC estimates evolving infectiousness for final-popularity prediction; TiDeH models time-dependent retweet dynamics; MaSEPTiDE develops marked, time-dependent excitation. Finite-horizon prediction is also established: CASPER derives conditional future-count moments, and Haimovich et al.~develop arbitrary-horizon popularity prediction on Facebook page content. The prediction horizon, available marks and forecast output must be aligned before their numerical results can be compared with ours \cite{seismic2015,tideh2016,maseptide2018,casper2022,haimovich2022}.
+
+\hypertarget{learned-cascade-representations-and-evaluation-protocols}{%
+\subsection{Learned cascade representations and evaluation protocols}}
+
+The survey of Zhou et al.~\cite{zhou2021} organizes cascade analysis around diffusion models, feature-based prediction and deep learning. DeepCas learns cascade representations from graphs \cite{deepcas2016}. DeepHawkes, CasFlow, continuous-time graph learning and CasFT represent increasingly rich temporal or structural information. CasFlow explicitly models uncertainty in latent cascade representations; CasFT generates future trends through a diffusion model. These approaches establish substantial prior work on temporal and uncertainty-aware cascade modeling. Our experiment evaluates the predictive count cumulative distribution function (CDF) from a restricted input set. Comparisons with published log-scale point errors would require matching the cohort, preprocessing, information access and predictive output \cite{deephawkes2017,casflow2023,ctcp2023,casft2024}.
+
+ConCat models irregular cascade dynamics using neural ordinary differential equations and neural temporal point processes \cite{concat2025}. This is a richer event-history representation than the fixed seven-summary contrast studied here. Evaluation design is itself an active subject. The recent benchmarking preprint by Peng et al. compares Random Cascade, Full Temporal and Inductive User protocols, including overlap diagnostics and changes in model rankings. Our Weibo experiment provides root-user-disjoint retrospective evaluation; its single publication day cannot supply a chronological forecasting test. SEISMIC permits chronological blocks with label maturity. These different designs are part of the interpretation of the results \cite{cascadebench2026}.
+
+\hypertarget{distributional-learning-and-count-assessment}{%
+\subsection{Distributional learning and count assessment}}
+
+Quantile regression forests (QRF) estimate a conditional distribution through forest leaf memberships, and NGBoost learns distribution parameters through natural-gradient boosting. Poisson, negative-binomial and two-part count models supply established parametric alternatives. Proper scores and count-appropriate probability integral transform (PIT) diagnostics provide the evaluation framework. We use these methods for a controlled comparison of available prefix representations \cite{qrf2006,ngboost2020,counts2008,czado2009,scoring2019}.
+
+Work on calibration and sharpness distinguishes probability reliability from concentration \cite{calibration2007}. Wei and Held develop calibration tests for count data \cite{wei2014}, and Kolassa studies predictive count distributions in retail forecasting \cite{kolassa2016}. These are methodological precedents rather than social-cascade experiments. Point forecasts must be matched to their loss: the median is appropriate for absolute error, whereas a log-scale squared-error target need not select that median \cite{gneiting2011}. We therefore retain the probabilistic primary target and label saved-median mean squared logarithmic error (MSLE) as a supplementary descriptive metric.
+
+Table~\ref{tab:literature} summarizes the relevant distinctions. It positions the empirical question relative to its closest precedents.
+
+\input{tables/literature} {\small\textit{Preparation:~\cite{openai2026}.}}

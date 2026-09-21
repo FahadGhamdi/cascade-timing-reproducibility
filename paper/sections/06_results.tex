@@ -1,0 +1,81 @@
+\hypertarget{results}{%
+\section{Results}}
+
+\hypertarget{timing-improves-the-six-primary-crps-contrasts}{%
+\subsection{Timing improves the six primary CRPS contrasts}}
+
+Table~\ref{tab:primary} and Figure~\ref{fig:primary} show lower mean CRPS with timing in all six comparisons. All adjusted intervals lie below zero. The effect magnitudes differ: relative reductions range from 0.69\% to 4.31\% on Weibo and from 7.25\% to 13.48\% on SEISMIC. The 0.69\% reduction for Weibo NGBoost is small in relative terms despite its interval excluding zero. Evidence of a nonzero average improvement and the size of that improvement should therefore be reported separately.
+
+\input{tables/primary}
+
+\begin{figure*}[t]\centering
+\includegraphics[width=\textwidth]{figures/primary_contrasts.pdf}
+\caption{Mean CRPS changes from adding timing, with conditional adjusted intervals from 10,000 paired resamples per source. Labels give relative point reductions. Separate count scales are used; this is not a cross-source interaction test.}\label{fig:primary}
+\end{figure*}
+
+The per-window descriptive means favor \(I_1\) in all 18 primary-family/source/window combinations. However, Weibo NGBoost changes little at 15 minutes (113.285 to 113.222) and 60 minutes (89.374 to 89.085). Source and model differences persist beyond the aggregate result; no window-specific significance claim is made. Supplementary Section S4 provides every per-window value.
+
+\hypertarget{conditional-empirical-forecasts-are-strong-references}{%
+\subsection{Conditional empirical forecasts are strong references}}
+
+Table~\ref{tab:all} places the information contrasts in a broader descriptive comparison. Conditioning the empirical distribution on prefix size reduces CRPS from 126.569 to 103.816 on Weibo and from 56.224 to 42.740 on SEISMIC. On SEISMIC this simple conditional reference lies close to the size-only QRF and NGBoost procedures. Timing-augmented QRF has the lowest mean CRPS among the evaluated procedures in both sources, at 96.640 and 39.058. The six primary intervals do not test QRF's superiority over other families.
+
+\input{tables/all}
+
+\begin{figure*}[t]\centering
+\includegraphics[width=\textwidth]{figures/all_procedures.pdf}
+\caption{Descriptive mean CRPS for every complete procedure. Squares denote size and duration ($I_0$); circles add timing ($I_1$). Conditional empirical forecasts establish a strong size-based reference. All comparisons retain the source-specific count units.}\label{fig:all}
+\end{figure*}
+
+Ordinary NB2 and Hurdle are close under size-only SEISMIC inputs. On Weibo, NB2 has lower CRPS than Hurdle under both information sets. The zero-handling mechanism therefore does not by itself determine the overall distribution-score ranking.
+
+\hypertarget{distribution-score-gains-coexist-with-calibration-limitations}{%
+\subsection{Distribution-score gains coexist with calibration limitations}}
+
+No-growth Brier loss, median absolute error and 90\% interval score all improve descriptively in the six primary information comparisons. Table~\ref{tab:calibration} provides Brier loss and 90\% coverage for these families. Coverage changes have a mixed interpretation. SEISMIC QRF's 90\% coverage rises from 92.42\% to 93.99\%, farther above nominal, even as its interval score improves from 387.892 to 367.088. Its mean width falls from 284.852 to 276.571. The lower proper-score loss captures improvements not summarized by closeness of this single coverage rate to 90\%.
+
+\input{tables/calibration}
+
+The count PIT panels show substantial nonuniformity for Hurdle, particularly on Weibo, and smaller but persistent departures for the forest and boosting procedures. Timing does not uniformly flatten those distributions. The ordinary Poisson reference illustrates a more severe problem: its timing-augmented nominal 90\% intervals cover only 12.38\% of Weibo cases and 18.63\% of SEISMIC cases. Extra timing predictors do not compensate for this distributional mismatch. Full coverage, interval-score and reliability summaries are retained in the supplement.
+
+\begin{figure*}[t]\centering
+\includegraphics[width=\textwidth]{figures/calibration_overview.pdf}
+\caption{Aggregate nonrandomized count PIT-bin mass, averaged across the prescribed seeds and windows. The horizontal dotted line marks 0.1 for ten bins. Both sources use identical vertical axes. The supplement includes all per-window randomized and nonrandomized panels. These are marginal descriptive diagnostics.}\label{fig:calibration}
+\end{figure*}
+
+\hypertarget{duplicate-sensitivity-and-completeness}{%
+\subsection{Duplicate sensitivity and completeness}}
+
+Three Weibo test roots carry the frozen exact-duplicate-token flag. Removing them only for the planned descriptive sensitivity leaves all three timing contrasts negative: -2.520 for Hurdle, -3.737 for QRF and -0.641 for NGBoost. Absolute score levels change considerably; QRF I0/I1 become 90.725/86.988 compared with 100.990/96.640 on the full sample. A small number of large cases therefore affects the magnitude of aggregate scores. This sensitivity preserves the direction of the descriptive contrasts without establishing unique-event validity or removing possible training effects of duplicate records. SEISMIC's duplicate status remains unknown where event identifiers are unavailable.
+
+All selected primary test procedures are complete. Independent saved-output checks recover the reported aggregates; computational verification is documented in Supplementary Section S6.
+
+\hypertarget{prefix-size-strata-show-heterogeneous-timing-effects}{%
+\subsection{Prefix-size strata show heterogeneous timing effects}}
+
+Figure~\ref{fig:strata} shows every source, window and family slot.
+
+\begin{figure*}[t]\centering
+\includegraphics[width=\textwidth]{figures/timing_strata.pdf}
+\caption{All 90 supplementary source/family/window/stratum point reductions in CRPS. Positive values favor timing; negative values favor size-only inputs. Color uses one common symmetric scale. Asterisks identify the six point estimates whose exploratory intervals were withheld for fewer than 30 sampling units. Complete pointwise intervals and both empirical references are in the supplement.}\label{fig:strata}
+\end{figure*}
+
+The supplementary tables cover all 30 source/window/bin slots and all three primary families. For QRF, the at-least-50-event stratum favors I1 at each window in both sources. Its descriptive relative reductions are 16.50\%, 5.19\% and 6.53\% on Weibo, and 11.38\%, 15.35\% and 8.03\% on SEISMIC at 5, 15 and 60 minutes. Behavior in smaller strata is mixed: SEISMIC QRF at 60 minutes has a 1.21\% increase in CRPS for 10--49 events, while Weibo QRF at five minutes has a 2.20\% increase for 3--9 events. Hurdle and NGBoost display other patterns. These results describe a recurring dense-prefix QRF pattern within the selected archives, not a common curve or a validated threshold across procedures.
+
+Empty prefixes clarify the meaning of the contrast. Their seven timing inputs are the same deterministic defaults within each window. Nevertheless, SEISMIC Hurdle shows a 25.52\% descriptive reduction for its 103 empty five-minute prefixes. The added features cannot convey observed event times within that subgroup. The fitted response at the empty-prefix input has changed through estimation over the full training sample. Thus an I1-I0 subgroup improvement is a property of the fitted procedures and cannot automatically be assigned to locally observed timing information.
+
+At 60 minutes, SEISMIC has only 26 empty-prefix roots and 20 roots with 1--2 events; their point estimates are retained and intervals are withheld under the specified rule. All other slot counts, both empirical references, family results and pointwise intervals are available in Supplementary Section S8 and the machine-readable tables.
+
+\hypertarget{timing-retains-its-advantage-over-the-independent-noise-control}{%
+\subsection{Timing retains its advantage over the independent-noise control}}
+
+\begin{figure*}[t]\centering
+\includegraphics[width=\textwidth]{figures/noise_control.pdf}
+\caption{All 12 supplementary negative-control contrasts with separately Bonferroni-adjusted conditional intervals. Noise minus $I_0$ has mixed point signs and intervals spanning zero; this does not establish equivalence. Every $I_1$ minus noise interval lies below zero. Noise losses average the three fixed noise realizations and the prescribed fitting seeds.}\label{fig:noise}
+\end{figure*}
+
+Table~\ref{tab:noise} reports all supplementary control contrasts. Noise-I0 point estimates are mixed and every adjusted interval includes zero. Timing has lower CRPS than the noise control in all six cases, with adjusted intervals entirely below zero. Relative reductions against noise range from 0.72\% to 5.20\% on Weibo and from 7.63\% to 13.52\% on SEISMIC. These are point summaries of the averaged control procedure.
+
+\input{tables/noise}
+
+The timing advantage therefore persists against this specified uninformative augmentation. The intervals containing zero do not establish equivalence between noise and I0, and the control does not equate effective capacity. For example, the Weibo QRF noise-I0 interval spans -1.255 to +4.803 CRPS units; meaningful changes in either direction remain compatible with that interval. Separate realization summaries, including favorable noise outcomes, are retained in Supplementary Section S8. All scheduled control procedures and test scores completed. {\small\textit{Preparation:~\cite{openai2026}.}}

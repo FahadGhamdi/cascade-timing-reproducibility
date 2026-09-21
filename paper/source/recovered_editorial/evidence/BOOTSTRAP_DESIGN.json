@@ -1,0 +1,32 @@
+[
+  {
+    "available_columns": [
+      true,
+      true,
+      true
+    ],
+    "clusters": 3467,
+    "conditional_on_fixed_models_and_samples": true,
+    "draws": 10000,
+    "ratio_root_weighting": true,
+    "roots": 5000,
+    "shared_indices_sha256": "dc0280bcce83aecf069217e8e8f681118907692549018f5d94286baf2e2d8a71",
+    "source": "weibo",
+    "unit_order": "lexical group identifier"
+  },
+  {
+    "available_columns": [
+      true,
+      true,
+      true
+    ],
+    "clusters": 5000,
+    "conditional_on_fixed_models_and_samples": true,
+    "draws": 10000,
+    "ratio_root_weighting": true,
+    "roots": 5000,
+    "shared_indices_sha256": "90561a329feba2c150bbf2843a6b7bda727b82881c965cf185401e43af25f9a5",
+    "source": "seismic",
+    "unit_order": "lexical group identifier"
+  }
+]

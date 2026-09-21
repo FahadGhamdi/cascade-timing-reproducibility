@@ -1,0 +1,444 @@
+{
+  "key": "cheng2014",
+  "requested_title": "Can cascades be predicted?",
+  "retrieved_from": "https://api.crossref.org/works?query.title=Can+cascades+be+predicted%3F&rows=3",
+  "review_required": false,
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          8
+        ]
+      ],
+      "date-time": "2026-09-08T06:29:52Z",
+      "timestamp": 1788848992541,
+      "version": "build-2803163510"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 34,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              4,
+              7
+            ]
+          ],
+          "date-time": "2014-04-07T00:00:00Z",
+          "timestamp": 1396828800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          4,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1145/2566486.2567997",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2014-10-07T08:57:59Z",
+      "timestamp": 1412672279000
+    },
+    "page": "925-936",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 535,
+    "title": [
+      "Can cascades be predicted?"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Justin",
+        "family": "Cheng",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Stanford University, Stanford, CA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lada",
+        "family": "Adamic",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Facebook, Menlo Park, CA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "P. Alex",
+        "family": "Dow",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Facebook, Menlo Park, CA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jon Michael",
+        "family": "Kleinberg",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Cornell University, Ithaca, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jure",
+        "family": "Leskovec",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Stanford University, Stanford, CA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2014,
+          4,
+          7
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_1_1",
+        "volume-title": "Workshop on the Weblogging Ecosystem",
+        "author": "Adar E.",
+        "year": "2004",
+        "unstructured": "E. Adar , L. Zhang , L. A. Adamic , and R. M. Lukose . Implicit structure and the dynamics of blogspace . In Workshop on the Weblogging Ecosystem , 2004 . E. Adar, L. Zhang, L. A. Adamic, and R. M. Lukose. Implicit structure and the dynamics of blogspace. In Workshop on the Weblogging Ecosystem, 2004."
+      },
+      {
+        "key": "e_1_3_2_1_2_1",
+        "unstructured": "A. Anderson S. Goel J. Hofman and D. Watts. The structural virality of online diffusion. Under review.  A. Anderson S. Goel J. Hofman and D. Watts. The structural virality of online diffusion. Under review."
+      },
+      {
+        "key": "e_1_3_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1150402.1150412"
+      },
+      {
+        "key": "e_1_3_2_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2433396.2433401"
+      },
+      {
+        "key": "e_1_3_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1935826.1935845"
+      },
+      {
+        "key": "e_1_3_2_1_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1566374.1566421"
+      },
+      {
+        "key": "e_1_3_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1509/jmr.10.0353"
+      },
+      {
+        "key": "e_1_3_2_1_8_1",
+        "volume-title": "Proc. ICWSM",
+        "author": "Cha M.",
+        "year": "2010",
+        "unstructured": "M. Cha , H. Haddadi , F. Benevenuto , and P. K. Gummadi . Measuring user influence in twitter: The million follower fallacy . In Proc. ICWSM , 2010 . M. Cha, H. Haddadi, F. Benevenuto, and P. K. Gummadi. Measuring user influence in twitter: The million follower fallacy. In Proc. ICWSM, 2010."
+      },
+      {
+        "key": "e_1_3_2_1_9_1",
+        "volume-title": "Proc. ICWSM",
+        "author": "Dow P. A.",
+        "year": "2013",
+        "unstructured": "P. A. Dow , L. A. Adamic , and A. Friggeri . The anatomy of large facebook cascades . In Proc. ICWSM , 2013 . P. A. Dow, L. A. Adamic, and A. Friggeri. The anatomy of large facebook cascades. In Proc. ICWSM, 2013."
+      },
+      {
+        "key": "e_1_3_2_1_10_1",
+        "volume-title": "Proc. OSM",
+        "author": "Galuba W.",
+        "year": "2010",
+        "unstructured": "W. Galuba , K. Aberer , D. Chakraborty , Z. Despotovic , and W. Kellerer . Outtweeting the twitterers-predicting information cascades in microblogs . In Proc. OSM , 2010 . W. Galuba, K. Aberer, D. Chakraborty, Z. Despotovic, and W. Kellerer. Outtweeting the twitterers-predicting information cascades in microblogs. In Proc. OSM, 2010."
+      },
+      {
+        "key": "e_1_3_2_1_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2229012.2229058"
+      },
+      {
+        "key": "e_1_3_2_1_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.1000814107"
+      },
+      {
+        "key": "e_1_3_2_1_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/988672.988739"
+      },
+      {
+        "key": "e_1_3_2_1_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SocialCom.2013.101"
+      },
+      {
+        "key": "e_1_3_2_1_15_1",
+        "volume-title": "Proc. ICWSM",
+        "author": "Hoang T.-A.",
+        "year": "2012",
+        "unstructured": "T.-A. Hoang and E.-P. Lim . Virality and susceptibility in information diffusions . In Proc. ICWSM , 2012 . T.-A. Hoang and E.-P. Lim. Virality and susceptibility in information diffusions. In Proc. ICWSM, 2012."
+      },
+      {
+        "key": "e_1_3_2_1_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1963192.1963222"
+      },
+      {
+        "key": "e_1_3_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2487788.2488017"
+      },
+      {
+        "key": "e_1_3_2_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1835804.1835875"
+      },
+      {
+        "key": "e_1_3_2_1_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2396761.2398634"
+      },
+      {
+        "key": "e_1_3_2_1_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1232722.1232727"
+      },
+      {
+        "key": "e_1_3_2_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9781611972771.60"
+      },
+      {
+        "key": "e_1_3_2_1_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.0708471105"
+      },
+      {
+        "key": "e_1_3_2_1_23_1",
+        "author": "Ma Z.",
+        "year": "2013",
+        "unstructured": "Z. Ma , A. Sun , and G. Cong . On predicting the popularity of newly emerging hashtags in twitter. Journal of the American Society for Information Science and Technology , 2013 . Z. Ma, A. Sun, and G. Cong. On predicting the popularity of newly emerging hashtags in twitter. Journal of the American Society for Information Science and Technology, 2013.",
+        "journal-title": "Journal of the American Society for Information Science and Technology"
+      },
+      {
+        "key": "e_1_3_2_1_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2339530.2339540"
+      },
+      {
+        "key": "e_1_3_2_1_25_1",
+        "volume-title": "Linguistic inquiry and word count: LIWC",
+        "author": "Pennebaker J. W.",
+        "year": "2001",
+        "unstructured": "J. W. Pennebaker , M. E. Francis , and R. J. Booth . Linguistic inquiry and word count: LIWC 2001 . 2001. J. W. Pennebaker, M. E. Francis, and R. J. Booth. Linguistic inquiry and word count: LIWC 2001. 2001."
+      },
+      {
+        "key": "e_1_3_2_1_26_1",
+        "volume-title": "Proc. ICWSM",
+        "author": "Petrovic S.",
+        "year": "2011",
+        "unstructured": "S. Petrovic , M. Osborne , and V. Lavrenko . RT to win! predicting message propagation in twitter . In Proc. ICWSM , 2011 . S. Petrovic, M. Osborne, and V. Lavrenko. RT to win! predicting message propagation in twitter. In Proc. ICWSM, 2011."
+      },
+      {
+        "key": "e_1_3_2_1_27_1",
+        "volume-title": "Proceedings of the Seventh International Conference on Weblogs and Social Media (ICWSM)",
+        "author": "Romero D. M.",
+        "year": "2013",
+        "unstructured": "D. M. Romero , C. Tan , and J. Ugander . On the interplay between social and topical structure . In Proceedings of the Seventh International Conference on Weblogs and Social Media (ICWSM) , 2013 . D. M. Romero, C. Tan, and J. Ugander. On the interplay between social and topical structure. In Proceedings of the Seventh International Conference on Weblogs and Social Media (ICWSM), 2013."
+      },
+      {
+        "key": "e_1_3_2_1_28_1",
+        "volume-title": "Science",
+        "author": "Salganik M.",
+        "year": "2006",
+        "unstructured": "M. Salganik , P. Dodds , and D. Watts . Experimental study of inequality and unpredictability in an artificial cultural market . Science , 2006 . M. Salganik, P. Dodds, and D. Watts. Experimental study of inequality and unpredictability in an artificial cultural market. Science, 2006."
+      },
+      {
+        "key": "e_1_3_2_1_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1787234.1787254"
+      },
+      {
+        "key": "e_1_3_2_1_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2124295.2124320"
+      },
+      {
+        "key": "e_1_3_2_1_31_1",
+        "volume-title": "Crown",
+        "author": "Watts D. J.",
+        "year": "2012",
+        "unstructured": "D. J. Watts . Everything is Obvious: How Common Sense Fails Us . Crown , 2012 . D. J. Watts. Everything is Obvious: How Common Sense Fails Us. Crown, 2012."
+      },
+      {
+        "key": "e_1_3_2_1_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep02522"
+      },
+      {
+        "key": "e_1_3_2_1_33_1",
+        "volume-title": "Proc. ICWSM",
+        "author": "Yang J.",
+        "year": "2010",
+        "unstructured": "J. Yang and S. Counts . Predicting the speed, scale, and range of information diffusion in twitter . In Proc. ICWSM , 2010 . J. Yang and S. Counts. Predicting the speed, scale, and range of information diffusion in twitter. In Proc. ICWSM, 2010."
+      },
+      {
+        "key": "e_1_3_2_1_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDM.2010.22"
+      }
+    ],
+    "event": {
+      "name": "WWW '14: 23rd International World Wide Web Conference",
+      "location": "Seoul Korea",
+      "acronym": "WWW '14",
+      "sponsor": [
+        "IW3C2 International World Wide Web Conference Committee",
+        "SIGWEB ACM Special Interest Group on Hypertext, Hypermedia, and Web"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 23rd international conference on World wide web"
+    ],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/2566486.2567997",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/2566486.2567997",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T03:00:59Z",
+      "timestamp": 1750215659000
+    },
+    "score": 32.556084,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/2566486.2567997"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          4,
+          7
+        ]
+      ]
+    },
+    "references-count": 34,
+    "alternative-id": [
+      "10.1145/2566486.2567997",
+      "10.1145/2566486"
+    ],
+    "URL": "https://doi.org/10.1145/2566486.2567997",
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          4,
+          7
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2014-04-07",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "_title_similarity": 1.0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "MSLE_summary_rows": 96,
+  "level_slots": 360,
+  "new_CRPS_scores": 0,
+  "new_bootstrap_vectors": 4000,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "post_test_analysis": true,
+  "status": "supplementary_saved_score_analysis_completed",
+  "timing_slots": 90
+}

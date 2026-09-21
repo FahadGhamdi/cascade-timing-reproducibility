@@ -1,0 +1,578 @@
+[
+  {
+    "job_id": "weibo__hurdle__noise0__s20260913",
+    "source": "weibo",
+    "family": "hurdle",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260913,
+    "params": {
+      "ridge": 1.0
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "seismic__hurdle__noise0__s20260913",
+    "source": "seismic",
+    "family": "hurdle",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260913,
+    "params": {
+      "ridge": 0.001
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__qrf__noise0__s20260913",
+    "source": "weibo",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260913,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__qrf__noise0__s20260914",
+    "source": "weibo",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260914,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__qrf__noise0__s20260915",
+    "source": "weibo",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260915,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__qrf__noise0__s20260913",
+    "source": "seismic",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260913,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__qrf__noise0__s20260914",
+    "source": "seismic",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260914,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__qrf__noise0__s20260915",
+    "source": "seismic",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260915,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__ngboost__noise0__s20260913",
+    "source": "weibo",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260913,
+    "params": {
+      "depth": 1,
+      "leaf": 10,
+      "stages": 100
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "weibo__ngboost__noise0__s20260914",
+    "source": "weibo",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260914,
+    "params": {
+      "depth": 1,
+      "leaf": 10,
+      "stages": 100
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "weibo__ngboost__noise0__s20260915",
+    "source": "weibo",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260915,
+    "params": {
+      "depth": 1,
+      "leaf": 10,
+      "stages": 100
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "seismic__ngboost__noise0__s20260913",
+    "source": "seismic",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260913,
+    "params": {
+      "depth": 2,
+      "leaf": 10,
+      "stages": 300
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__ngboost__noise0__s20260914",
+    "source": "seismic",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260914,
+    "params": {
+      "depth": 2,
+      "leaf": 10,
+      "stages": 300
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__ngboost__noise0__s20260915",
+    "source": "seismic",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 0,
+    "seed": 20260915,
+    "params": {
+      "depth": 2,
+      "leaf": 10,
+      "stages": 300
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__hurdle__noise1__s20260913",
+    "source": "weibo",
+    "family": "hurdle",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260913,
+    "params": {
+      "ridge": 1.0
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "seismic__hurdle__noise1__s20260913",
+    "source": "seismic",
+    "family": "hurdle",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260913,
+    "params": {
+      "ridge": 0.001
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__qrf__noise1__s20260913",
+    "source": "weibo",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260913,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__qrf__noise1__s20260914",
+    "source": "weibo",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260914,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__qrf__noise1__s20260915",
+    "source": "weibo",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260915,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__qrf__noise1__s20260913",
+    "source": "seismic",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260913,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__qrf__noise1__s20260914",
+    "source": "seismic",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260914,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__qrf__noise1__s20260915",
+    "source": "seismic",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260915,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__ngboost__noise1__s20260913",
+    "source": "weibo",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260913,
+    "params": {
+      "depth": 1,
+      "leaf": 10,
+      "stages": 100
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "weibo__ngboost__noise1__s20260914",
+    "source": "weibo",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260914,
+    "params": {
+      "depth": 1,
+      "leaf": 10,
+      "stages": 100
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "weibo__ngboost__noise1__s20260915",
+    "source": "weibo",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260915,
+    "params": {
+      "depth": 1,
+      "leaf": 10,
+      "stages": 100
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "seismic__ngboost__noise1__s20260913",
+    "source": "seismic",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260913,
+    "params": {
+      "depth": 2,
+      "leaf": 10,
+      "stages": 300
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__ngboost__noise1__s20260914",
+    "source": "seismic",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260914,
+    "params": {
+      "depth": 2,
+      "leaf": 10,
+      "stages": 300
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__ngboost__noise1__s20260915",
+    "source": "seismic",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 1,
+    "seed": 20260915,
+    "params": {
+      "depth": 2,
+      "leaf": 10,
+      "stages": 300
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__hurdle__noise2__s20260913",
+    "source": "weibo",
+    "family": "hurdle",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260913,
+    "params": {
+      "ridge": 1.0
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "seismic__hurdle__noise2__s20260913",
+    "source": "seismic",
+    "family": "hurdle",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260913,
+    "params": {
+      "ridge": 0.001
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__qrf__noise2__s20260913",
+    "source": "weibo",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260913,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__qrf__noise2__s20260914",
+    "source": "weibo",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260914,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__qrf__noise2__s20260915",
+    "source": "weibo",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260915,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__qrf__noise2__s20260913",
+    "source": "seismic",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260913,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__qrf__noise2__s20260914",
+    "source": "seismic",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260914,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__qrf__noise2__s20260915",
+    "source": "seismic",
+    "family": "qrf",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260915,
+    "params": {
+      "depth": 12,
+      "leaf": 10,
+      "trees": 128
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "weibo__ngboost__noise2__s20260913",
+    "source": "weibo",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260913,
+    "params": {
+      "depth": 1,
+      "leaf": 10,
+      "stages": 100
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "weibo__ngboost__noise2__s20260914",
+    "source": "weibo",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260914,
+    "params": {
+      "depth": 1,
+      "leaf": 10,
+      "stages": 100
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "weibo__ngboost__noise2__s20260915",
+    "source": "weibo",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260915,
+    "params": {
+      "depth": 1,
+      "leaf": 10,
+      "stages": 100
+    },
+    "candidate": 0
+  },
+  {
+    "job_id": "seismic__ngboost__noise2__s20260913",
+    "source": "seismic",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260913,
+    "params": {
+      "depth": 2,
+      "leaf": 10,
+      "stages": 300
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__ngboost__noise2__s20260914",
+    "source": "seismic",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260914,
+    "params": {
+      "depth": 2,
+      "leaf": 10,
+      "stages": 300
+    },
+    "candidate": 3
+  },
+  {
+    "job_id": "seismic__ngboost__noise2__s20260915",
+    "source": "seismic",
+    "family": "ngboost",
+    "info": "I0_PLUS_NOISE",
+    "noise_replicate": 2,
+    "seed": 20260915,
+    "params": {
+      "depth": 2,
+      "leaf": 10,
+      "stages": 300
+    },
+    "candidate": 3
+  }
+]

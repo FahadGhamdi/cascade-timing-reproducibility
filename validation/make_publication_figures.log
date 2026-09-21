@@ -1,0 +1,3 @@
+families ['conditional_empirical', 'empirical_window', 'hurdle', 'nb2_glm', 'ngboost', 'poisson_glm', 'qrf']
+bins ['0', '1-2', '10-49', '3-9', '50+']
+Figure PDFs: 11

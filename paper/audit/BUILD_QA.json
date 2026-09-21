@@ -1,0 +1,43 @@
+{
+  "revision": 6,
+  "built_at_utc": "2026-09-14T08:58:36.013857+00:00",
+  "experiments_run": false,
+  "overleaf_account_tested": false,
+  "documents": {
+    "main": {
+      "pages": 12,
+      "references": 36,
+      "undefined_references": false,
+      "overfull_warnings": [
+        "Overfull \\hbox (9.2679pt too wide) in paragraph at lines 28--28",
+        "Overfull \\hbox (9.2679pt too wide) in paragraph at lines 28--28"
+      ],
+      "visually_reviewed": true
+    },
+    "supplementary": {
+      "pages": 19,
+      "references": 5,
+      "undefined_references": false,
+      "overfull_warnings": [],
+      "visually_reviewed": true
+    }
+  },
+  "reporting_checks": 286,
+  "title_matches": 37,
+  "limits": [
+    "Main inherited class emits two non-clipping title-box warnings.",
+    "Latest official class could not be downloaded (403).",
+    "Title checks include archived metadata; not all full papers were read anew."
+  ],
+  "pdfs": {
+    "main": {
+      "sha256": "dae428fb798c26ecf84aebf62ac2933af374443a67840f97480c295a5e5bdf6b",
+      "pages": 12
+    },
+    "supplementary": {
+      "sha256": "cc441dafc7f74494c00d3c899ebee704b06ffce78b93c2e9b7d9b4213ba464de",
+      "pages": 19
+    }
+  },
+  "visual_scope": "All main pages inspected; revised supplement opening inspected; remaining supplement pages text-identical to previously reviewed version."
+}

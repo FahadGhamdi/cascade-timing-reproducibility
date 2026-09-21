@@ -1,0 +1,487 @@
+{
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          8
+        ]
+      ],
+      "date-time": "2026-09-08T14:58:17Z",
+      "timestamp": 1788879497294,
+      "version": "build-2803163510"
+    },
+    "reference-count": 38,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2020-07-01T00:00:00Z",
+          "timestamp": 1593561600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2020-07-01T00:00:00Z",
+          "timestamp": 1593561600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2020-07-01T00:00:00Z",
+          "timestamp": 1593561600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1109/infocom41043.2020.9155359",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          4
+        ]
+      ],
+      "date-time": "2020-08-04T18:29:35Z",
+      "timestamp": 1596565775000
+    },
+    "page": "1867-1876",
+    "source": "Crossref",
+    "is-referenced-by-count": 50,
+    "title": [
+      "An Adaptive and Fast Convergent Approach to Differentially Private Deep Learning"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Zhiying",
+        "family": "Xu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shuyu",
+        "family": "Shi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alex X.",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jun",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lin",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref38",
+        "first-page": "2146",
+        "article-title": "What is the best multistage architecture for object recognition?",
+        "author": "jarrett",
+        "year": "2009",
+        "journal-title": "Proceedings of IEEE 12th International Conference on Computer Vision (ICCV)"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "crossref",
+        "first-page": "211",
+        "DOI": "10.1561/0400000042",
+        "article-title": "The algorithmic foundations of differential privacy",
+        "volume": "9",
+        "author": "dwork",
+        "year": "2014",
+        "journal-title": "Foundations and Trends\ufffd in Theoretical Computer Science"
+      },
+      {
+        "key": "ref32",
+        "article-title": "Efficient per-example gradient computations",
+        "author": "goodfellow",
+        "year": "2015"
+      },
+      {
+        "key": "ref31",
+        "article-title": "Test functions for optimization &#x2014; Wikipedia, the free encyclopedia",
+        "year": "0"
+      },
+      {
+        "key": "ref30",
+        "article-title": "Improving the Gaussian mechanism for differential privacy: Analytical calibration and optimal denoising",
+        "author": "balle",
+        "year": "2018"
+      },
+      {
+        "key": "ref37",
+        "first-page": "1097",
+        "article-title": "Imagenet classification with deep convolutional neural networks",
+        "author": "krizhevsky",
+        "year": "2012",
+        "journal-title": "Proceedings of 26th Conference on Neural Information Processing Systems (NeurIPS)"
+      },
+      {
+        "key": "ref36",
+        "first-page": "807",
+        "article-title": "Rectified linear units improve restricted boltzmann machines",
+        "author": "nair",
+        "year": "2010",
+        "journal-title": "Proc of the International Conference on Machine Learning (ICML)"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2591796.2591883"
+      },
+      {
+        "key": "ref34",
+        "first-page": "265",
+        "article-title": "Tensorflow: A system for largescale machine learning",
+        "volume": "16",
+        "author": "abadi",
+        "year": "2016",
+        "journal-title": "Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI'02)"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2976749.2978318"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3219819.3220076"
+      },
+      {
+        "key": "ref12",
+        "article-title": "Learning rate adaptation for differentially private stochastic gradient descent",
+        "author": "koskela",
+        "year": "2018"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2019.8737494"
+      },
+      {
+        "key": "ref14",
+        "first-page": "263",
+        "article-title": "R&#x00E9;nyi differential privacy",
+        "author": "mironov",
+        "year": "2017",
+        "journal-title": "Proc 20th IEEE Symposium on Computer Security Foundations (CSF)"
+      },
+      {
+        "key": "ref15",
+        "article-title": "Subsampled r&#x00E9;nyi differential privacy and analytical moments accountant",
+        "author": "wang",
+        "year": "2018"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/5.726791"
+      },
+      {
+        "key": "ref17",
+        "article-title": "Learning multiple layers of features from tiny images",
+        "author": "krizhevsky",
+        "year": "2009",
+        "journal-title": "Citeseer Tech Rep"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2018.8485902"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2019.8737457"
+      },
+      {
+        "key": "ref28",
+        "article-title": "Geographic differential privacy for mobile crowd coverage maximization",
+        "author": "wang",
+        "year": "2018",
+        "journal-title": "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)"
+      },
+      {
+        "key": "ref4",
+        "first-page": "17",
+        "article-title": "Privacy in pharmacogenetics: An end-to-end case study of personalized warfarin dosing",
+        "author": "fredrikson",
+        "year": "2014",
+        "journal-title": "Proc 23rd USENIX Secur Symp (USENIX Secur )"
+      },
+      {
+        "key": "ref27",
+        "article-title": "Boosting model performance through differentially private model aggregation",
+        "author": "collet",
+        "year": "2018"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFCOMW.2018.8407032"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14722/ndss.2015.23241"
+      },
+      {
+        "key": "ref29",
+        "article-title": "A privacy-preserving deep learning approach for face recognition with edge computing",
+        "author": "mao",
+        "year": "2018",
+        "journal-title": "Proceedings of USENIX Workshop on Hot Topics in Edge Computing (HotEdge 18)"
+      },
+      {
+        "key": "ref5",
+        "first-page": "265",
+        "article-title": "Calibrating noise to sensitivity in private data analysis",
+        "author": "dwork",
+        "year": "2006",
+        "journal-title": "Theory of Cryptography Conference"
+      },
+      {
+        "key": "ref8",
+        "first-page": "1999",
+        "article-title": "Secure multi-party differential privacy",
+        "author": "kairouz",
+        "year": "2015",
+        "journal-title": "Conference on Neural Information Processing Systems (NeurIPS)"
+      },
+      {
+        "key": "ref7",
+        "article-title": "Privacy-preserving machine learning through data obfuscation",
+        "author": "zhang",
+        "year": "2018"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2017.8057090"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "crossref",
+        "first-page": "1310",
+        "DOI": "10.1145/2810103.2813687",
+        "article-title": "Privacy-preserving deep learning",
+        "author": "shokri",
+        "year": "2015",
+        "journal-title": "Proceedings of 22nd ACM Conference on Computer and Communications Security (CCS)"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2016.2558659"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2019.8737579"
+      },
+      {
+        "key": "ref22",
+        "first-page": "1309",
+        "article-title": "Differential privacy preservation for deep auto-encoders: An application of human behavior prediction",
+        "volume": "16",
+        "author": "phan",
+        "year": "2016",
+        "journal-title": "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2019.8737630"
+      },
+      {
+        "key": "ref24",
+        "article-title": "Semi-supervised knowledge transfer for deep learning from private training data",
+        "author": "papernot",
+        "year": "2017",
+        "journal-title": "Proc of the Int Conf on Learning Representations (ICLR)"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3064176.3064218"
+      },
+      {
+        "key": "ref26",
+        "article-title": "Scalable private learning with PATE",
+        "author": "papernot",
+        "year": "2018",
+        "journal-title": "in&#x00B4; Proceedings of 6th International Conference on Learning Representations (ICLR)"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDM.2017.48"
+      }
+    ],
+    "event": {
+      "name": "IEEE INFOCOM 2020 - IEEE Conference on Computer Communications",
+      "location": "Toronto, ON, Canada",
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            6
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            9
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "IEEE INFOCOM 2020 - IEEE Conference on Computer Communications"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/9146503/9155217/09155359.pdf?arnumber=9155359",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          28
+        ]
+      ],
+      "date-time": "2022-06-28T17:55:39Z",
+      "timestamp": 1656438939000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/9155359/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          7
+        ]
+      ]
+    },
+    "references-count": 38,
+    "URL": "https://doi.org/10.1109/infocom41043.2020.9155359",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          7
+        ]
+      ]
+    }
+  },
+  "retrieved_from": "https://api.crossref.org/works/10.1109%2FINFOCOM41043.2020.9155359",
+  "review_required": false
+}

@@ -1,0 +1,23 @@
+{
+  "strata": {
+    "files": [
+      "MSLE_SAVED_MEDIANS.csv",
+      "STRATUM_LEVELS.csv",
+      "EMPIRICAL_REFERENCES_BY_STRATUM.csv",
+      "PROCEDURE_LOSSES.npz"
+    ],
+    "passed": true,
+    "atol": 1e-08,
+    "rtol": 1e-10
+  },
+  "noise": {
+    "files": [
+      "NOISE_REALIZATION_SUMMARIES.csv",
+      "NOISE_PROCEDURE_LOSSES.npz",
+      "PROCEDURE_COMPLETENESS.json"
+    ],
+    "passed": true,
+    "atol": 1e-08,
+    "rtol": 1e-10
+  }
+}

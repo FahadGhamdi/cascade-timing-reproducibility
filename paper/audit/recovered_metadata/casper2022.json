@@ -1,0 +1,771 @@
+{
+  "key": "casper2022",
+  "requested_title": "Anytime Information Cascade Popularity Prediction via Self-Exciting Processes",
+  "retrieved_from": "https://api.crossref.org/works?query.title=Anytime+Information+Cascade+Popularity+Prediction+via+Self-Exciting+Processes&rows=3",
+  "review_required": true,
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          13
+        ]
+      ],
+      "date-time": "2026-09-13T12:49:21Z",
+      "timestamp": 1789303761672,
+      "version": "build-2803163510"
+    },
+    "reference-count": 68,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "12",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "am",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "62176043"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "62176043"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "62072077"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "62072077"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "NSF",
+        "award": [
+          "III-2106758"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "III-2106758"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NSF",
+        "award": [
+          "POSE-2346158.D"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "POSE-2346158.D"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Trans. Knowl. Data Eng."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1109/tkde.2024.3465241",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          19
+        ]
+      ],
+      "date-time": "2024-09-19T17:29:05Z",
+      "timestamp": 1726766945000
+    },
+    "page": "8541-8555",
+    "source": "Crossref",
+    "is-referenced-by-count": 35,
+    "title": [
+      "Information Cascade Popularity Prediction via Probabilistic Diffusion"
+    ],
+    "prefix": "10.1109",
+    "volume": "36",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0097-3617",
+        "authenticated-orcid": false,
+        "given": "Zhangtao",
+        "family": "Cheng",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Electronic Science and Technology of China, Chengdu, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8038-8150",
+        "authenticated-orcid": false,
+        "given": "Fan",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Electronic Science and Technology of China, Chengdu, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6415-7558",
+        "authenticated-orcid": false,
+        "given": "Xovee",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Electronic Science and Technology of China, Chengdu, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1474-3169",
+        "authenticated-orcid": false,
+        "given": "Kunpeng",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Decision, Operations &#x0026; Information Technologies, University of Maryland, College Park, MD, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8839-6278",
+        "authenticated-orcid": false,
+        "given": "Goce",
+        "family": "Trajcevski",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electrical and Computer Engineering, Iowa State University, Ames, IA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8163-3146",
+        "authenticated-orcid": false,
+        "given": "Ting",
+        "family": "Zhong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Electronic Science and Technology of China, Chengdu, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3491-5968",
+        "authenticated-orcid": false,
+        "given": "Philip S.",
+        "family": "Yu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, University of Illinois at Chicago, Chicago, IL, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3433000"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2017.2701375"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3038912.3052643"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v28i1.8739"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/988672.988739"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2021.3064233"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2566486.2567997"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.idm.2020.03.002"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3178876.3186108"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TNNLS.2021.3106156"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2021.3126475"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDM.2017.57"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDE.2019.00074"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3219819.3220077"
+      },
+      {
+        "key": "ref15",
+        "first-page": "5321",
+        "article-title": "Latent odes for irregularly-sampled time series",
+        "volume-title": "Proc. Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Rubanova"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2021.3130191"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1561/2200000089"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3442381.3449873"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3511808.3557268"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ins.2023.119531"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2019.2939796"
+      },
+      {
+        "key": "ref22",
+        "first-page": "2256",
+        "article-title": "Deep unsupervised learning using nonequilibrium thermodynamics",
+        "volume-title": "Proc. Int. Conf. Mach. Learn.",
+        "author": "Sohl-Dickstein"
+      },
+      {
+        "key": "ref23",
+        "first-page": "6572",
+        "article-title": "Neural ordinary differential equations",
+        "volume-title": "Proc. Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Chen"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM41043.2020.9155349"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3404835.3462934"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3485273"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/int.22518"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3038912.3052650"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3132847.3132973"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/icwsm.v10i1.14748"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-75762-5_57"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2783258.2783401"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3336191.3371834"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2022.3151829"
+      },
+      {
+        "key": "ref35",
+        "first-page": "1530",
+        "article-title": "Variational inference with normalizing flows",
+        "volume-title": "Proc. Int. Conf. Mach. Learn.",
+        "author": "Rezende"
+      },
+      {
+        "key": "ref36",
+        "article-title": "Auto-encoding variational bayes",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Kingma"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/2969033.2969125"
+      },
+      {
+        "key": "ref38",
+        "article-title": "Large scale GAN training for high fidelity natural image synthesis",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Brock"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.24963/ijcai.2021/139"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.56.5018"
+      },
+      {
+        "key": "ref41",
+        "article-title": "Denoising diffusion implicit models",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Song"
+      },
+      {
+        "key": "ref42",
+        "first-page": "8780",
+        "article-title": "Diffusion models beat GANs on image synthesis",
+        "volume-title": "Proc. Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Dhariwal"
+      },
+      {
+        "key": "ref43",
+        "article-title": "SDEdit: Image synthesis and editing with stochastic differential equations",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Meng"
+      },
+      {
+        "key": "ref44",
+        "article-title": "DiffWave: A versatile diffusion model for audio synthesis",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Kong"
+      },
+      {
+        "key": "ref45",
+        "first-page": "24804",
+        "article-title": "CSDI: Conditional score-based diffusion models for probabilistic time series imputation",
+        "volume-title": "Proc. Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Tashiro"
+      },
+      {
+        "key": "ref46",
+        "article-title": "FFJORD: Free-form continuous dynamics for scalable reversible generative models",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Grathwohl"
+      },
+      {
+        "key": "ref47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.acha.2010.04.005"
+      },
+      {
+        "key": "ref48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.24963/ijcai.2019/594"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TNNLS.2020.2978386"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TNNLS.2022.3155478"
+      },
+      {
+        "key": "ref51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2018.2789443"
+      },
+      {
+        "key": "ref52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2021.3115017"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2021.3094332"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2022.3160208"
+      },
+      {
+        "key": "ref55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3219819.3220025"
+      },
+      {
+        "key": "ref56",
+        "article-title": "Learning long-term dependencies in irregularly-sampled time series",
+        "author": "Lechner",
+        "year": "2020"
+      },
+      {
+        "key": "ref57",
+        "article-title": "Exploiting uncertainty in popularity prediction of information diffusion cascades using self-exciting point processes",
+        "author": "Kong",
+        "year": "2020"
+      },
+      {
+        "key": "ref58",
+        "first-page": "6840",
+        "article-title": "Denoising diffusion probabilistic models",
+        "volume-title": "Proc. Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Ho"
+      },
+      {
+        "key": "ref59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep02522"
+      },
+      {
+        "key": "ref60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1787234.1787254"
+      },
+      {
+        "key": "ref61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2433396.2433443"
+      },
+      {
+        "key": "ref62",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/neco.1997.9.8.1735"
+      },
+      {
+        "key": "ref63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.24963/ijcai.2023/247"
+      },
+      {
+        "key": "ref64",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v38i8.28701"
+      },
+      {
+        "key": "ref65",
+        "article-title": "Adam: A method for stochastic optimization",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Kingma"
+      },
+      {
+        "key": "ref66",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3301303"
+      },
+      {
+        "issue": "1",
+        "key": "ref67",
+        "first-page": "3221",
+        "article-title": "Accelerating T-SNE using tree-based algorithms",
+        "volume": "15",
+        "author": "Van Der Maaten",
+        "year": "2014",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "ref68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3404835.3463104"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Knowledge and Data Engineering"
+    ],
+    "link": [
+      {
+        "URL": "https://ieeexplore.ieee.org/ielam/69/10750897/10684548-aam.pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/69/10750897/10684548.pdf?arnumber=10684548",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          26
+        ]
+      ],
+      "date-time": "2024-11-26T23:54:13Z",
+      "timestamp": 1732665253000
+    },
+    "score": 39.4025,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10684548/"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "references-count": 68,
+    "journal-issue": {
+      "issue": "12"
+    },
+    "URL": "https://doi.org/10.1109/tkde.2024.3465241",
+    "ISSN": [
+      "1041-4347",
+      "1558-2191",
+      "2326-3865"
+    ],
+    "issn-type": [
+      {
+        "value": "1041-4347",
+        "type": "print"
+      },
+      {
+        "value": "1558-2191",
+        "type": "electronic"
+      },
+      {
+        "value": "2326-3865",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "_title_similarity": 0.696969696969697
+  }
+}

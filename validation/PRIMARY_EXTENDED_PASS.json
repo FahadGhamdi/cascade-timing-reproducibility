@@ -1,0 +1,30 @@
+{
+  "stage": "primary",
+  "verified_files": 2940,
+  "steps": [
+    {
+      "name": "primary",
+      "seconds": 7.836751765999907,
+      "returncode": 0,
+      "execution": "unchanged original function in process"
+    }
+  ],
+  "status": "passed",
+  "full_refit_to_test_reproduction": false,
+  "interpretation": "Frozen-parent stage replay; original locks preserved.",
+  "primary_comparison": {
+    "files": [
+      "PRIMARY_COMPARISONS.json",
+      "PROCEDURE_METRICS.json",
+      "CALIBRATION.json",
+      "DUPLICATE_SENSITIVITY.json",
+      "BOOTSTRAP_DESIGN.json",
+      "BOOTSTRAP_DELTAS.csv.gz",
+      "ROOT_PROCEDURE_SCORES.csv.gz"
+    ],
+    "passed": true,
+    "atol": 1e-08,
+    "rtol": 1e-10
+  },
+  "source_files_verified_after": 2940
+}

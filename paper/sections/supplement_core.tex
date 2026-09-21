@@ -1,0 +1,572 @@
+Scientific source version: 13 September 2026. Companion to the IEEE Access author-review manuscript. Sections S1--S7 preserve the original Phase 13F experiment and review. S8 integrates the completed Phase 14A/14B supplement; S9 records the independent review of its saved outputs.
+
+\hypertarget{study-provenance-and-frozen-decisions}{%
+\section{Study provenance and frozen decisions}\label{study-provenance-and-frozen-decisions}}
+
+The current experiment is a new, source-specific forecast comparison informed by earlier BRACE development. It uses a root-relative endpoint of 86,400 seconds. Older studies used an additional 24 hours after a prediction prefix. Their numerical results are not pooled with, or renamed as, the current results.
+
+\small\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Record
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Purpose
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Evidence status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Legacy development through Phase 12D & Investigate count forecasting, temporal adapters and numerical behavior & Development history; different cohorts and, in relevant earlier studies, a different horizon \\
+13A & Identify and audit the DeepHawkes Weibo release & Ingestion reproduced with documented anomalies; no model evaluation \\
+13B & Freeze cohorts, information sets and root-relative target & 26,000 roots, 78,000 windows; preparation reproduced \\
+13C / 13C-R1 & Bounded TRAIN pilot and numerical compatibility & Initial timeout retained; recovery completed; 17 original NGBoost score failures retained \\
+13D & Score the same saved NGBoost laws under a refined certificate; bounded domain-adapter decision & 1,536 score calculations completed; original failures preserved; CASPER adapter unqualified \\
+13E & Select shared family settings using VALIDATION & 154 jobs, 74 score failures; 40 qualified objects locked \\
+13F & One evaluation of retained objects on TEST & All 600,000 model-window scores complete; six primary comparisons available \\
+Original Phase 13F review & Check artifacts and independently aggregate saved results; write manuscript & No model loads, fits, forecasts, row scores or bootstrap draws \\
+Phase 14A supplement & Stratify stored losses and compute saved-median MSLE & Mac reaggregation matches the supplied Linux reference; no new real forecasts or CRPS \\
+Phase 14B supplement & Dimension-matched noise control & 42 procedures, 48 component fits, 630,000 complete scores and 12 available supplementary contrasts \\
+Phase 14 return review & Verify archive, saved rows, aggregates and saved bootstrap quantiles; integrate manuscript & No new fits, predictions, distribution scores or bootstrap draws \\
+\end{longtable}\normalsize
+
+The detailed protocols are retained in \path{protocols/PROTOCOL_PHASE13B.md}, \path{protocols/PROTOCOL_PHASE13E.md}, \path{protocols/PROTOCOL_PHASE13F.md}, and \path{protocols/PROTOCOL_PHASE14.md}. The Phase 14 freeze receipt is also retained. The records are prospective with respect to their stated performance evaluations, informed by disclosed earlier results and metadata. No external registry acceptance is claimed. The hashes establish the relationship among retained artifacts; their timestamps alone are not an independent public preregistration service.
+
+Weibo roles are assigned by root-user hash into 60/20/20 pools, followed by a separate root ordering to select 6,000/2,000/5,000 roots. SEISMIC uses the declared day blocks and prior-use exclusions. Exact identity strings are preserved, including scientific-notation IDs. Hashes and fixed cohort files, rather than floating-point conversion of identifiers, define membership. All quality exclusions were specified before current model evaluation.
+
+\hypertarget{exact-model-and-selection-specification}{%
+\section{Exact model and selection specification}\label{exact-model-and-selection-specification}}
+
+All models fit 18,000 rows from the 6,000 TRAIN roots in a source. Each root contributes the same three windows. Poisson, NB2 and Hurdle use TRAIN-fitted scaling; forest and boosting inputs retain the fixed feature transforms. Targets are stored separately from features, and the prediction contract rejects feature records containing a response field.
+
+\hypertarget{s2.1-grids-and-fitting}{%
+\subsection{Grids and fitting}\label{s2.1-grids-and-fitting}}
+
+\small\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ordered candidates, indices 0--3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fixed settings
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Hurdle & Count ridge 1, 0.1, 0.01, 0.001 & Logistic activity gate, C=1; shifted positive count 1+NB2 \\
+NB2 GLM & Ridge 1, 0.1, 0.01, 0.001 & Penalized joint likelihood, log-link mean, common size \\
+Poisson GLM & Ridge 1, 0.1, 0.01, 0.001 & Log-link mean \\
+QRF & (depth, minimum leaf) = (8,50), (8,10), (12,50), (12,10) & 128 trees; bootstrap; all predictors available per split; one worker \\
+NGBoost & (stages, depth) = (100,1), (300,1), (100,2), (300,2) & Normal LogScore on log1p(Y); leaf minimum 10; learning rate 0.03 \\
+Conditional empirical & k=250,100,50,25 & Same-window nearest log-prefix size; lexical root-ID tie-break \\
+Empirical by window & One distribution & All TRAIN responses at the corresponding window \\
+\end{longtable}\normalsize
+
+The Hurdle gate uses lbfgs, tolerance 1e-7 and at most 1,000 iterations. NB slopes have an L2 penalty and the intercept is unpenalized. NB coefficients are bounded in {[}-20,20{]}, and size in {[}0.001,1e6{]}. L-BFGS-B limits are 1,000 iterations and 1,500 objective evaluations, with ftol=1e-10 and gtol=1e-6. Poisson uses at most 1,000 iterations and tolerance 1e-7. Constant-law branches handle degenerate counts explicitly. The Hurdle's positive component is shifted; it is not the zero-truncated NB likelihood used in some published hurdle implementations.
+
+For each tree, QRF weights every original TRAIN row that shares the query leaf equally, then averages the tree distributions. Bootstrap training shapes the tree, but leaf support is not restricted to bootstrap multiplicities. Its finite support is retained, including when a held-out response exceeds the largest training outcome.
+
+NGBoost uses natural gradients, full rows and predictors at each stage, internal tolerance 1e-4, and no validation-based early stopping. Stage budget and actual returned stages are recorded. It trains a transformed continuous likelihood, not the discrete likelihood induced by rounding. The CDF in the manuscript is the exact count mapping tested by the scorer.
+
+\hypertarget{s2.2-seed-schedule-eligibility-and-selection}{%
+\subsection{Seed schedule, eligibility and selection}\label{s2.2-seed-schedule-eligibility-and-selection}}
+
+QRF and NGBoost use seeds 20260913, 20260914 and 20260915. Other procedures use the first seed. A shared candidate is eligible only if every required I0/I1/seed job completes its fit and all validation rows. Select the smallest average validation root CRPS across both information sets and the prescribed seeds. Differences within 1e-8 tie; the lowest candidate index wins. The conditional empirical k is selected by I0 validation CRPS.
+
+\small\begin{longtable}[]{@{}lllll@{}}
+\toprule\noalign{}
+Source & Family & Selected candidate & Setting & Retained objects \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Weibo & Hurdle & 0 & Ridge 1 & 2 \\
+Weibo & NB2 GLM & 0 & Ridge 1 & 2 \\
+Weibo & Poisson GLM & 3 & Ridge 0.001 & 2 \\
+Weibo & QRF & 3 & Depth 12, leaf 10 & 6 \\
+Weibo & NGBoost & 0 & 100 stages, depth 1 & 6 \\
+Weibo & Conditional empirical & 3 & k=25 & 1 \\
+Weibo & Empirical by window & 0 & Fixed & 1 \\
+SEISMIC & Hurdle & 3 & Ridge 0.001 & 2 \\
+SEISMIC & NB2 GLM & 3 & Ridge 0.001 & 2 \\
+SEISMIC & Poisson GLM & 3 & Ridge 0.001 & 2 \\
+SEISMIC & QRF & 3 & Depth 12, leaf 10 & 6 \\
+SEISMIC & NGBoost & 3 & 300 stages, depth 2 & 6 \\
+SEISMIC & Conditional empirical & 1 & k=100 & 1 \\
+SEISMIC & Empirical by window & 0 & Fixed & 1 \\
+\end{longtable}\normalsize
+
+The 154 validation jobs comprised 144 learned procedures and ten reference preparations. Total component fits were 160. Of 924,000 validation score attempts, 923,926 completed and 74 failed the frozen numerical contract. All failures were on Weibo: 11 Hurdle, nine NB2 and 54 NGBoost scores. The 21 affected jobs had converged fits but incomplete scoring; all were retained as ineligible. The chosen 40 objects completed validation and were not refitted after selection. Their bindings are in \path{evidence/MODEL_LOCK.json}.
+
+\hypertarget{s2.3-missing-specialized-process-comparison}{%
+\subsection{Missing specialized process comparison}\label{s2.3-missing-specialized-process-comparison}}
+
+The declared CASPER adaptation did not qualify. Its final feasibility stage had 12 nonempty attempts: 11 reached the 20,000-iteration limit and one reached its time limit; six empty cases needed no optimization. No qualified predictive means or performance scores followed. Earlier development also investigated a capped TiDeH-inspired adapter under a different experiment contract. Neither branch supplies a like-for-like published process baseline for the present table. The missing baseline limits domain-method comparisons, while leaving the narrower within-family information contrast interpretable. It must not be reported as a loss by published CASPER or TiDeH.
+
+\hypertarget{scores-numerical-rules-and-inference}{%
+\section{Scores, numerical rules and inference}\label{scores-numerical-rules-and-inference}}
+
+For discrete CRPS, empirical laws use their finite-support identity. Poisson, NB2 and Hurdle use the inherited direct-body evaluation and an omitted-tail bound, with target 1e-8 and maximum grid 1,048,576. Parameter means above 1e7 trigger ineligibility rather than clipping.
+
+The rounded transformed-Normal law uses the Phase 13D direct-body plus adaptive convex-tail calculation: direct range 4,096--1,048,576; target 1e-8; tail/body switch 0.1; at most 65,536 blocks; far index at most 2\^{}50; and 30 seconds per score. The returned numerical error bound is saved with each row. This analytic tail certificate includes a floating-point guard but is not a directed-rounding proof of every arithmetic operation. Original unsuccessful score attempts remain unsuccessful in their historical phases.
+
+The central 90\% interval score is
+
+\[
+(u-l)+20(l-y)\mathbf1\{y<l\}+20(y-u)\mathbf1\{y>u\}.
+\]
+
+Intervals use the forecast's discrete quantiles. We report width and coverage alongside the score. Absolute error uses the predictive median, not a mean mislabeled as a median. No extra mean-based comparison is imported from the old manuscript.
+
+PIT diagnostics use ten equal bins. For each case, the randomized PIT is constructed between F(y-1) and F(y), with a SHA-256 uniform based on source/root/window and salt \path{BRACE13E-PIT-v1}, shared across models and seeds. Nonrandomized bin mass integrates the uniform over this interval; a degenerate interval is assigned to the appropriate boundary bin by the frozen code. No-growth reliability uses ten fixed probability bins. \path{evidence/CALIBRATION.json} contains the aggregate and per-window bin masses, frequencies, and count/sum-forecast/sum-observed triplets for every procedure. Seed averaging does not create extra independent roots.
+
+The test pass has 40 model jobs, each with 15,000 case forecasts, hence 600,000 model-case evaluations. After averaging windows there are 200,000 model/root summaries; averaging prescribed seed losses gives 120,000 procedure/root summaries for 24 procedures. The actual test cohort comprises 10,000 roots and 30,000 root-window cases. No full-sample procedure mean would be reported after a failed row or missing seed; in this pass all selected procedures completed.
+
+Bootstrap details are fixed: NumPy PCG64, seed 20260916, source order Weibo then SEISMIC, lexical group order, batches of 100 and int64 sample indices. There are 10,000 vectors per source and 60,000 saved contrast values in total. Weibo has 3,467 sampled root-user groups; SEISMIC has 5,000 root units. Within each vector the root-weighted mean is the ratio of sampled root-loss sums to sampled root counts. Percentile quantiles use linear interpolation at 0.05/12 and 1-0.05/12. No additional multiplicity family is inferred from the descriptive tables.
+
+The original index-stream SHA-256 values are retained in \path{evidence/BOOTSTRAP_DESIGN.json}. The original Phase 13F review checked quantiles of saved replicates without regenerating the primary bootstrap. Phase 14A draws a separate exploratory subgroup bootstrap, described in S8. The conditional uncertainty statements exclude training, tuning and source-selection uncertainty and depend on the adequacy of the declared resampling units.
+
+\hypertarget{full-secondary-results}{%
+\section{Full secondary results}\label{full-secondary-results}}
+
+The following tables provide the complete aggregate secondary results.
+
+\hypertarget{aggregate-metrics-for-all-procedures}{%
+\subsection{Aggregate metrics for all procedures}\label{aggregate-metrics-for-all-procedures}}
+
+\begingroup\setlength{\tabcolsep}{5pt}\footnotesize\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Procedure
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Info
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CRPS
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+No-growth Brier
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Median AE
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+90\% coverage
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+90\% width
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+90\% interval score
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Weibo & Empirical by window & I0 & 126.569 & 0.016303 & 140.675 & 89.09\% & 384.333 & 2039.451 \\
+Weibo & Conditional empirical & I0 & 103.816 & 0.015350 & 122.334 & 83.89\% & 337.608 & 1390.895 \\
+Weibo & Poisson GLM & I0 & 148.384 & 0.016738 & 153.551 & 12.27\% & 31.792 & 2801.479 \\
+Weibo & Poisson GLM & I1 & 146.924 & 0.016733 & 152.123 & 12.38\% & 32.089 & 2770.853 \\
+Weibo & NB2 GLM & I0 & 123.562 & 0.020555 & 139.501 & 96.16\% & 438.037 & 1857.146 \\
+Weibo & NB2 GLM & I1 & 120.559 & 0.019735 & 139.392 & 94.97\% & 402.479 & 1728.436 \\
+Weibo & Hurdle & I0 & 124.126 & 0.016337 & 140.427 & 94.96\% & 433.792 & 1862.830 \\
+Weibo & Hurdle & I1 & 121.286 & 0.011839 & 139.699 & 94.99\% & 394.252 & 1756.772 \\
+Weibo & QRF & I0 & 100.990 & 0.015019 & 122.086 & 91.98\% & 456.030 & 1272.354 \\
+Weibo & QRF & I1 & 96.640 & 0.010319 & 117.061 & 92.58\% & 460.665 & 1214.982 \\
+Weibo & NGBoost & I0 & 111.249 & 0.016345 & 133.155 & 92.21\% & 391.677 & 1526.020 \\
+Weibo & NGBoost & I1 & 110.484 & 0.015661 & 132.550 & 92.51\% & 386.910 & 1483.795 \\
+SEISMIC & Empirical by window & I0 & 56.224 & 0.007972 & 70.209 & 92.00\% & 340.000 & 640.027 \\
+SEISMIC & Conditional empirical & I0 & 42.740 & 0.007895 & 56.737 & 92.16\% & 249.932 & 399.028 \\
+SEISMIC & Poisson GLM & I0 & 66.422 & 0.008068 & 71.567 & 14.59\% & 32.628 & 1162.297 \\
+SEISMIC & Poisson GLM & I1 & 59.117 & 0.008068 & 63.971 & 18.63\% & 31.366 & 1025.798 \\
+SEISMIC & NB2 GLM & I0 & 52.041 & 0.008010 & 67.178 & 94.43\% & 301.777 & 526.765 \\
+SEISMIC & NB2 GLM & I1 & 45.554 & 0.008012 & 60.203 & 93.33\% & 269.412 & 418.028 \\
+SEISMIC & Hurdle & I0 & 52.036 & 0.007973 & 67.233 & 94.43\% & 300.405 & 526.018 \\
+SEISMIC & Hurdle & I1 & 45.022 & 0.005113 & 59.577 & 94.13\% & 267.911 & 412.004 \\
+SEISMIC & QRF & I0 & 42.875 & 0.007908 & 57.719 & 92.42\% & 284.852 & 387.892 \\
+SEISMIC & QRF & I1 & 39.058 & 0.005924 & 51.467 & 93.99\% & 276.571 & 367.088 \\
+SEISMIC & NGBoost & I0 & 42.522 & 0.007992 & 57.259 & 93.30\% & 289.582 & 389.978 \\
+SEISMIC & NGBoost & I1 & 39.440 & 0.006595 & 52.505 & 92.41\% & 235.177 & 370.462 \\
+\end{longtable}\normalsize\endgroup
+
+\hypertarget{interval-coverage-at-all-four-nominal-levels}{%
+\subsection{Interval coverage at all four nominal levels}\label{interval-coverage-at-all-four-nominal-levels}}
+
+\small\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Procedure
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Info
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+50\%
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+80\%
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+90\%
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+95\%
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+SEISMIC & Empirical by window & I0 & 52.767\% & 83.427\% & 92.000\% & 96.007\% \\
+Weibo & Empirical by window & I0 & 50.567\% & 79.247\% & 89.093\% & 95.627\% \\
+SEISMIC & Conditional empirical & I0 & 54.607\% & 82.740\% & 92.160\% & 96.547\% \\
+Weibo & Conditional empirical & I0 & 45.693\% & 74.820\% & 83.887\% & 93.207\% \\
+SEISMIC & Hurdle & I0 & 61.953\% & 88.707\% & 94.427\% & 96.820\% \\
+SEISMIC & Hurdle & I1 & 62.287\% & 88.207\% & 94.127\% & 96.593\% \\
+Weibo & Hurdle & I0 & 71.787\% & 92.127\% & 94.960\% & 96.700\% \\
+Weibo & Hurdle & I1 & 69.633\% & 92.133\% & 94.987\% & 96.507\% \\
+SEISMIC & QRF & I0 & 54.400\% & 82.684\% & 92.420\% & 96.469\% \\
+SEISMIC & QRF & I1 & 56.736\% & 86.093\% & 93.987\% & 97.458\% \\
+Weibo & QRF & I0 & 51.324\% & 80.893\% & 91.984\% & 96.158\% \\
+Weibo & QRF & I1 & 54.231\% & 82.973\% & 92.580\% & 96.700\% \\
+SEISMIC & NGBoost & I0 & 56.700\% & 86.753\% & 93.300\% & 96.067\% \\
+SEISMIC & NGBoost & I1 & 55.640\% & 85.653\% & 92.413\% & 95.807\% \\
+Weibo & NGBoost & I0 & 53.493\% & 86.727\% & 92.213\% & 94.893\% \\
+Weibo & NGBoost & I1 & 53.467\% & 85.607\% & 92.513\% & 95.400\% \\
+SEISMIC & NB2 GLM & I0 & 62.307\% & 88.847\% & 94.433\% & 96.740\% \\
+SEISMIC & NB2 GLM & I1 & 62.240\% & 87.733\% & 93.327\% & 95.913\% \\
+Weibo & NB2 GLM & I0 & 73.800\% & 92.467\% & 96.160\% & 97.260\% \\
+Weibo & NB2 GLM & I1 & 71.347\% & 91.607\% & 94.967\% & 96.827\% \\
+SEISMIC & Poisson GLM & I0 & 6.480\% & 11.680\% & 14.593\% & 17.433\% \\
+SEISMIC & Poisson GLM & I1 & 7.887\% & 14.800\% & 18.627\% & 21.833\% \\
+Weibo & Poisson GLM & I0 & 5.440\% & 9.980\% & 12.273\% & 14.420\% \\
+Weibo & Poisson GLM & I1 & 4.820\% & 9.520\% & 12.380\% & 14.793\% \\
+\end{longtable}\normalsize
+
+\hypertarget{window-specific-primary-information-contrasts}{%
+\subsection{Window-specific primary information contrasts}\label{window-specific-primary-information-contrasts}}
+
+Descriptive per-window summaries; no separate window-wise hypothesis tests.
+
+\small\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14285}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Prefix (min)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+I0 CRPS
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+I1 CRPS
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+I1 − I0
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relative reduction
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Weibo & Hurdle & 5 & 137.348 & 134.555 & -2.793 & 2.03\% \\
+Weibo & Hurdle & 15 & 128.398 & 125.443 & -2.955 & 2.30\% \\
+Weibo & Hurdle & 60 & 106.632 & 103.861 & -2.771 & 2.60\% \\
+Weibo & QRF & 5 & 119.100 & 113.362 & -5.738 & 4.82\% \\
+Weibo & QRF & 15 & 102.225 & 99.054 & -3.172 & 3.10\% \\
+Weibo & QRF & 60 & 81.646 & 77.505 & -4.141 & 5.07\% \\
+Weibo & NGBoost & 5 & 131.090 & 129.145 & -1.945 & 1.48\% \\
+Weibo & NGBoost & 15 & 113.285 & 113.222 & -0.063 & 0.06\% \\
+Weibo & NGBoost & 60 & 89.374 & 89.085 & -0.289 & 0.32\% \\
+SEISMIC & Hurdle & 5 & 62.254 & 55.138 & -7.117 & 11.43\% \\
+SEISMIC & Hurdle & 15 & 53.150 & 45.085 & -8.064 & 15.17\% \\
+SEISMIC & Hurdle & 60 & 40.704 & 34.843 & -5.861 & 14.40\% \\
+SEISMIC & QRF & 5 & 52.613 & 48.476 & -4.137 & 7.86\% \\
+SEISMIC & QRF & 15 & 43.388 & 38.257 & -5.131 & 11.83\% \\
+SEISMIC & QRF & 60 & 32.626 & 30.442 & -2.183 & 6.69\% \\
+SEISMIC & NGBoost & 5 & 52.510 & 49.376 & -3.134 & 5.97\% \\
+SEISMIC & NGBoost & 15 & 42.623 & 38.824 & -3.800 & 8.91\% \\
+SEISMIC & NGBoost & 60 & 32.434 & 30.120 & -2.314 & 7.13\% \\
+\end{longtable}\normalsize
+
+The companion machine-readable tables preserve full precision:
+
+\begin{itemize}
+\tightlist
+\item
+  \path{tables/ALL_PROCEDURES.md}: CRPS, no-growth Brier, median absolute error, 90\% coverage, width and interval score for 24 procedures.
+\item
+  \path{tables/INTERVAL_COVERAGE.md}: nominal 50/80/90/95\% coverage.
+\item
+  \path{tables/PER_WINDOW_PRIMARY_FAMILIES.md}: all 18 descriptive timing contrasts by window.
+\item
+  \path{tables/TEST_SAMPLE_PROFILE.md}: post-TEST descriptive response and prefix profile.
+\item
+  \path{evidence/PROCEDURE_METRICS.json}: full-precision aggregate and per-window results, including the simple references.
+\item
+  \path{evidence/CALIBRATION.json}: both PIT constructions and all no-growth reliability bins.
+\end{itemize}
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/per_window.pdf}\caption{Per-window timing reductions. Values are redrawn from the frozen aggregate evidence.}\end{figure}
+
+No-growth rates over the 15,000 unique source-window cases are 251/15,000 (1.6733\%) on Weibo and 121/15,000 (0.8067\%) on SEISMIC. The three windows within a root are dependent. These rates help interpret the Brier scale and should not be treated as independent-event incidence estimates. Sparse high-probability reliability bins are descriptive and can be unstable.
+
+\hypertarget{prespecified-duplicate-sensitivity}{%
+\section{Prespecified duplicate sensitivity}\label{prespecified-duplicate-sensitivity}}
+
+Three flagged Weibo test roots are excluded only in the descriptive sensitivity. Models and primary results remain unchanged.
+
+\small\begin{longtable}[]{@{}lllll@{}}
+\toprule\noalign{}
+Family & Kept roots & I0 CRPS & I1 CRPS & Difference \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Hurdle & 4,997 & 109.570281 & 107.050111 & -2.520170 \\
+QRF & 4,997 & 90.725382 & 86.988110 & -3.737272 \\
+NGBoost & 4,997 & 97.853775 & 97.212399 & -0.641376 \\
+\end{longtable}\normalsize
+
+The contrast directions persist, while average score magnitudes change. The sensitivity cannot reconstruct unique events, isolate the reason a flagged root has large loss, or remove training effects of repeated records. No new significance statements are attached. SEISMIC's \path{unavailable_without_event_ids} flag remains an unknown status rather than a negative duplicate finding.
+
+\hypertarget{original-phase-13f-evidence-review}{%
+\section{Original Phase 13F evidence review}\label{original-phase-13f-evidence-review}}
+
+The supplied Phase 13F archive is 160,964,430 bytes with SHA-256:
+
+\path{592e185fc9a0ad96265b407af71a3e80e9d66ccbe9da140a3bd32c36bfb51ce0}.
+
+All 496 manifest payload names, sizes and hashes were checked; reading every member verified its ZIP CRC. The 39 frozen source files matched the previously prepared kit; all 40 model-object hashes matched the retained lock, itself identical to the previously reviewed Phase 13E lock. The Mac report records 18 successful synthetic tests, one completed test pass, zero fits and zero selection calls.
+
+The independent reporting calculation read all 600,000 saved score rows, verified case identities and complete window membership, and checked all nine stored metrics through both root-aggregation levels. Model/root and procedure/root values matched exactly. The largest aggregate-metric difference from a different summation order was 7.43512e-11; the largest per-window difference was 2.95586e-12. Primary point values, saved-replicate quantiles and duplicate-sensitivity values matched exactly. These checks are recorded in \path{evidence/INDEPENDENT_REVIEW.json}.
+
+No fitted object was deserialized in this review. No model was retrained, queried or rescored, and no bootstrap draw was repeated. Consequently, verification of the saved reporting arithmetic must be distinguished from an independent reproduction of training or scoring. Calibration plots were checked visually; their saved bin calculations were not independently reconstructed row by row.
+
+The Mac environment is recorded in \path{evidence/ENVIRONMENT.json}, including Python 3.12.14, NumPy 2.3.5, SciPy 1.17.0, scikit-learn 1.8.0 and NGBoost 0.5.11. Historical cross-platform refitting discrepancies remain in the legacy record. We do not claim bitwise retraining equivalence on arbitrary operating systems.
+
+\hypertarget{publication-figure-and-artifact-notes}{%
+\section{Publication figure and artifact notes}\label{publication-figure-and-artifact-notes}}
+
+The IEEE manuscript figures were redrawn from the frozen machine-readable aggregates. Vector PDFs and PNG previews are provided, with editable Python source for numerical plots and TikZ source for the methodological diagram. No model was fitted or queried, no case was rescored and no bootstrap was regenerated while preparing the IEEE package. The archived previous reporting artifacts are preserved separately.
+
+This manuscript package is not a substitute for the full experimental archives. Reproduction of fitting and evaluation requires the source data, model source, environments and the training-selection, locked-test and supplementary-control archives. The public deposit layout and redistribution terms require author confirmation before an open-access artifact claim can be made.
+
+\hypertarget{post-13f-supplementary-analyses-phase-14}{%
+\section{Post-13F supplementary analyses, Phase 14}\label{post-13f-supplementary-analyses-phase-14}}
+
+\hypertarget{status-and-analysis-chronology}{%
+\subsection{Status and analysis chronology}\label{status-and-analysis-chronology}}
+
+The six primary comparisons and their diagnostics had already been observed. The Phase 14 protocol, count bins and noise schedule were frozen before the new strata were calculated and before any real noise fitting. These are prospectively specified supplementary analyses of an already observed test cohort. The Mac saved-score reaggregation matched the supplied Linux reference within the frozen tolerance. The real-data negative control completed once on Mac. Its results are integrated below without modifying the original six primary comparisons or the historical failures.
+
+The historical Phase 13F protocol's 2\% reference is preserved as a descriptive convention, without an operational cost justification or an inferential practical-significance test. The revised main discussion uses the full effect sizes instead of dichotomizing them at that value.
+
+\hypertarget{prefix-strata-and-uncertainty}{%
+\subsection{Prefix strata and uncertainty}\label{prefix-strata-and-uncertainty}}
+
+Bins are fixed at 0, 1--2, 3--9, 10--49 and \ensuremath{\geq}50 nonroot events. Analyze each window within each source. Weibo resamples entire root-user clusters, then divides sampled stratum loss sums by sampled eligible-root counts; SEISMIC resamples roots. The same 2,000 vectors per source are reused across all windows, bins and families. Each root retains its windows and original seed losses. Pointwise 95\% percentile intervals require at least 30 observed sampling units and at least 99\% finite resamples. They do not constitute 90 additional confirmatory tests.
+
+\small\begin{longtable}[]{@{}lrrrrrr@{}}
+\toprule\noalign{}
+Source & Prefix, min & 0 & 1--2 & 3--9 & 10--49 & \ensuremath{\geq}50 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+weibo & 5 & 1,622 & 1,516 & 1,251 & 526 & 85 \\
+weibo & 15 & 764 & 982 & 1,720 & 1,168 & 366 \\
+weibo & 60 & 334 & 386 & 1,547 & 1,814 & 919 \\
+seismic & 5 & 103 & 106 & 497 & 2,866 & 1,428 \\
+seismic & 15 & 53 & 49 & 171 & 2,433 & 2,294 \\
+seismic & 60 & 26 & 20 & 51 & 1,585 & 3,318 \\
+\end{longtable}\normalsize
+
+Relative CRPS reduction, in percent, is 100\(\times\)(1-I1/I0); negative values are deteriorations. The following table retains all families and bins. It has no fitted threshold or selection of a preferred curve.
+
+\small\begin{longtable}[]{@{}llrrrrrr@{}}
+\toprule\noalign{}
+Source & Family & Prefix, min & 0 & 1--2 & 3--9 & 10--49 & \ensuremath{\geq}50 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+weibo & hurdle & 5 & -0.01 & 2.70 & -0.18 & 0.38 & 5.79 \\
+weibo & hurdle & 15 & -0.03 & 3.97 & 10.08 & -0.28 & 1.75 \\
+weibo & hurdle & 60 & 0.02 & 8.12 & 10.10 & 10.92 & -0.39 \\
+weibo & qrf & 5 & 0.00 & -0.16 & -2.20 & 4.35 & 16.50 \\
+weibo & qrf & 15 & 0.00 & 0.03 & 0.24 & 2.33 & 5.19 \\
+weibo & qrf & 60 & -0.01 & -1.46 & 0.02 & 3.95 & 6.53 \\
+weibo & ngboost & 5 & 0.37 & 0.21 & 1.40 & 3.12 & 1.07 \\
+weibo & ngboost & 15 & 0.09 & -0.00 & -1.93 & -0.01 & 0.39 \\
+weibo & ngboost & 60 & 0.37 & -1.70 & -3.31 & 2.44 & 0.49 \\
+seismic & hurdle & 5 & 25.52 & -41.63 & -19.16 & 14.12 & 13.38 \\
+seismic & hurdle & 15 & 43.17 & -9.56 & -10.26 & 15.06 & 15.78 \\
+seismic & hurdle & 60 & 47.17 & 19.36 & 21.57 & 6.13 & 15.51 \\
+seismic & qrf & 5 & 0.16 & 0.14 & -1.34 & 2.60 & 11.38 \\
+seismic & qrf & 15 & 0.65 & 7.39 & -0.52 & 1.40 & 15.35 \\
+seismic & qrf & 60 & 2.03 & -5.17 & 8.80 & -1.21 & 8.03 \\
+seismic & ngboost & 5 & 1.40 & 2.87 & 5.47 & 2.71 & 7.86 \\
+seismic & ngboost & 15 & -0.77 & 3.61 & -0.89 & 0.96 & 11.82 \\
+seismic & ngboost & 60 & -0.51 & 5.42 & 5.39 & -1.30 & 8.68 \\
+\end{longtable}\normalsize
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/timing_strata.pdf}\caption{All source and family prefix-stratum contrasts. Values are redrawn from the frozen aggregate evidence.}\end{figure}
+
+The full tables contain 360 procedure/stratum metric rows and 90 timing-contrast rows. Partition-weighted means recover all 72 procedure/window aggregates across ten metrics within 2.28\ensuremath{\times}10\textsuperscript{-13}. All zero-prefix I1 additions equal (1,1,0,0,0,0,0). An empty-prefix improvement therefore concerns the fitted function, not event-time variation inside that subgroup.
+
+\hypertarget{supplementary-msle-of-the-saved-median-forecasts}{%
+\subsection{Supplementary MSLE of the saved median forecasts}\label{supplementary-msle-of-the-saved-median-forecasts}}
+
+We compute natural-log MSLE, (log1p(median)-log1p(y))\textsuperscript{2}, from saved individual-model medians, average losses over seeds and windows within root, then over roots. The table below gives Weibo values; both sources and all procedures are retained in \path{tables/MSLE_SAVED_MEDIANS.csv}. These values did not select or refit a procedure. A median is generally optimal for absolute error, not for squared log loss. \href{https://arxiv.org/abs/0912.0902}{Gneiting~\cite{gneiting2011}}.
+
+\small\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1364}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1364}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1818}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1818}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1818}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1818}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Information
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+5 min
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+15 min
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+60 min
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Root-average
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Empirical & I0 & 1.880557 & 2.063790 & 2.321336 & 2.088561 \\
+Conditional empirical & I0 & 1.323165 & 1.393302 & 1.444213 & 1.386894 \\
+hurdle & I0 & 1.539661 & 1.799347 & 2.518383 & 1.952464 \\
+hurdle & I1 & 1.534333 & 1.734562 & 2.221178 & 1.830024 \\
+qrf & I0 & 1.316971 & 1.404395 & 1.428152 & 1.383173 \\
+qrf & I1 & 1.246641 & 1.137481 & 1.101965 & 1.162029 \\
+ngboost & I0 & 1.598530 & 1.481395 & 1.544876 & 1.541601 \\
+ngboost & I1 & 1.528144 & 1.424909 & 1.500589 & 1.484547 \\
+\end{longtable}\normalsize
+
+These values are not directly comparable to published DeepHawkes/CasFlow leaderboards: selected roots, split rules, retained duplicates, target boundaries, information access and log conventions must first be aligned.
+
+\hypertarget{completed-independent-noise-control}{%
+\subsection{Completed independent-noise control}\label{completed-independent-noise-control}}
+
+I0 receives seven independent Uniform(-\(\sqrt{3}\),\(\sqrt{3}\)) coordinates. Three fixed noise realizations are crossed with one Hurdle seed or three QRF/NGBoost seeds on each source: 42 procedures, at most 48 component fits and 630,000 model-case TEST evaluations on the existing 30,000 distinct test root-window cases. TRAIN/TEST streams are generated separately; each realization is shared across families and fitting seeds. Hyperparameters, loss definitions and numerical score rules are inherited without validation reselection. The 6,000 TRAIN roots per source match the frozen selected-model provenance byte for byte.
+
+The root loss averages the three windows, original model seeds and three noise realizations. Twelve supplementary contrasts compare noise-I0 and I1-noise. Ten thousand common bootstrap vectors per source retain the original grouping and root weighting; bounds use 0.05/24 and 1-0.05/24, retaining the 12-slot multiplicity family when any comparison is withheld. Missing required rows, seeds or realizations withhold the whole affected noise procedure. Original I0/I1 comparisons are preserved.
+
+Independent noise avoids treating impossible shuffled combinations as valid timing vectors, but it is not a perfect capacity match. Continuous noise and sparse, correlated timing summaries provide different opportunities for splits and shrinkage. In particular, adding noise can sometimes improve a forest's out-of-sample accuracy; the negative control is not expected to fail by definition. \cite{strobl2007}, \cite{hooker2021}, \cite{mentch2022}.
+
+All 42 scheduled control procedures completed, using 48 component fits. Every one of the 630,000 attempted predictions and scores completed, with no prediction failures, score failures, timeouts or recorded warnings. These evaluations reuse the 10,000 test roots; they are not 630,000 independent observations. The Mac preflight reports 17 successful unit tests and three separate synthetic procedure fits using four component fits, outside the real-data budget. No original model was refitted and no validation reselection occurred.
+
+\textbf{All 12 supplementary contrasts, full interpretation.}
+
+\small\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1875}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1875}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1875}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1875}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Noise CRPS
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Noise - I0 {[}adjusted interval{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+I1 - noise {[}adjusted interval{]}
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Weibo & Hurdle & 124.124 & -0.002 {[}-0.036, +0.030{]} & -2.838 {[}-5.212, -1.050{]} \\
+Weibo & QRF & 101.944 & +0.953 {[}-1.255, +4.803{]} & -5.304 {[}-10.532, -1.905{]} \\
+Weibo & NGBoost & 111.283 & +0.033 {[}-0.036, +0.080{]} & -0.799 {[}-1.457, -0.274{]} \\
+SEISMIC & Hurdle & 52.063 & +0.027 {[}-0.002, +0.056{]} & -7.041 {[}-10.573, -4.833{]} \\
+SEISMIC & QRF & 42.660 & -0.216 {[}-0.515, +0.212{]} & -3.602 {[}-4.594, -2.648{]} \\
+SEISMIC & NGBoost & 42.697 & +0.174 {[}-0.160, +0.793{]} & -3.257 {[}-4.145, -2.392{]} \\
+\end{longtable}\normalsize
+
+Every noise-I0 interval includes zero; all I1-noise intervals are below zero. No equivalence test or margin was specified, so the first result does not prove a null augmentation effect. The second supports the predictive value of this timing representation relative to this fixed control, conditional on the retained models, realizations and sampling assumptions. The primary six-contrast family and this supplementary 12-contrast family are reported separately, without claiming joint error control over all analyses.
+
+\textbf{Separate noise realizations, mean CRPS.} Each cell averages the prescribed fitting seeds and root windows; none was selected for final reporting.
+
+\small\begin{longtable}[]{@{}llrrr@{}}
+\toprule\noalign{}
+Source & Family & Realization 0 & Realization 1 & Realization 2 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Weibo & Hurdle & 124.137157 & 124.111029 & 124.124508 \\
+Weibo & QRF & 101.478728 & 101.234407 & 103.118272 \\
+Weibo & NGBoost & 111.286162 & 111.249499 & 111.312650 \\
+SEISMIC & Hurdle & 52.075040 & 52.067359 & 52.045596 \\
+SEISMIC & QRF & 42.652127 & 42.684987 & 42.642352 \\
+SEISMIC & NGBoost & 42.670395 & 42.745813 & 42.673987 \\
+\end{longtable}\normalsize
+
+The aggregate control averages the losses over all three realizations. It is not a predictive mixture distribution, and its bootstrap intervals do not integrate over hypothetical new noise realizations. The Weibo QRF realization means illustrate variability that remains outside those conditional intervals.
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{figures/noise_control.pdf}\caption{Supplementary noise contrasts. Values are redrawn from the frozen aggregate evidence.}\end{figure}
+
+The complete records include \path{tables/NOISE_REALIZATION_SUMMARIES.csv}, \path{evidence/phase14/STAGE_B_REPORT.json}, \path{evidence/phase14/PROCEDURE_COMPLETENESS.json}, and both saved bootstrap arrays. The generator, settings and numerical contract were retained after all outcomes were observed.
+
+\hypertarget{scope-decision-and-preserved-history}{%
+\subsection{Scope decision and preserved history}\label{scope-decision-and-preserved-history}}
+
+The main paper evaluates compact summaries within general distributional learners. Specialized event-process comparisons are outside that scope. The prior numerically qualified 12D adapter and the separate unqualified CASPER adapter remain documented in the experimental history; neither establishes failure of the published methods. No new domain-process fitting or seven-feature importance sweep is scheduled in Phase 14.
+
+The revised manuscript cites the final three-author Hooker, Mentch and Zhou (2021) journal article, \emph{Statistics and Computing} 31, Article 82, DOI 10.1007/s11222-021-10057-z. The frozen protocol and its historical citation bytes remain unchanged.
+
+\hypertarget{independent-review-of-the-phase-14-return}{%
+\section{Independent review of the Phase 14 return}\label{independent-review-of-the-phase-14-return}}
+
+The received archive is \path{BRACE_PHASE14_RETURN_20260913T192805Z.zip}, 222,470,817 bytes, SHA-256:
+
+\path{5295b94b6c6bfef77b14bbe94d16ed977e489e05dafe5e0b667d49cd1f7d2784}.
+
+The review checked the inventory, safe unique paths, sizes, SHA-256 and CRC for all 521 payloads. All 108 source-manifest payloads and its manifest match the original supplementary kit byte for byte. Forty-two model files were hashed without deserialization. All 12 noise-matrix files matched their bindings.
+
+An independent script read every one of the 630,000 saved score rows, checking unique root/window membership, source, group, prefix count, response, completion status and the stored CRPS error bound. It reconstructed all six noise-procedure loss arrays from the required seeds and three realizations, compared all 18 realization means and all 12 contrasts, and evaluated the declared quantiles of the saved bootstrap replicates. Regrouping the floating-point summation over realizations produced a maximum difference of 5.821\ensuremath{\times}10\textsuperscript{-11} across the ten-metric loss arrays, within the review tolerance; the maximum difference in reported noise-contrast point quantities was 6.662\ensuremath{\times}10\textsuperscript{-16}. All saved interval endpoints matched exactly.
+
+The review also recovered all 90 stratum CRPS contrasts and their interval decisions from saved procedure arrays. There are 64 negative and 26 positive point estimates; these are direction counts, not counts of statistically established subgroup effects. Six intervals remain withheld for the two sparse SEISMIC strata at 60 minutes across all three families. The primary CRPS means remain consistent with the unchanged Phase 13F record, with a maximum summation-order difference of 1.422\ensuremath{\times}10\textsuperscript{-14}.
+
+No models were fitted or queried, no distribution scores were recomputed, and no bootstrap samples were generated during this review. The saved bootstrap quantiles were checked without regenerating the index streams; the frozen grouping implementation was inspected. This is verification of recorded evidence, not an independent rerun of training or numerical scoring. The Mac source/parent integrity receipts are retained separately from this review. The independent verifier and its bounded scope are in \path{code/review_saved_phase14.py} and \path{evidence/phase14/INDEPENDENT_PHASE14_REVIEW.json}.

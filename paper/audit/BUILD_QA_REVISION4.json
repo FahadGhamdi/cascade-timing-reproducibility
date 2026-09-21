@@ -1,0 +1,43 @@
+{
+  "revision": 4,
+  "built_at_utc": "2026-09-14T08:34:37.671761+00:00",
+  "experiments_run": false,
+  "overleaf_account_tested": false,
+  "documents": {
+    "main": {
+      "pages": 12,
+      "references": 36,
+      "undefined_references": false,
+      "overfull_warnings": [
+        "Overfull \\hbox (9.2679pt too wide) in paragraph at lines 28--28",
+        "Overfull \\hbox (9.2679pt too wide) in paragraph at lines 28--28"
+      ],
+      "visually_reviewed": true
+    },
+    "supplementary": {
+      "pages": 19,
+      "references": 5,
+      "undefined_references": false,
+      "overfull_warnings": [],
+      "visually_reviewed": true
+    }
+  },
+  "reporting_checks": 286,
+  "title_matches": 37,
+  "limits": [
+    "Main inherited class emits two non-clipping title-box warnings.",
+    "Latest official class could not be downloaded (403).",
+    "Title checks include archived metadata; not all full papers were read anew."
+  ],
+  "pdfs": {
+    "main": {
+      "sha256": "2338073bb5dac71b5df65cf6ba04d4eaec122a286000907e9d260a1d39af2498",
+      "pages": 12
+    },
+    "supplementary": {
+      "sha256": "3015ecf95c8e1be0fc5093587aad895930880134d4b94b2e232b5d152ea634e2",
+      "pages": 19
+    }
+  },
+  "visual_scope": "All manuscript pages inspected; Figure 1 and author pages inspected enlarged. Supplement pages 2--19 text-identical to Revision 3, whose full layout was reviewed."
+}

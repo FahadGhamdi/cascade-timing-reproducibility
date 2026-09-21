@@ -1,0 +1,33 @@
+{
+  "analysis": {
+    "bootstrap_draws_per_source": 10000,
+    "complete_model_jobs": 40,
+    "complete_procedures": 24,
+    "counts_for_interrupted_jobs_are_lower_bounds": false,
+    "fit_calls": 0,
+    "model_jobs": 40,
+    "prediction_failure_rows": 0,
+    "primary_comparisons": 6,
+    "primary_comparisons_available": 6,
+    "procedures": 24,
+    "root_procedure_rows": 120000,
+    "score_attempts": 600000,
+    "score_failures": 0,
+    "score_successes": 600000,
+    "shared_draws_within_source": true,
+    "source_resample_vectors_total": 20000,
+    "test_forecasts_attempted": 600000,
+    "test_forecasts_returned": 600000
+  },
+  "casper_attempts": 0,
+  "figures_complete": true,
+  "fit_calls": 0,
+  "parent_archive_unchanged": true,
+  "selection_calls": 0,
+  "source_after": {
+    "all_match": true,
+    "files": 39
+  },
+  "status": "locked_test_completed_with_explicit_completeness",
+  "train_validation_rescoring": 0
+}

@@ -1,0 +1,34 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,graphicx,booktabs,longtable,array,calc,tabularx}
+\usepackage{lmodern}\usepackage{microtype,upquote,enumitem,xurl,seqsplit,float,caption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+\setlength{\emergencystretch}{2em}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thetable}{S\arabic{table}}\renewcommand{\thefigure}{S\arabic{figure}}
+\setlist{nosep}
+\title{Technical Supplement\\\large What Does Timing Add to Size?\\Probabilistic Forecasts of Recorded Cascade Growth on Two Archives}
+\author{Fahad AlGhamdi\\\small Department of Computer Science\\\small Faculty of Computing and Information, Al-Baha University\\\small Bahah 65779, Saudi Arabia\\\small \href{mailto:fghamdi@bu.edu.sa}{fghamdi@bu.edu.sa}\\\small ORCID: \href{https://orcid.org/0000-0002-4161-2658}{0000-0002-4161-2658}}
+\date{14 September 2026}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
+\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\hypersetup{pdftitle={Technical Supplement: What Does Timing Add to Size? Probabilistic Forecasts of Recorded Cascade Growth on Two Archives},pdfsubject={Author-review manuscript; declarations pending},pdfkeywords={cascade prediction, probabilistic forecasting, temporal features, calibration},pdfauthor={Fahad AlGhamdi}}
+\begin{document}\maketitle
+\noindent This document accompanies the IEEE Access manuscript. It preserves the experimental scope, numerical exclusions and full supplementary results. Original experiment identifiers appear here solely to connect claims to their archived evidence. Preparation assistance is disclosed in the manuscript Acknowledgment~\cite{openai2026}. Artifact paths in this document are relative to the companion \texttt{support/} folder.
+\makeatletter
+\renewcommand{\l@section}{\@dottedtocline{1}{0em}{2.8em}}
+\renewcommand{\l@subsection}{\@dottedtocline{2}{2.8em}{3.8em}}
+\makeatother
+\tableofcontents\clearpage
+\input{sections/supplement_core}
+\clearpage\section{Complete exploratory strata and empirical references}
+All 90 point contrasts are retained. Negative differences favor timing. The intervals below are exploratory pointwise summaries; six are withheld under the frozen small-sample rule. Root counts and resampling-unit counts have different meanings on Weibo. They coincide on SEISMIC. Raw CRPS is source specific.
+\input{sections/supplement_strata}
+\clearpage\section{Complete count-calibration graphics}
+Both PIT constructions and all window/family panels are shown. The saved \texttt{CALIBRATION.json} file supplies bin values for every procedure, including the simple references. No recalibration was fitted.
+\input{sections/supplement_figures}
+\clearpage\bibliographystyle{IEEEtran}\bibliography{references}
+\end{document}

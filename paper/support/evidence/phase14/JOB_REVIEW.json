@@ -1,0 +1,254 @@
+[
+  {
+    "job_id": "weibo__hurdle__noise0__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 1.7053025658242404e-13
+  },
+  {
+    "job_id": "seismic__hurdle__noise0__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 9.947598300641403e-14
+  },
+  {
+    "job_id": "weibo__qrf__noise0__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 6.252776074688882e-13
+  },
+  {
+    "job_id": "weibo__qrf__noise0__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.1316282072803006e-13
+  },
+  {
+    "job_id": "weibo__qrf__noise0__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 3.979039320256561e-13
+  },
+  {
+    "job_id": "seismic__qrf__noise0__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 4.973799150320701e-14
+  },
+  {
+    "job_id": "seismic__qrf__noise0__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 1.8474111129762605e-13
+  },
+  {
+    "job_id": "seismic__qrf__noise0__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 3.268496584496461e-13
+  },
+  {
+    "job_id": "weibo__ngboost__noise0__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 8.526512829121202e-14
+  },
+  {
+    "job_id": "weibo__ngboost__noise0__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 9.947598300641403e-14
+  },
+  {
+    "job_id": "weibo__ngboost__noise0__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 7.105427357601002e-14
+  },
+  {
+    "job_id": "seismic__ngboost__noise0__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 3.552713678800501e-14
+  },
+  {
+    "job_id": "seismic__ngboost__noise0__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 3.552713678800501e-14
+  },
+  {
+    "job_id": "seismic__ngboost__noise0__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 3.552713678800501e-14
+  },
+  {
+    "job_id": "weibo__hurdle__noise1__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 3.694822225952521e-13
+  },
+  {
+    "job_id": "seismic__hurdle__noise1__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 7.105427357601002e-14
+  },
+  {
+    "job_id": "weibo__qrf__noise1__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 6.536993168992922e-13
+  },
+  {
+    "job_id": "weibo__qrf__noise1__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.2737367544323206e-13
+  },
+  {
+    "job_id": "weibo__qrf__noise1__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 6.963318810448982e-13
+  },
+  {
+    "job_id": "seismic__qrf__noise1__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 7.815970093361102e-14
+  },
+  {
+    "job_id": "seismic__qrf__noise1__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 1.1368683772161603e-13
+  },
+  {
+    "job_id": "seismic__qrf__noise1__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 1.0658141036401503e-13
+  },
+  {
+    "job_id": "weibo__ngboost__noise1__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.0037305148434825e-12
+  },
+  {
+    "job_id": "weibo__ngboost__noise1__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.0037305148434825e-12
+  },
+  {
+    "job_id": "weibo__ngboost__noise1__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.0037305148434825e-12
+  },
+  {
+    "job_id": "seismic__ngboost__noise1__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 1.4210854715202004e-13
+  },
+  {
+    "job_id": "seismic__ngboost__noise1__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 1.4210854715202004e-13
+  },
+  {
+    "job_id": "seismic__ngboost__noise1__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 1.4210854715202004e-13
+  },
+  {
+    "job_id": "weibo__hurdle__noise2__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 1.3926637620897964e-12
+  },
+  {
+    "job_id": "seismic__hurdle__noise2__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 1.2789769243681803e-13
+  },
+  {
+    "job_id": "weibo__qrf__noise2__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 3.552713678800501e-13
+  },
+  {
+    "job_id": "weibo__qrf__noise2__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 3.694822225952521e-13
+  },
+  {
+    "job_id": "weibo__qrf__noise2__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 7.105427357601002e-14
+  },
+  {
+    "job_id": "seismic__qrf__noise2__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 6.394884621840902e-14
+  },
+  {
+    "job_id": "seismic__qrf__noise2__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 4.218847493575595e-15
+  },
+  {
+    "job_id": "seismic__qrf__noise2__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 1.4210854715202004e-13
+  },
+  {
+    "job_id": "weibo__ngboost__noise2__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.7000623958883807e-13
+  },
+  {
+    "job_id": "weibo__ngboost__noise2__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.984279490192421e-13
+  },
+  {
+    "job_id": "weibo__ngboost__noise2__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.984279490192421e-13
+  },
+  {
+    "job_id": "seismic__ngboost__noise2__s20260913",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.913225216616411e-13
+  },
+  {
+    "job_id": "seismic__ngboost__noise2__s20260914",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.984279490192421e-13
+  },
+  {
+    "job_id": "seismic__ngboost__noise2__s20260915",
+    "rows": 15000,
+    "unique_keys": true,
+    "saved_metric_mean_max_abs_difference": 2.913225216616411e-13
+  }
+]

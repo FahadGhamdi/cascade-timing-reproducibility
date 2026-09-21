@@ -1,0 +1,15 @@
+{
+  "atol": 1e-08,
+  "bootstrap_arrays_compared": true,
+  "rtol": 1e-10,
+  "scope": "saved-score supplementary reaggregation; no retraining reproducibility claim",
+  "status": "matched_within_declared_aggregate_tolerance",
+  "tables": [
+    "STRATA_RESULTS.json",
+    "CASE_METADATA.json",
+    "BOOTSTRAP_DESIGN.json",
+    "MSLE_SAVED_MEDIANS.csv",
+    "EMPIRICAL_REFERENCES_BY_STRATUM.csv",
+    "STRATUM_LEVELS.csv"
+  ]
+}

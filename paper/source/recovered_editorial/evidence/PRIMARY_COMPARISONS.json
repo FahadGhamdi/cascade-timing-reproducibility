@@ -1,0 +1,104 @@
+[
+  {
+    "I0": 124.12622965314132,
+    "I1": 121.28647976318896,
+    "adjusted_interval": [
+      -4.945411075425581,
+      -1.0896734630136526
+    ],
+    "delta_I1_minus_I0": -2.8397498899523446,
+    "direction": "I1_lower_CRPS",
+    "family": "hurdle",
+    "interval_level": 0.9916666666666667,
+    "multiplicity_family_size": 6,
+    "relative_reduction": 0.02287791950088036,
+    "roots": 5000,
+    "source": "weibo",
+    "status": "complete"
+  },
+  {
+    "I0": 100.99033609125792,
+    "I1": 96.64015231114873,
+    "adjusted_interval": [
+      -7.577533014396065,
+      -0.3969970994602698
+    ],
+    "delta_I1_minus_I0": -4.35018378010919,
+    "direction": "I1_lower_CRPS",
+    "family": "qrf",
+    "interval_level": 0.9916666666666667,
+    "multiplicity_family_size": 6,
+    "relative_reduction": 0.043075248073025874,
+    "roots": 5000,
+    "source": "weibo",
+    "status": "complete"
+  },
+  {
+    "I0": 111.24949875847767,
+    "I1": 110.48402780582009,
+    "adjusted_interval": [
+      -1.3938909129866903,
+      -0.2729933796598876
+    ],
+    "delta_I1_minus_I0": -0.7654709526575987,
+    "direction": "I1_lower_CRPS",
+    "family": "ngboost",
+    "interval_level": 0.9916666666666667,
+    "multiplicity_family_size": 6,
+    "relative_reduction": 0.006880668777837995,
+    "roots": 5000,
+    "source": "weibo",
+    "status": "complete"
+  },
+  {
+    "I0": 52.03592971733114,
+    "I1": 45.022049664342774,
+    "adjusted_interval": [
+      -10.133911175524846,
+      -4.95644342191554
+    ],
+    "delta_I1_minus_I0": -7.0138800529883625,
+    "direction": "I1_lower_CRPS",
+    "family": "hurdle",
+    "interval_level": 0.9916666666666667,
+    "multiplicity_family_size": 6,
+    "relative_reduction": 0.13478917530808177,
+    "roots": 5000,
+    "source": "seismic",
+    "status": "complete"
+  },
+  {
+    "I0": 42.875397847917014,
+    "I1": 39.058273657757326,
+    "adjusted_interval": [
+      -4.825852350271051,
+      -2.8554974089173544
+    ],
+    "delta_I1_minus_I0": -3.8171241901596864,
+    "direction": "I1_lower_CRPS",
+    "family": "qrf",
+    "interval_level": 0.9916666666666667,
+    "multiplicity_family_size": 6,
+    "relative_reduction": 0.08902830951445351,
+    "roots": 5000,
+    "source": "seismic",
+    "status": "complete"
+  },
+  {
+    "I0": 42.522489936973656,
+    "I1": 39.43993673554542,
+    "adjusted_interval": [
+      -4.106720203270244,
+      -1.8897573099942828
+    ],
+    "delta_I1_minus_I0": -3.0825532014282273,
+    "direction": "I1_lower_CRPS",
+    "family": "ngboost",
+    "interval_level": 0.9916666666666667,
+    "multiplicity_family_size": 6,
+    "relative_reduction": 0.07249230244976623,
+    "roots": 5000,
+    "source": "seismic",
+    "status": "complete"
+  }
+]

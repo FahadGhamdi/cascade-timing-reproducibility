@@ -1,0 +1,614 @@
+{
+  "key": "martin2016",
+  "requested_title": "Exploring limits to prediction in complex social systems",
+  "retrieved_from": "https://api.crossref.org/works/10.1145/2872427.2883001",
+  "review_required": false,
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          3
+        ]
+      ],
+      "date-time": "2026-09-03T15:46:23Z",
+      "timestamp": 1788450383316,
+      "version": "build-2803163510"
+    },
+    "publisher-location": "Republic and Canton of Geneva, Switzerland",
+    "reference-count": 63,
+    "publisher": "International World Wide Web Conferences Steering Committee",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              4,
+              11
+            ]
+          ],
+          "date-time": "2016-04-11T00:00:00Z",
+          "timestamp": 1460332800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1145/2872427.2883001",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T15:35:52Z",
+      "timestamp": 1485185752000
+    },
+    "page": "683-694",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 81,
+    "title": [
+      "Exploring Limits to Prediction in Complex Social Systems"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Travis",
+        "family": "Martin",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Michigan, Ann Arbor, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jake M.",
+        "family": "Hofman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Microsoft Research, NYC, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amit",
+        "family": "Sharma",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Microsoft Research, NYC, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ashton",
+        "family": "Anderson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Microsoft Research, NYC, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Duncan J.",
+        "family": "Watts",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Microsoft Research, NYC, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_1_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1157679"
+      },
+      {
+        "key": "e_1_3_2_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WI-IAT.2010.63"
+      },
+      {
+        "key": "e_1_3_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1935826.1935845"
+      },
+      {
+        "key": "e_1_3_2_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/mnsc.1040.0300"
+      },
+      {
+        "key": "e_1_3_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature14956"
+      },
+      {
+        "key": "e_1_3_2_1_6_1",
+        "volume-title": "Contagious: Why things catch on",
+        "author": "Berger J.",
+        "year": "2013",
+        "unstructured": "J. Berger . Contagious: Why things catch on . Simon and Schuster , 2013 . J. Berger. Contagious: Why things catch on. Simon and Schuster, 2013."
+      },
+      {
+        "key": "e_1_3_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcps.2011.05.001"
+      },
+      {
+        "key": "e_1_3_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/944919.944937"
+      },
+      {
+        "key": "e_1_3_2_1_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jocs.2010.12.007"
+      },
+      {
+        "key": "e_1_3_2_1_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2566486.2567997"
+      },
+      {
+        "key": "e_1_3_2_1_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1475-4932.2012.00809.x"
+      },
+      {
+        "key": "e_1_3_2_1_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pmed.0040013"
+      },
+      {
+        "key": "e_1_3_2_1_13_1",
+        "volume-title": "The Predictioneer's Game: Using the logic of brazen self-interest to see and shape the future",
+        "author": "De Mesquita B. B.",
+        "year": "2010",
+        "unstructured": "B. B. De Mesquita . The Predictioneer's Game: Using the logic of brazen self-interest to see and shape the future . Random House Incorporated , 2010 . B. B. De Mesquita. The Predictioneer's Game: Using the logic of brazen self-interest to see and shape the future. Random House Incorporated, 2010."
+      },
+      {
+        "key": "e_1_3_2_1_14_1",
+        "volume-title": "Hollywood economics: How extreme uncertainty shapes the film industry",
+        "author": "Vany A. De",
+        "year": "2004",
+        "unstructured": "A. De Vany . Hollywood economics: How extreme uncertainty shapes the film industry . Routledge , 2004 . A. De Vany. Hollywood economics: How extreme uncertainty shapes the film industry. Routledge, 2004."
+      },
+      {
+        "key": "e_1_3_2_1_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1175/1520-0469(2004)061%3C2425:PAITPI%3E2.0.CO;2"
+      },
+      {
+        "key": "e_1_3_2_1_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.149.3683.510"
+      },
+      {
+        "key": "e_1_3_2_1_17_1",
+        "volume-title": "The Master Algorithm: How the Quest for the Ultimate Learning Machine will Remake our World",
+        "author": "Domingos P.",
+        "year": "2015",
+        "unstructured": "P. Domingos . The Master Algorithm: How the Quest for the Ultimate Learning Machine will Remake our World . BasicBooks , 2015 . P. Domingos. The Master Algorithm: How the Quest for the Ultimate Learning Machine will Remake our World. BasicBooks, 2015."
+      },
+      {
+        "key": "e_1_3_2_1_18_1",
+        "volume-title": "The winner-take-all society: Why the few at the top get so much more than the rest of us",
+        "author": "Frank R. H.",
+        "year": "2010",
+        "unstructured": "R. H. Frank and P. J. Cook . The winner-take-all society: Why the few at the top get so much more than the rest of us . Random House , 2010 . R. H. Frank and P. J. Cook. The winner-take-all society: Why the few at the top get so much more than the rest of us. Random House, 2010."
+      },
+      {
+        "key": "e_1_3_2_1_19_1",
+        "volume-title": "Anchor",
+        "author": "Friedman G.",
+        "year": "2010",
+        "unstructured": "G. Friedman . The next 100 years : a forecast for the 21st century . Anchor , 2010 . G. Friedman. The next 100 years: a forecast for the 21st century. Anchor, 2010."
+      },
+      {
+        "key": "e_1_3_2_1_20_1",
+        "volume-title": "McClelland & Stewart Limited",
+        "author": "Gardner D.",
+        "year": "2010",
+        "unstructured": "D. Gardner . Future Babble : Why Expert Predictions Fail and Why We Believe Them Anyway . McClelland & Stewart Limited , 2010 . D. Gardner. Future Babble: Why Expert Predictions Fail and Why We Believe Them Anyway. McClelland & Stewart Limited, 2010."
+      },
+      {
+        "key": "e_1_3_2_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature07634"
+      },
+      {
+        "key": "e_1_3_2_1_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/mnsc.2015.2158"
+      },
+      {
+        "key": "e_1_3_2_1_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.1005962107"
+      },
+      {
+        "key": "e_1_3_2_1_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1807342.1807400"
+      },
+      {
+        "key": "e_1_3_2_1_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/09298215.2014.881888"
+      },
+      {
+        "key": "e_1_3_2_1_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SocialCom-PASSAT.2012.129"
+      },
+      {
+        "key": "e_1_3_2_1_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.91.042811"
+      },
+      {
+        "key": "e_1_3_2_1_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1964858.1964870"
+      },
+      {
+        "key": "e_1_3_2_1_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.0308344101"
+      },
+      {
+        "key": "e_1_3_2_1_30_1",
+        "volume-title": "Skew distributions and the sizes of business firms",
+        "author": "Ijiri Y.",
+        "year": "1977",
+        "unstructured": "Y. Ijiri and H. A. Simon . Skew distributions and the sizes of business firms , volume 24 . North Holland , 1977 . Y. Ijiri and H. A. Simon. Skew distributions and the sizes of business firms, volume 24. North Holland, 1977."
+      },
+      {
+        "key": "e_1_3_2_1_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WISM.2009.15"
+      },
+      {
+        "key": "e_1_3_2_1_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2487788.2488017"
+      },
+      {
+        "key": "e_1_3_2_1_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/956750.956769"
+      },
+      {
+        "key": "e_1_3_2_1_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1248506"
+      },
+      {
+        "key": "e_1_3_2_1_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1772690.1772754"
+      },
+      {
+        "key": "e_1_3_2_1_36_1",
+        "volume-title": "Ninth International AAAI Conference on Web and Social Media",
+        "author": "Maity S. K.",
+        "year": "2015",
+        "unstructured": "S. K. Maity , A. Gupta , P. Goyal , and A. Mukherjee . A stratified learning approach for predicting the popularity of Twitter idioms . In Ninth International AAAI Conference on Web and Social Media , 2015 . S. K. Maity, A. Gupta, P. Goyal, and A. Mukherjee. A stratified learning approach for predicting the popularity of Twitter idioms. In Ninth International AAAI Conference on Web and Social Media, 2015."
+      },
+      {
+        "key": "e_1_3_2_1_37_1",
+        "volume-title": "Untangling skill and luck in business, sports, and investing",
+        "author": "Mauboussin M. J.",
+        "year": "2012",
+        "unstructured": "M. J. Mauboussin . The success equation : Untangling skill and luck in business, sports, and investing . Harvard Business Press , 2012 . M. J. Mauboussin. The success equation: Untangling skill and luck in business, sports, and investing. Harvard Business Press, 2012."
+      },
+      {
+        "key": "e_1_3_2_1_38_1",
+        "unstructured": "A. K. McCallum. Mallet: A machine learning for language toolkit. http://mallet.cs.umass.edu 2002.  A. K. McCallum. Mallet: A machine learning for language toolkit. http://mallet.cs.umass.edu 2002."
+      },
+      {
+        "key": "e_1_3_2_1_39_1",
+        "volume-title": "The future of everything: The science of prediction",
+        "author": "Orrell D.",
+        "year": "2008",
+        "unstructured": "D. Orrell . The future of everything: The science of prediction . BasicBooks , 2008 . D. Orrell. The future of everything: The science of prediction. BasicBooks, 2008."
+      },
+      {
+        "key": "e_1_3_2_1_40_1",
+        "volume-title": "Fiasco: A History of Hollywood's Iconic Flops",
+        "author": "Parish J. R.",
+        "year": "2006",
+        "unstructured": "J. R. Parish . Fiasco: A History of Hollywood's Iconic Flops . Wiley , 2006 . J. R. Parish. Fiasco: A History of Hollywood's Iconic Flops. Wiley, 2006."
+      },
+      {
+        "key": "e_1_3_2_1_41_1",
+        "volume-title": "ICWSM",
+        "author": "Petrovic S.",
+        "year": "2011",
+        "unstructured": "S. Petrovic , M. Osborne , and V. Lavrenko . RT to win! predicting message propagation in twitter . In ICWSM , 2011 . S. Petrovic, M. Osborne, and V. Lavrenko. RT to win! predicting message propagation in twitter. In ICWSM, 2011."
+      },
+      {
+        "key": "e_1_3_2_1_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2433396.2433443"
+      },
+      {
+        "key": "e_1_3_2_1_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/593098"
+      },
+      {
+        "key": "e_1_3_2_1_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1963405.1963503"
+      },
+      {
+        "key": "e_1_3_2_1_45_1",
+        "volume-title": "Seventh International AAAI Conference on Web and Social Media",
+        "author": "Romero D. M.",
+        "year": "2013",
+        "unstructured": "D. M. Romero , C. Tan , and J. Ugander . On the interplay between social and topical structure . In Seventh International AAAI Conference on Web and Social Media , 2013 . D. M. Romero, C. Tan, and J. Ugander. On the interplay between social and topical structure. In Seventh International AAAI Conference on Web and Social Media, 2013."
+      },
+      {
+        "key": "e_1_3_2_1_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1121066"
+      },
+      {
+        "key": "e_1_3_2_1_47_1",
+        "volume-title": "Free Press",
+        "author": "Schnaars S. P.",
+        "year": "1989",
+        "unstructured": "S. P. Schnaars . Megamistakes. Free Press ; Collier Macmillan , 1989 . S. P. Schnaars. Megamistakes. Free Press; Collier Macmillan, 1989."
+      },
+      {
+        "key": "e_1_3_2_1_48_1",
+        "volume-title": "The fortune sellers: The big business of buying and selling predictions",
+        "author": "Sherden W. A.",
+        "year": "1998",
+        "unstructured": "W. A. Sherden . The fortune sellers: The big business of buying and selling predictions . John Wiley & Sons , 1998 . W. A. Sherden. The fortune sellers: The big business of buying and selling predictions. John Wiley & Sons, 1998."
+      },
+      {
+        "key": "e_1_3_2_1_49_1",
+        "unstructured": "B. Shulman A. Sharma and D. Cosley. Predictability of item popularity: Gaps between prediction and understanding. Unpublished.  B. Shulman A. Sharma and D. Cosley. Predictability of item popularity: Gaps between prediction and understanding. Unpublished."
+      },
+      {
+        "key": "e_1_3_2_1_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/09332480.2000.10542216"
+      },
+      {
+        "key": "e_1_3_2_1_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2675133.2675290"
+      },
+      {
+        "key": "e_1_3_2_1_52_1",
+        "volume-title": "Anchor",
+        "author": "Surowiecki J.",
+        "year": "2005",
+        "unstructured": "J. Surowiecki . The wisdom of crowds . Anchor , 2005 . J. Surowiecki. The wisdom of crowds. Anchor, 2005."
+      },
+      {
+        "key": "e_1_3_2_1_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1787234.1787254"
+      },
+      {
+        "key": "e_1_3_2_1_54_1",
+        "volume-title": "The black swan: The impact of the highly improbable",
+        "author": "Taleb N. N.",
+        "year": "2010",
+        "unstructured": "N. N. Taleb . The black swan: The impact of the highly improbable . Random House , 2010 . N. N. Taleb. The black swan: The impact of the highly improbable. Random House, 2010."
+      },
+      {
+        "key": "e_1_3_2_1_55_1",
+        "volume-title": "Princeton University Press",
+        "author": "Tetlock P.",
+        "year": "2005",
+        "unstructured": "P. Tetlock . Expert political judgment: How good is it? How can we know ? Princeton University Press , 2005 . P. Tetlock. Expert political judgment: How good is it? How can we know? Princeton University Press, 2005."
+      },
+      {
+        "key": "e_1_3_2_1_56_1",
+        "volume-title": "Crown",
+        "author": "Tetlock P. E.",
+        "year": "2015",
+        "unstructured": "P. E. Tetlock and D. Gardner . Superforecasting: The art and science of prediction . Crown , 2015 . P. E. Tetlock and D. Gardner. Superforecasting: The art and science of prediction. Crown, 2015."
+      },
+      {
+        "key": "e_1_3_2_1_57_1",
+        "volume-title": "Crown Business",
+        "author": "Watts D. J.",
+        "year": "2011",
+        "unstructured": "D. J. Watts . Everything is obvious:* Once you know the answer . Crown Business , 2011 . D. J. Watts. Everything is obvious:* Once you know the answer. Crown Business, 2011."
+      },
+      {
+        "key": "e_1_3_2_1_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/4591061"
+      },
+      {
+        "key": "e_1_3_2_1_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep02522"
+      },
+      {
+        "key": "e_1_3_2_1_60_1",
+        "volume-title": "Eighth International AAAI Conference on Weblogs and Social Media",
+        "author": "Weng L.",
+        "year": "2014",
+        "unstructured": "L. Weng , F. Menczer , and Y.-Y. Ahn . Predicting successful memes using network and community structure . In Eighth International AAAI Conference on Weblogs and Social Media , 2014 . L. Weng, F. Menczer, and Y.-Y. Ahn. Predicting successful memes using network and community structure. In Eighth International AAAI Conference on Weblogs and Social Media, 2014."
+      },
+      {
+        "key": "e_1_3_2_1_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1963405.1963504"
+      },
+      {
+        "key": "e_1_3_2_1_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDM.2015.79"
+      },
+      {
+        "key": "e_1_3_2_1_63_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2783258.2783401"
+      }
+    ],
+    "event": {
+      "name": "WWW '16: 25th International World Wide Web Conference",
+      "location": "Montréal Québec Canada",
+      "acronym": "WWW '16",
+      "sponsor": [
+        "IW3C2 International World Wide Web Conference Committee",
+        "SIGWEB ACM Special Interest Group on Hypertext, Hypermedia, and Web"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 25th International Conference on World Wide Web"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/2872427.2883001",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/2872427.2883001",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T00:39:05Z",
+      "timestamp": 1750207145000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/2872427.2883001"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          11
+        ]
+      ]
+    },
+    "references-count": 63,
+    "alternative-id": [
+      "10.1145/2872427.2883001",
+      "10.5555/2872427"
+    ],
+    "URL": "https://doi.org/10.1145/2872427.2883001",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          11
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2016-04-11",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "_title_similarity": 1.0
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "key": "pinto2013",
+  "requested_title": "Using early view patterns to predict the popularity of YouTube videos",
+  "retrieved_from": "https://api.crossref.org/works/10.1145/2433396.2433443",
+  "review_required": false,
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          8
+        ]
+      ],
+      "date-time": "2026-09-08T06:29:52Z",
+      "timestamp": 1788848992225,
+      "version": "build-2803163510"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 18,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              2,
+              4
+            ]
+          ],
+          "date-time": "2013-02-04T00:00:00Z",
+          "timestamp": 1359936000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          2,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1145/2433396.2433443",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          2,
+          5
+        ]
+      ],
+      "date-time": "2013-02-05T13:19:52Z",
+      "timestamp": 1360070392000
+    },
+    "page": "365-374",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 292,
+    "title": [
+      "Using early view patterns to predict the popularity of youtube videos"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Henrique",
+        "family": "Pinto",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Universidade Federal de Minas Gerais, Belo Horizonte, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jussara M.",
+        "family": "Almeida",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Universidade Federal de Minas Gerais, Belo Horizonte, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marcos A.",
+        "family": "Gonçalves",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Universidade Federal de Minas Gerais, Belo Horizonte, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          2,
+          4
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_1_1",
+        "unstructured": "Alexa.com. Alexa top 500 global sites. http://www.alexa.com/topsites 2011. {Online; acessed 2-November-2011}.  Alexa.com. Alexa top 500 global sites. http://www.alexa.com/topsites 2011. {Online; acessed 2-November-2011}."
+      },
+      {
+        "key": "e_1_3_2_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/993483"
+      },
+      {
+        "key": "e_1_3_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TNET.2008.2011358"
+      },
+      {
+        "key": "e_1_3_2_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1298306.1298309"
+      },
+      {
+        "key": "e_1_3_2_1_5_1",
+        "volume-title": "Robust dynamic classes revealed by measuring the response function of a social system. Proc",
+        "author": "Crane R.",
+        "year": "2008",
+        "unstructured": "R. Crane and D. Sornette . Robust dynamic classes revealed by measuring the response function of a social system. Proc . National Academy of Sciences , 105(41), 2008 . R. Crane and D. Sornette. Robust dynamic classes revealed by measuring the response function of a social system. Proc. National Academy of Sciences, 105(41), 2008."
+      },
+      {
+        "key": "e_1_3_2_1_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1935826.1935925"
+      },
+      {
+        "key": "e_1_3_2_1_7_1",
+        "volume-title": "The elements of statistical learning",
+        "author": "Friedman J.",
+        "year": "2001",
+        "unstructured": "J. Friedman , T. Hastie , and R. Tibshirani . The elements of statistical learning , volume 1 . Springer Series in Statistics, 2001 . J. Friedman, T. Hastie, and R. Tibshirani. The elements of statistical learning, volume 1. Springer Series in Statistics, 2001."
+      },
+      {
+        "key": "e_1_3_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MIC.2010.73"
+      },
+      {
+        "key": "e_1_3_2_1_9_1",
+        "unstructured": "V. Heffernan. Uploading the avant-garde. http://www.nytimes.com/2009/09/06/magazine/06FOB-medium-t.html 2009. {Online; acessed 2-November-2011}.  V. Heffernan. Uploading the avant-garde. http://www.nytimes.com/2009/09/06/magazine/06FOB-medium-t.html 2009. {Online; acessed 2-November-2011}."
+      },
+      {
+        "key": "e_1_3_2_1_10_1",
+        "volume-title": "The art of computer systems performance analysis",
+        "author": "Jain R.",
+        "year": "2008",
+        "unstructured": "R. Jain . The art of computer systems performance analysis . John Wiley & Sons , 2008 . R. Jain. The art of computer systems performance analysis. John Wiley & Sons, 2008."
+      },
+      {
+        "key": "e_1_3_2_1_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WI-IAT.2010.209"
+      },
+      {
+        "key": "e_1_3_2_1_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1772690.1772754"
+      },
+      {
+        "issue": "3",
+        "key": "e_1_3_2_1_13_1",
+        "volume": "16",
+        "author": "Rodrigues T.",
+        "year": "2010",
+        "unstructured": "T. Rodrigues , F. Benevenuto , V. Almeida , J. Almeida , and M. Gonçalves . Equal but different: A contextual analysis of duplicated videos on youtube. Springer Journal of the Brazilian Computer Society , 16 ( 3 ), 2010 . T. Rodrigues, F. Benevenuto, V. Almeida, J. Almeida, and M. Gonçalves. Equal but different: A contextual analysis of duplicated videos on youtube. Springer Journal of the Brazilian Computer Society, 16(3), 2010.",
+        "journal-title": "Springer Journal of the Brazilian Computer Society"
+      },
+      {
+        "key": "e_1_3_2_1_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1242572.1242667"
+      },
+      {
+        "key": "e_1_3_2_1_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1787234.1787254"
+      },
+      {
+        "key": "e_1_3_2_1_16_1",
+        "volume-title": "Novelty and collective attention. Proc",
+        "author": "Wu F.",
+        "year": "2007",
+        "unstructured": "F. Wu and B. Huberman . Novelty and collective attention. Proc . National Academy of Sciences , 104(45), 2007 . F. Wu and B. Huberman. Novelty and collective attention. Proc. National Academy of Sciences, 104(45), 2007."
+      },
+      {
+        "key": "e_1_3_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INTERNET.2010.13"
+      },
+      {
+        "key": "e_1_3_2_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2124295.2124370"
+      }
+    ],
+    "event": {
+      "name": "WSDM 2013: Sixth ACM International Conference on Web Search and Data Mining",
+      "location": "Rome Italy",
+      "acronym": "WSDM 2013",
+      "sponsor": [
+        "SIGMOD ACM Special Interest Group on Management of Data",
+        "SIGWEB ACM Special Interest Group on Hypertext, Hypermedia, and Web",
+        "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data",
+        "SIGIR ACM Special Interest Group on Information Retrieval"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the sixth ACM international conference on Web search and data mining"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/2433396.2433443",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/2433396.2433443",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T20:14:11Z",
+      "timestamp": 1750277651000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/2433396.2433443"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          2,
+          4
+        ]
+      ]
+    },
+    "references-count": 18,
+    "alternative-id": [
+      "10.1145/2433396.2433443",
+      "10.1145/2433396"
+    ],
+    "URL": "https://doi.org/10.1145/2433396.2433443",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          2,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2013-02-04",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "_title_similarity": 1.0
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "key": "mentch2022",
+  "requested_title": "Getting better from worse: Augmented bagging and a cautionary tale of variable importance",
+  "retrieved_from": "https://api.crossref.org/works?query.title=Getting+better+from+worse%3A+Augmented+bagging+and+a+cautionary+tale+of+variable+importance&rows=3",
+  "review_required": true,
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          26
+        ]
+      ],
+      "date-time": "2025-03-26T01:00:07Z",
+      "timestamp": 1742950807678,
+      "version": "3.40.3"
+    },
+    "edition-number": "1",
+    "reference-count": 0,
+    "publisher": "Cambridge University Press",
+    "isbn-type": [
+      {
+        "type": "print",
+        "value": "9780521774772"
+      },
+      {
+        "type": "electronic",
+        "value": "9780511550881"
+      }
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              7,
+              6
+            ]
+          ],
+          "date-time": "2010-07-06T00:00:00Z",
+          "timestamp": 1278374400000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 3812,
+        "URL": "https://www.cambridge.org/core/terms"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2000,
+          1,
+          28
+        ]
+      ]
+    },
+    "DOI": "10.1017/cbo9780511550881.035",
+    "type": "book-chapter",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          1
+        ]
+      ],
+      "date-time": "2010-07-01T20:55:27Z",
+      "timestamp": 1278017727000
+    },
+    "page": "455-464",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "GETTING THE NUMBERS RIGHT, A CAUTIONARY TALE"
+    ],
+    "prefix": "10.1017",
+    "author": [
+      {
+        "given": "Ken",
+        "family": "Dickey",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "56",
+    "container-title": [
+      "More Java Gems"
+    ],
+    "link": [
+      {
+        "URL": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2A901007648740F6F9B385A28110495F",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2022-10-14T23:52:52Z",
+      "timestamp": 1665791572000
+    },
+    "score": 31.839245,
+    "resource": {
+      "primary": {
+        "URL": "https://www.cambridge.org/core/product/identifier/CBO9780511550881A050/type/book_part"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2000,
+          1,
+          28
+        ]
+      ]
+    },
+    "ISBN": [
+      "9780521774772",
+      "9780511550881"
+    ],
+    "references-count": 0,
+    "URL": "https://doi.org/10.1017/cbo9780511550881.035",
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          1,
+          28
+        ]
+      ]
+    },
+    "_title_similarity": 0.49557522123893805
+  }
+}

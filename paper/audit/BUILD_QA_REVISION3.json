@@ -1,0 +1,43 @@
+{
+  "revision": 3,
+  "built_at_utc": "2026-09-14T08:00:36.184685+00:00",
+  "experiments_run": false,
+  "overleaf_account_tested": false,
+  "documents": {
+    "main": {
+      "pages": 12,
+      "references": 36,
+      "undefined_references": false,
+      "overfull_warnings": [
+        "Overfull \\hbox (9.2679pt too wide) in paragraph at lines 28--28",
+        "Overfull \\hbox (9.2679pt too wide) in paragraph at lines 28--28"
+      ],
+      "visually_reviewed": true
+    },
+    "supplementary": {
+      "pages": 19,
+      "references": 5,
+      "undefined_references": false,
+      "overfull_warnings": [],
+      "visually_reviewed": true
+    }
+  },
+  "reporting_checks": 286,
+  "title_matches": 37,
+  "limits": [
+    "Main inherited class emits two non-clipping title-box warnings.",
+    "Latest official class could not be downloaded (403).",
+    "Title checks include archived metadata; not all full papers were read anew."
+  ],
+  "pdfs": {
+    "main": {
+      "sha256": "5ef6944c479ab6e65797ed79c43ad1221d845501f373ec5707d6cdf92246ec1d",
+      "pages": 12
+    },
+    "supplementary": {
+      "sha256": "7d5d5a11d54fa6afafe99f310b789f68bfc4608bff046023cb7a0ac60afa1c19",
+      "pages": 19
+    }
+  },
+  "visual_scope": "All main and supplement pages inspected; Figure 1 inspected enlarged. Supplement panel-page whitespace retained for panel legibility."
+}

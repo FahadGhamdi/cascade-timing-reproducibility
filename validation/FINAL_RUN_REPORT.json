@@ -1,0 +1,94 @@
+{
+  "stage": "check-all",
+  "verified_files": 2940,
+  "steps": [
+    {
+      "name": "raw",
+      "seconds": 19.92863570099962,
+      "returncode": 0
+    },
+    {
+      "name": "primary",
+      "seconds": 7.896617571000206,
+      "returncode": 0,
+      "execution": "unchanged original function in process"
+    },
+    {
+      "name": "strata",
+      "seconds": 8.34302065600059,
+      "returncode": 0
+    },
+    {
+      "name": "noise_analysis",
+      "seconds": 8.961180078000325,
+      "returncode": 0
+    },
+    {
+      "name": "verify_reporting",
+      "seconds": 0.052612339000006614,
+      "returncode": 0
+    },
+    {
+      "name": "make_publication_figures",
+      "seconds": 8.223873745999299,
+      "returncode": 0
+    },
+    {
+      "name": "make_graphical_abstract",
+      "seconds": 1.2278093559998524,
+      "returncode": 0
+    }
+  ],
+  "status": "passed",
+  "full_refit_to_test_reproduction": false,
+  "interpretation": "Frozen-parent stage replay; original locks preserved.",
+  "raw_preparation": {
+    "passed": true,
+    "portable_entries": 22
+  },
+  "gzip_output_adapter": "flush every 128 text writes; uncompressed output compared to original",
+  "primary_comparison": {
+    "files": [
+      "PRIMARY_COMPARISONS.json",
+      "PROCEDURE_METRICS.json",
+      "CALIBRATION.json",
+      "DUPLICATE_SENSITIVITY.json",
+      "BOOTSTRAP_DESIGN.json",
+      "BOOTSTRAP_DELTAS.csv.gz",
+      "ROOT_PROCEDURE_SCORES.csv.gz"
+    ],
+    "passed": true,
+    "atol": 1e-08,
+    "rtol": 1e-10
+  },
+  "strata_comparison": {
+    "files": [
+      "STRATA_RESULTS.json",
+      "CASE_METADATA.json",
+      "BOOTSTRAP_DESIGN.json",
+      "STRATA_BOOTSTRAP.npz",
+      "MSLE_SAVED_MEDIANS.csv",
+      "STRATUM_LEVELS.csv",
+      "EMPIRICAL_REFERENCES_BY_STRATUM.csv",
+      "PROCEDURE_LOSSES.npz"
+    ],
+    "passed": true,
+    "atol": 1e-08,
+    "rtol": 1e-10
+  },
+  "noise_comparison": {
+    "files": [
+      "NOISE_COMPARISONS.json",
+      "NOISE_BOOTSTRAP.npz",
+      "NOISE_MATRIX_BINDINGS.json",
+      "NOISE_REALIZATION_SUMMARIES.csv",
+      "NOISE_PROCEDURE_LOSSES.npz",
+      "PROCEDURE_COMPLETENESS.json"
+    ],
+    "passed": true,
+    "atol": 1e-08,
+    "rtol": 1e-10
+  },
+  "paper_evidence_bound_to_originals": true,
+  "source_files_verified_after": 2940
+}

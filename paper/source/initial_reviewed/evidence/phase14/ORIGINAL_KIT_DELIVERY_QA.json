@@ -1,0 +1,15 @@
+{
+  "all_model_seeds_crossed_with_all_noise_realizations": true,
+  "broken_editorial_image_links": [],
+  "frozen_protocol_config_job_hashes": "unchanged",
+  "noise_job_schedule_verified_against_original_lock": 42,
+  "python_AST": "passed",
+  "real_noise_fits_executed_here": 0,
+  "reference_all_procedure_window_partitions_checked": 72,
+  "scientific_A_reference": "reference/STAGE_A_REPORT.json",
+  "source_training_binding": {
+    "all_match": true,
+    "files": 5
+  },
+  "synthetic_qualification": "reference/SYNTHETIC_QUALIFICATION.json"
+}

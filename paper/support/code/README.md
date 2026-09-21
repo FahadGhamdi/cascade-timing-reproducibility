@@ -1,0 +1,7 @@
+# Reporting helpers
+
+`render_figures.py` uses only the aggregate JSON included in this package. With NumPy and Matplotlib installed, run `python code/render_figures.py` from the package root. It redraws five figures; it does not call models, score distributions or generate bootstrap samples.
+
+`review_phase13f_saved_outputs.py` records the independent arithmetic used in this review, with a configurable input directory. It requires the full extracted Phase13F return in `<review-root>/received/` and the archive-verification receipt as `<review-root>/ARCHIVE_REVIEW.json`. Invoke `python code/review_phase13f_saved_outputs.py --review-root /absolute/path/to/review-root`. It needs NumPy. Reading the full saved score files does not retrain or query models. The small manuscript package does not contain those full score files.
+
+The archive receipt should only be supplied after checking the source ZIP and all its manifest entries; an already-written receipt alone does not verify fresh bytes. The helper checks the embedded freeze and model bindings, then root aggregation and quantiles of saved bootstrap replicates. The final evidence/INDEPENDENT_REVIEW.json also records separate comparisons against the previously prepared kit and the prior Phase13E model lock, performed during the present review outside that helper. Those two provenance comparisons are not automatically repeated by it. This is reporting-audit code, not a replacement for frozen experiment code.

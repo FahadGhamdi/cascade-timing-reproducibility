@@ -1,0 +1,854 @@
+{
+  "candidate": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          17
+        ]
+      ],
+      "date-time": "2026-08-17T18:14:32Z",
+      "timestamp": 1786990472213,
+      "version": "build-2736575974"
+    },
+    "reference-count": 66,
+    "publisher": "Elsevier BV",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2016-07-01T00:00:00Z",
+          "timestamp": 1467331200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "International Journal of Forecasting"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.ijforecast.2015.12.004",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          6
+        ]
+      ],
+      "date-time": "2016-04-06T16:41:42Z",
+      "timestamp": 1459960902000
+    },
+    "page": "788-803",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 136,
+    "title": [
+      "Evaluating predictive count data distributions in retail sales forecasting"
+    ],
+    "prefix": "10.1016",
+    "volume": "32",
+    "author": [
+      {
+        "given": "Stephan",
+        "family": "Kolassa",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000005",
+        "doi-asserted-by": "crossref",
+        "first-page": "177",
+        "DOI": "10.1198/073500106000000332",
+        "article-title": "Comparing density forecasts via weighted likelihood ratio tests",
+        "volume": "25",
+        "author": "Amisano",
+        "year": "2007",
+        "journal-title": "Journal of Business and Economic Statistics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000010",
+        "unstructured": "Biecek, P., & Ledwina, T. (2012). ddst: Data driven smooth test. URL: http://CRAN.R-project.org/package=ddst R package version 1.03."
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000015",
+        "first-page": "39",
+        "article-title": "Accuracy and accuracy-implication metrics for intermittent demand",
+        "volume": "4",
+        "author": "Boylan",
+        "year": "2006",
+        "journal-title": "Foresight"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000020",
+        "doi-asserted-by": "crossref",
+        "first-page": "473",
+        "DOI": "10.1057/palgrave.jors.2602312",
+        "article-title": "Classification for forecasting and stock control: a case study",
+        "volume": "59",
+        "author": "Boylan",
+        "year": "2008",
+        "journal-title": "Journal of the Operational Research Society"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000025",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1175/1520-0493(1950)078<0001:VOFEIT>2.0.CO;2",
+        "article-title": "Verification of forecasts expressed in terms of probability",
+        "volume": "78",
+        "author": "Brier",
+        "year": "1950",
+        "journal-title": "Monthly Weather Review"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000030",
+        "doi-asserted-by": "crossref",
+        "first-page": "1473",
+        "DOI": "10.1016/j.spl.2007.02.008",
+        "article-title": "Universal residuals: A multivariate transformation",
+        "volume": "77",
+        "author": "Brockwell",
+        "year": "2007",
+        "journal-title": "Statistics & Probability Letters"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000035",
+        "unstructured": "Canty, A., & Ripley, B. (2015). boot: Bootstrap R (S-Plus) Functions. R package version 1.3-17."
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000040",
+        "doi-asserted-by": "crossref",
+        "first-page": "841",
+        "DOI": "10.2307/2527341",
+        "article-title": "Evaluating interval forecasts",
+        "volume": "39",
+        "author": "Christoffersen",
+        "year": "1998",
+        "journal-title": "International Economic Review"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000045",
+        "doi-asserted-by": "crossref",
+        "first-page": "445",
+        "DOI": "10.1002/jae.703",
+        "article-title": "Evaluating interval forecasts of high-frequency financial data",
+        "volume": "18",
+        "author": "Clements",
+        "year": "2003",
+        "journal-title": "Journal of Applied Econometrics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000050",
+        "doi-asserted-by": "crossref",
+        "first-page": "779",
+        "DOI": "10.1016/j.jeconom.2005.06.013",
+        "article-title": "Bootstrap conditional distribution tests in the presence of dynamic misspecification",
+        "volume": "133",
+        "author": "Corradi",
+        "year": "2006",
+        "journal-title": "Journal of Econometrics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000055",
+        "doi-asserted-by": "crossref",
+        "first-page": "289",
+        "DOI": "10.1057/jors.1972.50",
+        "article-title": "Forecasting and stock control for intermittent demands",
+        "volume": "23",
+        "author": "Croston",
+        "year": "1972",
+        "journal-title": "Operational Research Quarterly"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000060",
+        "doi-asserted-by": "crossref",
+        "first-page": "1254",
+        "DOI": "10.1111/j.1541-0420.2009.01191.x",
+        "article-title": "Predictive model assessment for count data",
+        "volume": "65",
+        "author": "Czado",
+        "year": "2009",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000065",
+        "doi-asserted-by": "crossref",
+        "first-page": "863",
+        "DOI": "10.2307/2527342",
+        "article-title": "Evaluating density forecasts with applications to financial risk management",
+        "volume": "39",
+        "author": "Diebold",
+        "year": "1998",
+        "journal-title": "International Economic Review"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000070",
+        "first-page": "26",
+        "article-title": "The pattern of consumer purchases",
+        "volume": "8",
+        "author": "Ehrenberg",
+        "year": "1959",
+        "journal-title": "Journal of the Royal Statistical Society. Series C. Applied Statistics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000075",
+        "doi-asserted-by": "crossref",
+        "first-page": "20",
+        "DOI": "10.1016/j.ijforecast.2015.03.008",
+        "article-title": "A note on the mean absolute scaled error",
+        "volume": "32",
+        "author": "Franses",
+        "year": "2016",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000080",
+        "doi-asserted-by": "crossref",
+        "first-page": "291",
+        "DOI": "10.1007/BF00539368",
+        "article-title": "Recursive residuals and model diagnostics for normal and non-normal state space models",
+        "volume": "3",
+        "author": "Fr\u00fchwirth-Schnatter",
+        "year": "1996",
+        "journal-title": "Environmental and Ecological Statistics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000085",
+        "doi-asserted-by": "crossref",
+        "first-page": "746",
+        "DOI": "10.1198/jasa.2011.r10138",
+        "article-title": "Making and evaluating point forecasts",
+        "volume": "106",
+        "author": "Gneiting",
+        "year": "2011",
+        "journal-title": "Journal of the American Statistical Association"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000090",
+        "doi-asserted-by": "crossref",
+        "first-page": "243",
+        "DOI": "10.1111/j.1467-9868.2007.00587.x",
+        "article-title": "Probabilistic forecasts, calibration and sharpness",
+        "volume": "69",
+        "author": "Gneiting",
+        "year": "2007",
+        "journal-title": "Journal of the Royal Statistical Society. Series B. Statistical Methodology"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000095",
+        "doi-asserted-by": "crossref",
+        "first-page": "125",
+        "DOI": "10.1146/annurev-statistics-062713-085831",
+        "article-title": "Probabilistic forecasting",
+        "volume": "1",
+        "author": "Gneiting",
+        "year": "2014",
+        "journal-title": "Annual Review of Statistics and Its Application"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000100",
+        "doi-asserted-by": "crossref",
+        "first-page": "411",
+        "DOI": "10.1198/jbes.2010.08110",
+        "article-title": "Comparing density forecasts using threshold- and quantile-weighted scoring rules",
+        "volume": "29",
+        "author": "Gneiting",
+        "year": "2011",
+        "journal-title": "Journal of Business & Economic Statistics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000105",
+        "doi-asserted-by": "crossref",
+        "first-page": "799",
+        "DOI": "10.1016/j.ijforecast.2014.03.019",
+        "article-title": "Generalized autocontours: Evaluation of multivariate density models",
+        "volume": "31",
+        "author": "Gonz\u00e1lez-Rivera",
+        "year": "2015",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000110",
+        "doi-asserted-by": "crossref",
+        "first-page": "405",
+        "DOI": "10.1016/S0169-2070(99)00007-2",
+        "article-title": "On the asymmetry of the symmetric MAPE",
+        "volume": "15",
+        "author": "Goodwin",
+        "year": "1999",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000115",
+        "doi-asserted-by": "crossref",
+        "first-page": "550",
+        "DOI": "10.1175/1520-0493(2001)129<0550:IORHFV>2.0.CO;2",
+        "article-title": "Interpretation of rank histograms for verifying ensemble forecasts",
+        "volume": "129",
+        "author": "Hamill",
+        "year": "2001",
+        "journal-title": "Monthly Weather Review"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000120",
+        "first-page": "24",
+        "article-title": "Special functions in R: introducing the gsl package",
+        "volume": "6",
+        "author": "Hankin",
+        "year": "2006",
+        "journal-title": "R News"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000125",
+        "doi-asserted-by": "crossref",
+        "first-page": "150",
+        "DOI": "10.1198/000313001750358482",
+        "article-title": "Visualizing the median as the minimum-deviation location",
+        "volume": "55",
+        "author": "Hanley",
+        "year": "2001",
+        "journal-title": "The American Statistician"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000130",
+        "first-page": "65",
+        "article-title": "A simple sequentially rejective multiple test procedure",
+        "volume": "6",
+        "author": "Holm",
+        "year": "1979",
+        "journal-title": "Scandinavian Journal of Statistics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000135",
+        "doi-asserted-by": "crossref",
+        "first-page": "595",
+        "DOI": "10.1214/13-AOAS709",
+        "article-title": "The role of the information set for forecasting\u2014with applications to risk management",
+        "volume": "8",
+        "author": "Holzmann",
+        "year": "2014",
+        "journal-title": "The Annals of Applied Statistics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000140",
+        "first-page": "43",
+        "article-title": "Another look at forecast-accuracy metrics for intermittent demand",
+        "volume": "4",
+        "author": "Hyndman",
+        "year": "2006",
+        "journal-title": "Foresight"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000145",
+        "doi-asserted-by": "crossref",
+        "first-page": "679",
+        "DOI": "10.1016/j.ijforecast.2006.03.001",
+        "article-title": "Another look at measures of forecast accuracy",
+        "volume": "22",
+        "author": "Hyndman",
+        "year": "2006",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000150",
+        "doi-asserted-by": "crossref",
+        "first-page": "124",
+        "DOI": "10.1016/j.laa.2005.10.023",
+        "article-title": "Towards data driven selection of a penalty function for data driven Neyman tests",
+        "volume": "417",
+        "author": "Inglot",
+        "year": "2006",
+        "journal-title": "Linear Algebra and its Applications"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000155",
+        "first-page": "14",
+        "article-title": "Forecasting with in-memory technology",
+        "volume": "31",
+        "author": "Januschowski",
+        "year": "2013",
+        "journal-title": "Foresight"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000160",
+        "first-page": "1",
+        "article-title": "Beanplot: A boxplot alternative for visual comparison of distributions",
+        "volume": "28",
+        "author": "Kampstra",
+        "year": "2008",
+        "journal-title": "Journal of Statistical Software, Code Snippets"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000165",
+        "first-page": "20",
+        "article-title": "Sometimes it\u2019s better to be simple than correct",
+        "volume": "40",
+        "author": "Kolassa",
+        "year": "2016",
+        "journal-title": "Foresight"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000170",
+        "first-page": "21",
+        "article-title": "Percentage errors can ruin your day (and rolling the dice shows how)",
+        "volume": "23",
+        "author": "Kolassa",
+        "year": "2011",
+        "journal-title": "Foresight"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000175",
+        "first-page": "40",
+        "article-title": "Advantages of the MAD/Mean ratio over the MAPE",
+        "volume": "6",
+        "author": "Kolassa",
+        "year": "2007",
+        "journal-title": "Foresight"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000180",
+        "doi-asserted-by": "crossref",
+        "first-page": "180",
+        "DOI": "10.1016/j.ijpe.2014.06.007",
+        "article-title": "On intermittent demand model optimisation and selection",
+        "volume": "156",
+        "author": "Kourentzes",
+        "year": "2014",
+        "journal-title": "International Journal of Production Economics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000185",
+        "unstructured": "Kourentzes, N., & Petropoulos, F. (2014). tsintermittent: Intermittent time series forecasting. URL: http://CRAN.R-project.org/package=tsintermittent R package version 1.5."
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000190",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lambert, N.S., Pennock, D.M., & Shoham, Y. (2008). Eliciting properties of probability distributions. In Proceedings of the 9th ACM conference on electronic commerce (pp. 129\u2013138). http://dx.doi.org/10.1145/1386790.1386813.",
+        "DOI": "10.1145/1386790.1386813"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000195",
+        "unstructured": "Laurent, S. (2015a). Sum of squared Negative Binomial probability masses. CrossValidated. URL: http://stats.stackexchange.com/a/162478/1352. version: 2015-07-22."
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000200",
+        "unstructured": "Laurent, S. (2015b). Sum of squared Poisson probability masses. CrossValidated. URL: http://stats.stackexchange.com/a/162432/1352. version: 2015-07-22."
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000205",
+        "doi-asserted-by": "crossref",
+        "first-page": "1000",
+        "DOI": "10.1080/01621459.1994.10476834",
+        "article-title": "Data-driven version of Neyman\u2019s smooth test of fit",
+        "volume": "89",
+        "author": "Ledwina",
+        "year": "1994",
+        "journal-title": "Journal of the American Statistical Association"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000210",
+        "doi-asserted-by": "crossref",
+        "first-page": "795",
+        "DOI": "10.1007/s00181-005-0001-1",
+        "article-title": "Modelling financial transaction price movements: a dynamic integer count data model",
+        "volume": "30",
+        "author": "Liesenfeld",
+        "year": "2006",
+        "journal-title": "Empirical Economics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000215",
+        "doi-asserted-by": "crossref",
+        "first-page": "1023",
+        "DOI": "10.1002/jae.1192",
+        "article-title": "Evaluating density forecasts: forecast combinations, model mixtures, calibration and sharpness",
+        "volume": "26",
+        "author": "Mitchell",
+        "year": "2011",
+        "journal-title": "Journal of Applied Econometrics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000220",
+        "first-page": "37",
+        "article-title": "Measuring the quality of intermittent demand forecasts: It\u2019s worse than we\u2019ve thought!",
+        "volume": "37",
+        "author": "Morlidge",
+        "year": "2015",
+        "journal-title": "Foresight"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000225",
+        "doi-asserted-by": "crossref",
+        "first-page": "939",
+        "DOI": "10.1007/s10463-009-0260-2",
+        "article-title": "Neyman smooth goodness-of-fit tests for the marginal distribution of dependent data",
+        "volume": "63",
+        "author": "Munk",
+        "year": "2011",
+        "journal-title": "Annals of the Institute of Statistical Mathematics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000230",
+        "first-page": "150",
+        "article-title": "\u2018Smooth\u2019 test for goodness of fit",
+        "volume": "20",
+        "author": "Neyman",
+        "year": "1937",
+        "journal-title": "Skandinavisk Aktuarietidskrift"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000235",
+        "doi-asserted-by": "crossref",
+        "first-page": "914",
+        "DOI": "10.1057/jors.2014.62",
+        "article-title": "Forecast combinations for intermittent demand",
+        "volume": "66",
+        "author": "Petropoulos",
+        "year": "2015",
+        "journal-title": "Journal of the Operational Research Society"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000240",
+        "doi-asserted-by": "crossref",
+        "first-page": "6782",
+        "DOI": "10.1080/00207543.2014.917771",
+        "article-title": "Mean-based error measures for intermittent demand forecasting",
+        "volume": "52",
+        "author": "Prestwich",
+        "year": "2014",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000245",
+        "unstructured": "R Core Team (2015). R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing. Vienna, Austria. URL: http://www.R-project.org/. R version 3.2.2."
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000250",
+        "doi-asserted-by": "crossref",
+        "first-page": "470",
+        "DOI": "10.1214/aoms/1177729394",
+        "article-title": "Remarks on a multivariate transformation",
+        "volume": "23",
+        "author": "Rosenblatt",
+        "year": "1952",
+        "journal-title": "Annals of Mathematical Statistics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000255",
+        "doi-asserted-by": "crossref",
+        "first-page": "38",
+        "DOI": "10.1080/00031305.1990.10475690",
+        "article-title": "A simple noncalculus proof that the median minimizes the sum of the absolute deviations",
+        "volume": "44",
+        "author": "Schwertman",
+        "year": "1990",
+        "journal-title": "The American Statistician"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000260",
+        "doi-asserted-by": "crossref",
+        "first-page": "283",
+        "DOI": "10.1002/for.3980040305",
+        "article-title": "Diagnostic checks of non-standard time series models",
+        "volume": "4",
+        "author": "Smith",
+        "year": "1985",
+        "journal-title": "Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000265",
+        "doi-asserted-by": "crossref",
+        "first-page": "485",
+        "DOI": "10.1016/j.ijforecast.2011.03.009",
+        "article-title": "Forecasting the intermittent demand for slow-moving inventories: A modelling approach",
+        "volume": "28",
+        "author": "Snyder",
+        "year": "2012",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000270",
+        "doi-asserted-by": "crossref",
+        "first-page": "1746",
+        "DOI": "10.1016/j.jbusres.2015.03.034",
+        "article-title": "Forecasting intermittent inventory demands: simple parametric methods vs. bootstrapping",
+        "volume": "68",
+        "author": "Syntetos",
+        "year": "2015",
+        "journal-title": "Journal of Business Research"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000275",
+        "series-title": "Service parts management",
+        "first-page": "31",
+        "article-title": "Distributional assumptions for parametric forecasting of intermittent demand",
+        "author": "Syntetos",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000280",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1016/j.ijforecast.2004.10.001",
+        "article-title": "The accuracy of intermittent demand estimates",
+        "volume": "21",
+        "author": "Syntetos",
+        "year": "2005",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000285",
+        "doi-asserted-by": "crossref",
+        "first-page": "495",
+        "DOI": "10.1057/palgrave.jors.2601841",
+        "article-title": "On the categorization of demand patterns",
+        "volume": "56",
+        "author": "Syntetos",
+        "year": "2005",
+        "journal-title": "Journal of the Operational Research Society"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000290",
+        "doi-asserted-by": "crossref",
+        "first-page": "235",
+        "DOI": "10.1002/1099-131X(200007)19:4<235::AID-FOR772>3.0.CO;2-L",
+        "article-title": "Density forecasting: a survey",
+        "volume": "19",
+        "author": "Tay",
+        "year": "2000",
+        "journal-title": "Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000295",
+        "doi-asserted-by": "crossref",
+        "first-page": "321",
+        "DOI": "10.1057/palgrave.jors.2602569",
+        "article-title": "Forecasting intermittent demand: a comparative study",
+        "volume": "60",
+        "author": "Teunter",
+        "year": "2009",
+        "journal-title": "Journal of the Operational Research Society"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000300",
+        "series-title": "Modern applied statistics with S",
+        "author": "Venables",
+        "year": "2002"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000305",
+        "doi-asserted-by": "crossref",
+        "first-page": "165",
+        "DOI": "10.1016/S0169-2070(02)00009-2",
+        "article-title": "Chi-squared tests of interval and density forecasts, and the Bank of England\u2019s fan charts",
+        "volume": "19",
+        "author": "Wallis",
+        "year": "2003",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000310",
+        "doi-asserted-by": "crossref",
+        "first-page": "625",
+        "DOI": "10.1016/j.ijpe.2010.07.013",
+        "article-title": "Evaluation of forecasting error measurements and techniques for intermittent demand",
+        "volume": "128",
+        "author": "Wallstr\u00f6m",
+        "year": "2010",
+        "journal-title": "International Journal of Production Economics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000315",
+        "doi-asserted-by": "crossref",
+        "first-page": "787",
+        "DOI": "10.1007/s11749-014-0380-8",
+        "article-title": "Calibration tests for count data",
+        "volume": "23",
+        "author": "Wei",
+        "year": "2014",
+        "journal-title": "TEST"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000320",
+        "first-page": "36",
+        "article-title": "Forecast-accuracy metrics for intermittent demands: Look at the entire distribution of demand",
+        "volume": "4",
+        "author": "Willemain",
+        "year": "2006",
+        "journal-title": "Foresight"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000325",
+        "doi-asserted-by": "crossref",
+        "first-page": "375",
+        "DOI": "10.1016/S0169-2070(03)00013-X",
+        "article-title": "A new approach to forecasting intermittent demand for service parts inventories",
+        "volume": "20",
+        "author": "Willemain",
+        "year": "2004",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2015.12.004_br000330",
+        "doi-asserted-by": "crossref",
+        "first-page": "619",
+        "DOI": "10.1016/j.ijforecast.2005.05.001",
+        "article-title": "Author\u2019s response to Koehler and Gardner",
+        "volume": "21",
+        "author": "Willemain",
+        "year": "2005",
+        "journal-title": "International Journal of Forecasting"
+      }
+    ],
+    "container-title": [
+      "International Journal of Forecasting"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0169207016000315?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0169207016000315?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          15
+        ]
+      ],
+      "date-time": "2024-06-15T10:54:45Z",
+      "timestamp": 1718448885000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0169207016000315"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          7
+        ]
+      ]
+    },
+    "references-count": 66,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            7
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0169207016000315"
+    ],
+    "URL": "https://doi.org/10.1016/j.ijforecast.2015.12.004",
+    "relation": {},
+    "ISSN": [
+      "0169-2070"
+    ],
+    "issn-type": [
+      {
+        "value": "0169-2070",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          7
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Evaluating predictive count data distributions in retail sales forecasting",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "International Journal of Forecasting",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.ijforecast.2015.12.004",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "\u00a9 2016 International Institute of Forecasters. Published by Elsevier B.V. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  },
+  "retrieved_from": "https://api.crossref.org/works/10.1016%2Fj.ijforecast.2015.12.004",
+  "review_required": false
+}

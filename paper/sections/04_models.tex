@@ -1,0 +1,30 @@
+\hypertarget{forecasting-procedures-and-model-selection}{%
+\section{Forecasting procedures and model selection}}
+
+\hypertarget{count-distributions}{%
+\subsection{Count distributions}}
+
+The primary families are Hurdle, QRF and NGBoost. Hurdle uses a logistic model for \(\pi(x)=P(Y>0\mid x)\) and a positive law \(Y\mid Y>0=1+K\), with \(K\) following quadratic-variance negative-binomial (NB2) regression. In the NB2 parameterization, \(\operatorname{Var}(K\mid x)=\mu(x)+\mu(x)^2/r\). The positive component is a shifted negative binomial. Ordinary NB2 and Poisson regressions, with log-link means, provide additional references.
+
+QRF uses 128 bootstrap-grown regression trees. All original training rows are routed through each tree; a query receives uniform weight within its matching leaf, averaged over trees. The resulting distribution has finite support on training responses. This specifies our leaf-weight convention and its inability to place mass above the largest training response \cite{qrf2006}.
+
+NGBoost fits a Normal distribution to \(\log(1+Y)\), using Normal LogScore and natural gradients. We define the predicted integer count by
+
+\begin{align}
+Z&\sim N(\mu,\sigma^2),\\
+C&=\max\{0,\lfloor \exp(Z)-0.5\rfloor\},\\
+F_C(k)&=\Phi\!\left(\frac{\log(k+1.5)-\mu}{\sigma}\right),\quad k\ge0.
+\end{align}
+
+Training optimizes the transformed continuous density, while evaluation uses this rounded count law. The adapter is explicitly part of the tested procedure \cite{ngboost2020}.
+
+Two empirical references use training responses at the corresponding window. The unconditional reference assigns equal mass to all such responses. The conditional reference assigns equal mass to the \(k\) nearest training roots in log-prefix count, using a fixed lexical identity tie-break. Both references use \(I_0\). They help distinguish the contribution of conditioning on size from the contribution of adding timing.
+
+\hypertarget{shared-setting-selection-and-retained-models}{%
+\subsection{Shared-setting selection and retained models}}
+
+Each learned family has four predefined candidates. Hurdle, NB2 and Poisson vary their count-regression penalty; QRF varies depth and minimum leaf size; NGBoost varies depth and boosting budget. Within each source and family, a single candidate is selected by validation CRPS averaged over both information sets and all prescribed seeds. A candidate must complete the required fits and every validation score for both information sets. This rule chooses good joint predictive performance rather than maximizing the observed timing improvement.
+
+QRF and NGBoost use three fixed seeds; deterministic procedures use one. The selected training-fitted objects are retained without a training-plus-validation refit. Sharing a candidate and seed schedule controls those choices, while adding predictors still changes model dimension and effective flexibility. Selection/evaluation separation addresses the risk of favorable selection-set estimates \cite{cawley2010}.
+
+Numerical completeness is part of candidate eligibility. All retained procedures completed the test evaluation; no failed test root or seed was deleted. The supplement records candidate exclusions, selected settings, numerical rules and the complete experimental accounting. {\small\textit{Preparation:~\cite{openai2026}.}}
